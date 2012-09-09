@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CS8803AGA">
+</Property><Property Name="Solution File" Value="C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA.sln">
+</Property><Property Name="Date" Value="Sunday, September 09, 2012">
+</Property><Property Name="Time" Value="0:17:28 AM">
+</Property><Property Name="Log Number" Value="3">
+</Property></Properties><Event ErrorLevel="0" Project="CS8803AGAGameLibrary" Source="CS8803AGAGameLibrary\CS8803AGAGameLibrary.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CS8803AGAGameLibrary" Source="CS8803AGAGameLibrary\CS8803AGAGameLibrary.csproj" Description="Converted">
+</Event></UpgradeLog>

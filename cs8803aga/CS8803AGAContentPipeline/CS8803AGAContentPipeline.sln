@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS8803AGAContentPipeline", "CS8803AGAContentPipeline.csproj", "{22F000D5-ADF1-41FF-A5E3-4651A2759A77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22F000D5-ADF1-41FF-A5E3-4651A2759A77}.Debug|x86.ActiveCfg = Debug|x86
+		{22F000D5-ADF1-41FF-A5E3-4651A2759A77}.Debug|x86.Build.0 = Debug|x86
+		{22F000D5-ADF1-41FF-A5E3-4651A2759A77}.Release|x86.ActiveCfg = Release|x86
+		{22F000D5-ADF1-41FF-A5E3-4651A2759A77}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
