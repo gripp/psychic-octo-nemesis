@@ -1,0 +1,2 @@
+C:\Users\hartsoka\Documents\Classes\cs8803aga\QuestAdaptation\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\hartsoka\Documents\Classes\cs8803aga\QuestAdaptation\Content\obj\x86\Debug\Audio\sounds.xml
