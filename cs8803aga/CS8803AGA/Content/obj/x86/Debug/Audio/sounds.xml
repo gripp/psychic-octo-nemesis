@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="waves1">Wave Bank
+{
+    Name = waves1;
+    Xbox File = Xbox\waves1.xwb;
+    Windows File = Win\waves1.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = XMA40;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
+    Bank Last Revised Low = 94581105;
+    Bank Last Revised High = 30099407;
+
+    Wave
+    {
+        Name = bang_3;
+        File = effects\bang_3.wav;
+        Build Settings Last Modified Low = 184983766;
+        Build Settings Last Modified High = 29996679;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 141264;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2844977354;
+            Last Modified High = 29998351;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

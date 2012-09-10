@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Audio\effects\bang_3.wav</Source>
+      <Name>Audio\effects\bang_3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Audio\effects\bang_3.xnb</Output>
+      <Time>2012-09-10T12:34:08.680287-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Ness_Walk.png</Source>
+      <Name>Animation\Textures\Ness_Walk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Ness_Walk.xnb</Output>
+      <Time>2012-09-10T12:34:08.5092772-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Salsa_walk.png</Source>
+      <Name>Animation\Textures\Salsa_walk</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Salsa_walk.xnb</Output>
+      <Time>2012-09-10T12:34:08.5322785-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\splash.png</Source>
+      <Name>Sprites\splash</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\splash.xnb</Output>
+      <Time>2012-09-10T12:34:10.4943908-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\TitleScreen.png</Source>
+      <Name>Sprites\TitleScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TitleScreen.xnb</Output>
+      <Time>2012-09-10T12:34:10.5843959-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\mask.png</Source>
+      <Name>Animation\Textures\mask</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\mask.xnb</Output>
+      <Time>2012-09-10T12:34:08.4752753-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\blank.bmp</Source>
+      <Name>Sprites\blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
+      <Time>2012-09-10T12:34:09.6213408-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\grassRock.png</Source>
+      <Name>Sprites\grassRock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\grassRock.xnb</Output>
+      <Time>2012-09-10T12:34:09.7033455-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\Caption.png</Source>
+      <Name>Sprites\RPG\Caption</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Caption.xnb</Output>
+      <Time>2012-09-10T12:34:11.215432-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\CaptionBackGround.png</Source>
+      <Name>Sprites\RPG\CaptionBackGround</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGround.xnb</Output>
+      <Time>2012-09-10T12:34:11.2394334-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\CaptionBackGroundLarge.png</Source>
+      <Name>Sprites\RPG\CaptionBackGroundLarge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGroundLarge.xnb</Output>
+      <Time>2012-09-10T12:34:11.2624347-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\ConversationStrip.png</Source>
+      <Name>Sprites\RPG\ConversationStrip</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ConversationStrip.xnb</Output>
+      <Time>2012-09-10T12:34:11.3084373-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\CountShieldWithArrow.png</Source>
+      <Name>Sprites\RPG\CountShieldWithArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CountShieldWithArrow.xnb</Output>
+      <Time>2012-09-10T12:34:11.3814415-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\FadeScreen.png</Source>
+      <Name>Sprites\RPG\FadeScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen.xnb</Output>
+      <Time>2012-09-10T12:34:11.4034428-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\FadeScreen2.png</Source>
+      <Name>Sprites\RPG\FadeScreen2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen2.xnb</Output>
+      <Time>2012-09-10T12:34:11.4234439-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\GameScreenBkgd.png</Source>
+      <Name>Sprites\RPG\GameScreenBkgd</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GameScreenBkgd.xnb</Output>
+      <Time>2012-09-10T12:34:12.0234782-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\GearScoreBoard.png</Source>
+      <Name>Sprites\RPG\GearScoreBoard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GearScoreBoard.xnb</Output>
+      <Time>2012-09-10T12:34:12.0434794-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\GoldIcon.png</Source>
+      <Name>Sprites\RPG\GoldIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GoldIcon.xnb</Output>
+      <Time>2012-09-10T12:34:12.0674807-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\Highlight.png</Source>
+      <Name>Sprites\RPG\Highlight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Highlight.xnb</Output>
+      <Time>2012-09-10T12:34:12.0914821-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\HighlightLarge.png</Source>
+      <Name>Sprites\RPG\HighlightLarge</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\HighlightLarge.xnb</Output>
+      <Time>2012-09-10T12:34:12.1144834-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\InfoDisplay.png</Source>
+      <Name>Sprites\RPG\InfoDisplay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\InfoDisplay.xnb</Output>
+      <Time>2012-09-10T12:34:12.1494854-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\LineBorder.png</Source>
+      <Name>Sprites\RPG\LineBorder</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\LineBorder.xnb</Output>
+      <Time>2012-09-10T12:34:12.1694866-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\PlayerSelected.png</Source>
+      <Name>Sprites\RPG\PlayerSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerSelected.xnb</Output>
+      <Time>2012-09-10T12:34:12.2014884-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\PlayerUnSelected.png</Source>
+      <Name>Sprites\RPG\PlayerUnSelected</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerUnSelected.xnb</Output>
+      <Time>2012-09-10T12:34:12.2614918-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\PopupScreen.png</Source>
+      <Name>Sprites\RPG\PopupScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PopupScreen.xnb</Output>
+      <Time>2012-09-10T12:34:12.5995112-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\ScoreBoard.png</Source>
+      <Name>Sprites\RPG\ScoreBoard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScoreBoard.xnb</Output>
+      <Time>2012-09-10T12:34:12.6225125-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\ScrollButtons.png</Source>
+      <Name>Sprites\RPG\ScrollButtons</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollButtons.xnb</Output>
+      <Time>2012-09-10T12:34:12.6435137-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\ScrollDown.png</Source>
+      <Name>Sprites\RPG\ScrollDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollDown.xnb</Output>
+      <Time>2012-09-10T12:34:12.6695152-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\ScrollUp.png</Source>
+      <Name>Sprites\RPG\ScrollUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollUp.xnb</Output>
+      <Time>2012-09-10T12:34:12.6925165-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\SelectionArrow.png</Source>
+      <Name>Sprites\RPG\SelectionArrow</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SelectionArrow.xnb</Output>
+      <Time>2012-09-10T12:34:12.719518-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\SeparationLine.png</Source>
+      <Name>Sprites\RPG\SeparationLine</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SeparationLine.xnb</Output>
+      <Time>2012-09-10T12:34:12.7465196-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\StatsBorderTable.png</Source>
+      <Name>Sprites\RPG\StatsBorderTable</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\StatsBorderTable.xnb</Output>
+      <Time>2012-09-10T12:34:12.840525-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\TickMark.png</Source>
+      <Name>Sprites\RPG\TickMark</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TickMark.xnb</Output>
+      <Time>2012-09-10T12:34:12.8855275-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\RPG\TitleBar.png</Source>
+      <Name>Sprites\RPG\TitleBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TitleBar.xnb</Output>
+      <Time>2012-09-10T12:34:12.9295301-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\DarkKnight.png</Source>
+      <Name>Animation\Textures\DarkKnight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\DarkKnight.xnb</Output>
+      <Time>2012-09-10T12:34:08.452274-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\trees.png</Source>
+      <Name>Sprites\trees</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\trees.xnb</Output>
+      <Time>2012-09-10T12:34:11.1534285-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\town.png</Source>
+      <Name>Sprites\town</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\town.xnb</Output>
+      <Time>2012-09-10T12:34:11.1254269-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\graveyard.png</Source>
+      <Name>Sprites\graveyard</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\graveyard.xnb</Output>
+      <Time>2012-09-10T12:34:09.7343473-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\reducedtown.png</Source>
+      <Name>Sprites\reducedtown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtown.xnb</Output>
+      <Time>2012-09-10T12:34:09.851354-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\reducedtrees.png</Source>
+      <Name>Sprites\reducedtrees</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtrees.xnb</Output>
+      <Time>2012-09-10T12:34:09.8933564-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Kootenay.spritefont</Source>
+      <Name>SpriteFonts\Kootenay</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay.xnb</Output>
+      <Time>2012-09-10T12:34:09.344325-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Kootenay48.spritefont</Source>
+      <Name>SpriteFonts\Kootenay48</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay48.xnb</Output>
+      <Time>2012-09-10T12:34:09.3573257-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Kootenay8.spritefont</Source>
+      <Name>SpriteFonts\Kootenay8</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay8.xnb</Output>
+      <Time>2012-09-10T12:34:09.3913277-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Lindsey.spritefont</Source>
+      <Name>SpriteFonts\Lindsey</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Lindsey.xnb</Output>
+      <Time>2012-09-10T12:34:09.4133289-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Miramonte.spritefont</Source>
+      <Name>SpriteFonts\Miramonte</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Miramonte.xnb</Output>
+      <Time>2012-09-10T12:34:09.4273297-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\MiramonteBold.spritefont</Source>
+      <Name>SpriteFonts\MiramonteBold</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\MiramonteBold.xnb</Output>
+      <Time>2012-09-10T12:34:09.4413305-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Pericles.spritefont</Source>
+      <Name>SpriteFonts\Pericles</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pericles.xnb</Output>
+      <Time>2012-09-10T12:34:09.4623317-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\PericlesLight.spritefont</Source>
+      <Name>SpriteFonts\PericlesLight</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PericlesLight.xnb</Output>
+      <Time>2012-09-10T12:34:09.4803328-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\Pescadero.spritefont</Source>
+      <Name>SpriteFonts\Pescadero</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pescadero.xnb</Output>
+      <Time>2012-09-10T12:34:09.5053342-04:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFonts\PescaderoBold.spritefont</Source>
+      <Name>SpriteFonts\PescaderoBold</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PescaderoBold.xnb</Output>
+      <Time>2012-09-10T12:34:09.5323357-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\TileSet1.xml</Source>
+      <Name>Sprites\TileSet1</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TileSet1.xnb</Output>
+      <Time>2012-09-10T12:34:10.5553943-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Jason.xml</Source>
+      <Name>Characters\Jason</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Jason.xnb</Output>
+      <Time>2012-09-10T12:34:09.0313071-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\DarkKnight.xml</Source>
+      <Name>Characters\DarkKnight</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\DarkKnight.xnb</Output>
+      <Time>2012-09-10T12:34:09.0083058-04:00</Time>
+    </Item>
+    <Item>
+      <Source>World\trees.xml</Source>
+      <Name>World\trees</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\trees.xnb</Output>
+      <Time>2012-09-10T12:34:13.0495369-04:00</Time>
+    </Item>
+    <Item>
+      <Source>World\town.xml</Source>
+      <Name>World\town</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\town.xnb</Output>
+      <Time>2012-09-10T12:34:13.0245355-04:00</Time>
+    </Item>
+    <Item>
+      <Source>World\graveyard.xml</Source>
+      <Name>World\graveyard</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\graveyard.xnb</Output>
+      <Time>2012-09-10T12:34:12.9915336-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\DarkKnight.xml</Source>
+      <Name>Animation\Data\DarkKnight</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\DarkKnight.xnb</Output>
+      <Time>2012-09-10T12:34:07.6792298-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\Jason.xml</Source>
+      <Name>Animation\Data\Jason</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Jason.xnb</Output>
+      <Time>2012-09-10T12:34:07.8092372-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\Ness.xml</Source>
+      <Name>Animation\Data\Ness</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Ness.xnb</Output>
+      <Time>2012-09-10T12:34:08.0792526-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll</Key>
+        <Value>2012-09-10T12:38:27.8411102-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2009-05-28T00:16:14-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2009-05-28T00:16:06-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2009-05-28T00:16:16-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2009-05-28T00:16:26-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2009-05-28T00:16:12-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2009-05-28T00:16:06-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\CS8803AGAGameLibrary.dll</Key>
+        <Value>2012-09-10T12:38:26.7620484-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-09-10T12:26:00.5613682-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

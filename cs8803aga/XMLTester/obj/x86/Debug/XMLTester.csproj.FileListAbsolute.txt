@@ -1,7 +1,0 @@
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\bin\Debug\ConsoleApplication.exe.config
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\bin\Debug\ConsoleApplication.exe
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\bin\Debug\ConsoleApplication.pdb
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\bin\Debug\ConsoleApplication.dll
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\obj\x86\Debug\ConsoleApplication.exe
-C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\XMLTester\obj\x86\Debug\ConsoleApplication.pdb

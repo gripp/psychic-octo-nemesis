@@ -1,2 +1,4 @@
 C:\Users\hartsoka\Documents\Classes\cs8803aga\QuestAdaptation\Content\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\hartsoka\Documents\Classes\cs8803aga\QuestAdaptation\Content\obj\x86\Debug\Audio\sounds.xml
+C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\Audio\sounds.xml
