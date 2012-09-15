@@ -532,6 +532,15 @@
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Ness.xnb</Output>
       <Time>2012-09-10T12:34:08.0792526-04:00</Time>
     </Item>
+    <Item>
+      <Source>Characters\Riedl.xml</Source>
+      <Name>Characters\Riedl</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Riedl.xnb</Output>
+      <Time>2012-09-10T12:34:09.0083058-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

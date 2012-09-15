@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 using CS8803AGA.controllers;
+using CS8803AGA.story;
 
 namespace CS8803AGA.engine
 {
@@ -21,11 +22,15 @@ namespace CS8803AGA.engine
         public static Area ActiveArea { get { return activeArea; } }
         private static Area activeArea = null;
 
-        public static void initialize(EngineStateGameplay esg, PlayerController pc, Area startArea)
+        public static GameState Game { get { return game; } }
+        private static GameState game = null;
+
+        public static void initialize(EngineStateGameplay esg, PlayerController pc, Area startArea, GameState gs)
         {
             GameplayState = esg;
             playerController = pc;
             activeArea = startArea;
+            game = gs;
 
             activeArea.add(pc);
         }

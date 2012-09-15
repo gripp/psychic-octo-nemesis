@@ -7,6 +7,7 @@ using System;
 using CS8803AGA.collision;
 using CS8803AGA.devices;
 using CS8803AGA.controllers;
+using CS8803AGA.story;
 
 namespace CS8803AGA.engine
 {
@@ -29,14 +30,15 @@ namespace CS8803AGA.engine
             CharacterInfo ci = GlobalHelper.loadContent<CharacterInfo>(@"Characters/Jason");
 
             PlayerController player =
-                (PlayerController)CharacterController.construct(ci, new Vector2(600, 400), true);
+                (PlayerController)CharacterController.construct(ci, new Vector2(600, 400), true, -1); // -1 is a flag for non-NPC colliders.
 
             Point startPoint = new Point(0, 0);
             // Area.makeTestArea(startPoint);
 
-            Area.makeGameArea(startPoint);
+            GameState game = new GameState();
+            Area.makeGameArea(startPoint, game);
 
-            GameplayManager.initialize(this, player, WorldManager.GetArea(startPoint));
+            GameplayManager.initialize(this, player, WorldManager.GetArea(startPoint), game);
         }
 
         /// <summary>

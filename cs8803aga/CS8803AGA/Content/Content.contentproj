@@ -394,6 +394,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Characters\Riedl.xml">
+      <Name>Riedl</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Audio\music\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />

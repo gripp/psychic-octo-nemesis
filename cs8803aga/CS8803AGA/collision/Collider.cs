@@ -36,11 +36,21 @@ namespace CS8803AGA.collision
         /// </summary>
         public ColliderType m_type;
 
-        public Collider(ICollidable owner, Rectangle bounds, ColliderType type)
+        public int NPC_ID
+        {
+            get
+            {
+                return m_npc_id;
+            }
+        }
+        private int m_npc_id;
+
+        public Collider(ICollidable owner, Rectangle bounds, ColliderType type, int npc_id)
         {
             this.m_owner = owner;
             this.m_bounds = new DoubleRect(bounds.X, bounds.Y, bounds.Width, bounds.Height);
             this.m_type = type;
+            this.m_npc_id = npc_id;
         }
 
         /// <summary>

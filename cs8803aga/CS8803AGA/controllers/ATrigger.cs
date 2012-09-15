@@ -16,7 +16,7 @@ namespace CS8803AGA.controllers
     {
         public ATrigger(Rectangle bounds)
         {
-            m_collider = new Collider(this, bounds, ColliderType.Trigger);
+            m_collider = new Collider(this, bounds, ColliderType.Trigger, -1); // -1 is a flag for non-NPC colliders.
             m_position = new Vector2(m_collider.Bounds.Center().X, m_collider.Bounds.Center().Y);
         }
 

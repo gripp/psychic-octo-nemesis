@@ -138,3 +138,4 @@ C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Deb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Debug\CS8803AGA.exe
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Debug\CS8803AGA.pdb
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Riedl.xnb

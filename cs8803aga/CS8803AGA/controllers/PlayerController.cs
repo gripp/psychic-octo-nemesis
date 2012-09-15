@@ -7,6 +7,7 @@ using CSharpQuadTree;
 using CS8803AGA.engine;
 using CS8803AGA.devices;
 using CS8803AGA.collision;
+using CS8803AGA.story.characters;
 
 namespace CS8803AGA.controllers
 {
@@ -25,16 +26,19 @@ namespace CS8803AGA.controllers
         {
             AnimationController.update();
 
-            if (InputSet.getInstance().getButton(InputsEnum.CONFIRM_BUTTON))
-            {
-                handleInteract();
-            }
+            //if (InputSet.getInstance().getButton(InputsEnum.CONFIRM_BUTTON))
+            //{
+            //    handleInteract();
+            //}
 
             if (InputSet.getInstance().getButton(InputsEnum.BUTTON_1))
             {
-                string dir = angleTo4WayAnimation(m_previousAngle);
-                dir = "attack" + dir;
-                AnimationController.requestAnimation(dir, AnimationController.AnimationCommand.Play);
+                handleInteract();
+
+                // Commenting out these lines should prevent attacking.
+                // string dir = angleTo4WayAnimation(m_previousAngle);
+                // dir = "attack" + dir;
+                // AnimationController.requestAnimation(dir, AnimationController.AnimationCommand.Play);
             }
 
             float dx = InputSet.getInstance().getLeftDirectionalX() * m_speed;
@@ -97,7 +101,17 @@ namespace CS8803AGA.controllers
             {
                 if (c != this.m_collider && c.m_type == ColliderType.NPC)
                 {
-                    EngineManager.pushState(new EngineStateDialogue());
+                    string text = "";
+                    foreach (Character npc in GameplayManager.Game.Characters)
+                    {
+                        if (npc.ID == c.NPC_ID)
+                        {
+                            text = npc.getDialogue();
+                            break;
+                        }
+                    }
+
+                    EngineManager.pushState(new EngineStateDialogue(text));
                     InputSet.getInstance().setAllToggles();
                     return;
                 }

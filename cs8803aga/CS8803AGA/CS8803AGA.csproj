@@ -124,6 +124,9 @@
     <Compile Include="rendering\LineDrawer.cs" />
     <Compile Include="rendering\textures\DrawCommand.cs" />
     <Compile Include="rendering\textures\TextureDrawer.cs" />
+    <Compile Include="story\characters\Riedl.cs" />
+    <Compile Include="story\GameState.cs" />
+    <Compile Include="story\characters\Character.cs" />
     <Compile Include="ui\MenuList.cs" />
     <Compile Include="utilities\CommonFunctions.cs" />
     <Compile Include="global\Constants.cs" />
@@ -201,9 +204,6 @@
       <Project>{2F639B52-5C36-4053-96E2-60F429E8850D}</Project>
       <Name>CS8803AGAGameLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="story\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />

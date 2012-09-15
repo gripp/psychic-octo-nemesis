@@ -42,7 +42,7 @@ namespace CS8803AGA
                 di.collision.Y - di.graphic.Y + (int)drawPos.Y,
                 di.collision.Width,
                 di.collision.Height);
-            this.m_collider = new Collider(this, bounds, ColliderType.Scenery);
+            this.m_collider = new Collider(this, bounds, ColliderType.Scenery, -1); // -1 is a flag for non-NPC colliders.
 
             this.m_tint = tint;
         }

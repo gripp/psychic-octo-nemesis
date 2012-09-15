@@ -8,6 +8,9 @@ using Microsoft.Xna.Framework;
 using CSharpQuadTree;
 using CS8803AGA.controllers;
 using CS8803AGA.collision;
+using CS8803AGA.engine;
+using CS8803AGA.story.characters;
+using CS8803AGA.story;
 
 namespace CS8803AGA
 {
@@ -155,8 +158,10 @@ namespace CS8803AGA
                     {
                         CharacterInfo ci = GlobalHelper.loadContent<CharacterInfo>(@"Characters/DarkKnight");
                         Vector2 pos = new Vector2(a.getTileRectangle(i, j).X, a.getTileRectangle(i, j).Y);
-                        CharacterController cc = CharacterController.construct(ci, pos);
-                        a.add(cc);
+                        // I commented these lines out because they were causing problems and they're
+                        // not going to be necessary for my architecture anyway.
+                        // CharacterController cc = CharacterController.construct(ci, pos);
+                        // a.add(cc);
                     }
                 }
             }
@@ -181,7 +186,7 @@ namespace CS8803AGA
                     if (!TileSet.tileInfos[Tiles[i, j]].passable)
                     {
                         Rectangle bounds = getTileRectangle(i, j);
-                        Collider ci = new Collider(null, bounds, ColliderType.Scenery);
+                        Collider ci = new Collider(null, bounds, ColliderType.Scenery, -1); // -1 is a flag for non-NPC colliders.
                         CollisionDetector.register(ci);
                     }
                 }
@@ -469,7 +474,7 @@ namespace CS8803AGA
         #endregion
 
 
-        public static Area makeGameArea(Point startPoint)
+        public static Area makeGameArea(Point startPoint, GameState game)
         {
             Area a = new Area(@"Sprites/TileSet1", startPoint);
 
@@ -488,6 +493,14 @@ namespace CS8803AGA
                     }
                 }
             }
+
+            Riedl r = new Riedl();
+            game.Characters.Add(r);
+            CharacterInfo ci = GlobalHelper.loadContent<CharacterInfo>(@"Characters/Riedl");
+            Vector2 pos = new Vector2(a.getTileRectangle(10, 10).X, a.getTileRectangle(10, 10).Y);
+            CharacterController cc = CharacterController.construct(ci, pos, r.ID);
+            a.add(cc);
+            cc.AnimationController.requestAnimation("down", AnimationController.AnimationCommand.Play);
 
             a.initializeTileColliders();
             a.initializeAreaTransitions(null, null, null, null);

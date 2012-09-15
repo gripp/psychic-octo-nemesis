@@ -57,6 +57,7 @@ Content\World\graveyard.xnb
 Content\Animation\Data\DarkKnight.xnb
 Content\Animation\Data\Jason.xnb
 Content\Animation\Data\Ness.xnb
+Content\Characters\Riedl.xnb
 Content\Audio\sounds.xgs
 Content\Audio\waves1.xwb
 Content\Audio\sounds1.xsb

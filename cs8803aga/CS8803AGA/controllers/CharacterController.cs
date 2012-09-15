@@ -9,6 +9,8 @@ namespace CS8803AGA.controllers
 {
     public class CharacterController : ICollidable
     {
+        private int m_npc_id;
+
         public int Health { get; set; }
         public AnimationController AnimationController { get; protected set; }
 
@@ -25,7 +27,7 @@ namespace CS8803AGA.controllers
         /// <param name="startpos">Where in the Area the character should be placed</param>
         /// <param name="playerControlled">True if the character should be a PC, false if NPC</param>
         /// <returns>Constructed CharacterController</returns>
-        public static CharacterController construct(CharacterInfo ci, Vector2 startpos, bool playerControlled)
+        public static CharacterController construct(CharacterInfo ci, Vector2 startpos, bool playerControlled, int npcID)
         {
             CharacterController cc;
             ColliderType type;
@@ -40,6 +42,7 @@ namespace CS8803AGA.controllers
                 type = ColliderType.NPC;
             }
 
+            cc.m_npc_id = npcID;
             cc.m_position = startpos;
 
             cc.AnimationController = new AnimationController(ci.animationDataPath, ci.animationTexturePath);
@@ -48,7 +51,7 @@ namespace CS8803AGA.controllers
 
             Rectangle bounds = ci.collisionBox;
             bounds.Offset((int)cc.m_position.X,(int)cc.m_position.Y);
-            cc.m_collider = new Collider(cc, bounds, type);
+            cc.m_collider = new Collider(cc, bounds, type, cc.m_npc_id);
 
             cc.m_speed = ci.speed;
 
@@ -61,9 +64,9 @@ namespace CS8803AGA.controllers
         /// Factory method to construct non-player character controllers
         /// See other construct() method for more details
         /// </summary>
-        public static CharacterController construct(CharacterInfo ci, Vector2 startpos)
+        public static CharacterController construct(CharacterInfo ci, Vector2 startpos, int npc_id)
         {
-            return construct(ci, startpos, false);
+            return construct(ci, startpos, false, npc_id);
         }
 
         /// <summary>
