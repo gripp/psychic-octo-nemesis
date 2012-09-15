@@ -114,8 +114,8 @@ namespace CS8803AGA
                         targetGlobalLocation = new Point(this.m_owner.GlobalLocation.X + 1, this.m_owner.GlobalLocation.Y);
                         break;
                     case AreaSideEnum.Other:
-                        throw new Exception("AreaTransitions on non-edges not fully impled");
-                        break;
+                        throw new Exception("AreaTransitions on non-edges not fully impled"); // Impled?
+                        // break;
                     default:
                         throw new Exception("Unknown value for AreaSideEnum");
                 }

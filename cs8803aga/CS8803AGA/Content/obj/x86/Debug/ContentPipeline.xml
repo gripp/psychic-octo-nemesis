@@ -7,7 +7,7 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Audio\effects\bang_3.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Audio\effects\bang_3.xnb</Output>
       <Time>2012-09-10T12:34:08.680287-04:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Ness_Walk.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Ness_Walk.xnb</Output>
       <Time>2012-09-10T12:34:08.5092772-04:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Salsa_walk.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Salsa_walk.xnb</Output>
       <Time>2012-09-10T12:34:08.5322785-04:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\splash.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\splash.xnb</Output>
       <Time>2012-09-10T12:34:10.4943908-04:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TitleScreen.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TitleScreen.xnb</Output>
       <Time>2012-09-10T12:34:10.5843959-04:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\mask.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\mask.xnb</Output>
       <Time>2012-09-10T12:34:08.4752753-04:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
       <Time>2012-09-10T12:34:09.6213408-04:00</Time>
     </Item>
     <Item>
@@ -70,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\grassRock.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\grassRock.xnb</Output>
       <Time>2012-09-10T12:34:09.7033455-04:00</Time>
     </Item>
     <Item>
@@ -79,7 +79,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Caption.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Caption.xnb</Output>
       <Time>2012-09-10T12:34:11.215432-04:00</Time>
     </Item>
     <Item>
@@ -88,7 +88,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGround.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGround.xnb</Output>
       <Time>2012-09-10T12:34:11.2394334-04:00</Time>
     </Item>
     <Item>
@@ -97,7 +97,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGroundLarge.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGroundLarge.xnb</Output>
       <Time>2012-09-10T12:34:11.2624347-04:00</Time>
     </Item>
     <Item>
@@ -106,7 +106,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ConversationStrip.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ConversationStrip.xnb</Output>
       <Time>2012-09-10T12:34:11.3084373-04:00</Time>
     </Item>
     <Item>
@@ -115,7 +115,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CountShieldWithArrow.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CountShieldWithArrow.xnb</Output>
       <Time>2012-09-10T12:34:11.3814415-04:00</Time>
     </Item>
     <Item>
@@ -124,7 +124,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen.xnb</Output>
       <Time>2012-09-10T12:34:11.4034428-04:00</Time>
     </Item>
     <Item>
@@ -133,7 +133,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen2.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen2.xnb</Output>
       <Time>2012-09-10T12:34:11.4234439-04:00</Time>
     </Item>
     <Item>
@@ -142,7 +142,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GameScreenBkgd.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GameScreenBkgd.xnb</Output>
       <Time>2012-09-10T12:34:12.0234782-04:00</Time>
     </Item>
     <Item>
@@ -151,7 +151,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GearScoreBoard.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GearScoreBoard.xnb</Output>
       <Time>2012-09-10T12:34:12.0434794-04:00</Time>
     </Item>
     <Item>
@@ -160,7 +160,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GoldIcon.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GoldIcon.xnb</Output>
       <Time>2012-09-10T12:34:12.0674807-04:00</Time>
     </Item>
     <Item>
@@ -169,7 +169,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Highlight.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Highlight.xnb</Output>
       <Time>2012-09-10T12:34:12.0914821-04:00</Time>
     </Item>
     <Item>
@@ -178,7 +178,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\HighlightLarge.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\HighlightLarge.xnb</Output>
       <Time>2012-09-10T12:34:12.1144834-04:00</Time>
     </Item>
     <Item>
@@ -187,7 +187,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\InfoDisplay.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\InfoDisplay.xnb</Output>
       <Time>2012-09-10T12:34:12.1494854-04:00</Time>
     </Item>
     <Item>
@@ -196,7 +196,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\LineBorder.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\LineBorder.xnb</Output>
       <Time>2012-09-10T12:34:12.1694866-04:00</Time>
     </Item>
     <Item>
@@ -205,7 +205,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerSelected.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerSelected.xnb</Output>
       <Time>2012-09-10T12:34:12.2014884-04:00</Time>
     </Item>
     <Item>
@@ -214,7 +214,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerUnSelected.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerUnSelected.xnb</Output>
       <Time>2012-09-10T12:34:12.2614918-04:00</Time>
     </Item>
     <Item>
@@ -223,7 +223,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PopupScreen.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PopupScreen.xnb</Output>
       <Time>2012-09-10T12:34:12.5995112-04:00</Time>
     </Item>
     <Item>
@@ -232,7 +232,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScoreBoard.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScoreBoard.xnb</Output>
       <Time>2012-09-10T12:34:12.6225125-04:00</Time>
     </Item>
     <Item>
@@ -241,7 +241,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollButtons.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollButtons.xnb</Output>
       <Time>2012-09-10T12:34:12.6435137-04:00</Time>
     </Item>
     <Item>
@@ -250,7 +250,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollDown.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollDown.xnb</Output>
       <Time>2012-09-10T12:34:12.6695152-04:00</Time>
     </Item>
     <Item>
@@ -259,7 +259,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollUp.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollUp.xnb</Output>
       <Time>2012-09-10T12:34:12.6925165-04:00</Time>
     </Item>
     <Item>
@@ -268,7 +268,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SelectionArrow.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SelectionArrow.xnb</Output>
       <Time>2012-09-10T12:34:12.719518-04:00</Time>
     </Item>
     <Item>
@@ -277,7 +277,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SeparationLine.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SeparationLine.xnb</Output>
       <Time>2012-09-10T12:34:12.7465196-04:00</Time>
     </Item>
     <Item>
@@ -286,7 +286,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\StatsBorderTable.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\StatsBorderTable.xnb</Output>
       <Time>2012-09-10T12:34:12.840525-04:00</Time>
     </Item>
     <Item>
@@ -295,7 +295,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TickMark.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TickMark.xnb</Output>
       <Time>2012-09-10T12:34:12.8855275-04:00</Time>
     </Item>
     <Item>
@@ -304,7 +304,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TitleBar.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TitleBar.xnb</Output>
       <Time>2012-09-10T12:34:12.9295301-04:00</Time>
     </Item>
     <Item>
@@ -313,7 +313,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\DarkKnight.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\DarkKnight.xnb</Output>
       <Time>2012-09-10T12:34:08.452274-04:00</Time>
     </Item>
     <Item>
@@ -322,7 +322,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\trees.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\trees.xnb</Output>
       <Time>2012-09-10T12:34:11.1534285-04:00</Time>
     </Item>
     <Item>
@@ -331,7 +331,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\town.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\town.xnb</Output>
       <Time>2012-09-10T12:34:11.1254269-04:00</Time>
     </Item>
     <Item>
@@ -340,7 +340,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\graveyard.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\graveyard.xnb</Output>
       <Time>2012-09-10T12:34:09.7343473-04:00</Time>
     </Item>
     <Item>
@@ -349,7 +349,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtown.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtown.xnb</Output>
       <Time>2012-09-10T12:34:09.851354-04:00</Time>
     </Item>
     <Item>
@@ -358,7 +358,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtrees.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtrees.xnb</Output>
       <Time>2012-09-10T12:34:09.8933564-04:00</Time>
     </Item>
     <Item>
@@ -367,7 +367,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay.xnb</Output>
       <Time>2012-09-10T12:34:09.344325-04:00</Time>
     </Item>
     <Item>
@@ -376,7 +376,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay48.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay48.xnb</Output>
       <Time>2012-09-10T12:34:09.3573257-04:00</Time>
     </Item>
     <Item>
@@ -385,7 +385,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay8.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay8.xnb</Output>
       <Time>2012-09-10T12:34:09.3913277-04:00</Time>
     </Item>
     <Item>
@@ -394,7 +394,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Lindsey.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Lindsey.xnb</Output>
       <Time>2012-09-10T12:34:09.4133289-04:00</Time>
     </Item>
     <Item>
@@ -403,7 +403,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Miramonte.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Miramonte.xnb</Output>
       <Time>2012-09-10T12:34:09.4273297-04:00</Time>
     </Item>
     <Item>
@@ -412,7 +412,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\MiramonteBold.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\MiramonteBold.xnb</Output>
       <Time>2012-09-10T12:34:09.4413305-04:00</Time>
     </Item>
     <Item>
@@ -421,7 +421,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pericles.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pericles.xnb</Output>
       <Time>2012-09-10T12:34:09.4623317-04:00</Time>
     </Item>
     <Item>
@@ -430,7 +430,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PericlesLight.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PericlesLight.xnb</Output>
       <Time>2012-09-10T12:34:09.4803328-04:00</Time>
     </Item>
     <Item>
@@ -439,7 +439,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pescadero.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pescadero.xnb</Output>
       <Time>2012-09-10T12:34:09.5053342-04:00</Time>
     </Item>
     <Item>
@@ -448,7 +448,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PescaderoBold.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PescaderoBold.xnb</Output>
       <Time>2012-09-10T12:34:09.5323357-04:00</Time>
     </Item>
     <Item>
@@ -457,7 +457,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TileSet1.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TileSet1.xnb</Output>
       <Time>2012-09-10T12:34:10.5553943-04:00</Time>
     </Item>
     <Item>
@@ -466,7 +466,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Jason.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Jason.xnb</Output>
       <Time>2012-09-10T12:34:09.0313071-04:00</Time>
     </Item>
     <Item>
@@ -475,7 +475,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\DarkKnight.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\DarkKnight.xnb</Output>
       <Time>2012-09-10T12:34:09.0083058-04:00</Time>
     </Item>
     <Item>
@@ -484,7 +484,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\trees.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\trees.xnb</Output>
       <Time>2012-09-10T12:34:13.0495369-04:00</Time>
     </Item>
     <Item>
@@ -493,7 +493,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\town.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\town.xnb</Output>
       <Time>2012-09-10T12:34:13.0245355-04:00</Time>
     </Item>
     <Item>
@@ -502,7 +502,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\graveyard.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\graveyard.xnb</Output>
       <Time>2012-09-10T12:34:12.9915336-04:00</Time>
     </Item>
     <Item>
@@ -511,7 +511,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\DarkKnight.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\DarkKnight.xnb</Output>
       <Time>2012-09-10T12:34:07.6792298-04:00</Time>
     </Item>
     <Item>
@@ -520,7 +520,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Jason.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Jason.xnb</Output>
       <Time>2012-09-10T12:34:07.8092372-04:00</Time>
     </Item>
     <Item>
@@ -529,7 +529,7 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Ness.xnb</Output>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Ness.xnb</Output>
       <Time>2012-09-10T12:34:08.0792526-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -537,14 +537,14 @@
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll</Key>
+        <Key>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll</Key>
         <Value>2012-09-10T12:38:27.8411102-04:00</Value>
       </Assembly>
       <Assembly>
@@ -572,7 +572,7 @@
         <Value>2009-05-28T00:16:06-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\CS8803AGAGameLibrary.dll</Key>
+        <Key>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\CS8803AGAGameLibrary.dll</Key>
         <Value>2012-09-10T12:38:26.7620484-04:00</Value>
       </Assembly>
       <Assembly>

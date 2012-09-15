@@ -21,7 +21,7 @@ namespace CS8803AGA
         public const int TILE_WIDTH = 40;           // width of a tile, in pixels
         public const int TILE_HEIGHT = 40;          // heigh of a tile, in pixels
 
-        public const int WIDTH_IN_TILES = 34;       // number of tiles in the width of an area
+        public const int WIDTH_IN_TILES = 32;       // number of tiles in the width of an area
         public const int HEIGHT_IN_TILES = 16;      // number of tiles in height of an area
 
         public Point GlobalLocation                 // x,y coordinate of the area in the world (can be negative)
@@ -468,5 +468,31 @@ namespace CS8803AGA
 
         #endregion
 
+
+        public static Area makeGameArea(Point startPoint)
+        {
+            Area a = new Area(@"Sprites/TileSet1", startPoint);
+
+            // default area
+            for (int i = 0; i < WIDTH_IN_TILES; ++i)
+            {
+                for (int j = 0; j < HEIGHT_IN_TILES; ++j)
+                {
+                    if (i == 0 || i == WIDTH_IN_TILES - 1 || j == 0 || j == HEIGHT_IN_TILES - 1)
+                    {
+                        a.Tiles[i, j] = 4;
+                    }
+                    else
+                    {
+                        a.Tiles[i, j] = 6;
+                    }
+                }
+            }
+
+            a.initializeTileColliders();
+            a.initializeAreaTransitions(null, null, null, null);
+
+            return a;
+        }
     }
 }

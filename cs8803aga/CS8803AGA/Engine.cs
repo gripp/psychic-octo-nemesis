@@ -149,10 +149,10 @@ namespace CS8803AGA
                 //  tests Settings.IsGamerServicesAllowed prior to using
                 throw new Exception();
 
-                GamerServicesComponent gsc = new GamerServicesComponent(this);
-                gsc.Initialize();
-                this.Components.Add(gsc);
-                Settings.getInstance().IsGamerServicesAllowed = true;
+                //GamerServicesComponent gsc = new GamerServicesComponent(this);
+                //gsc.Initialize();
+                //this.Components.Add(gsc);
+                //Settings.getInstance().IsGamerServicesAllowed = true;
             }
             catch
             {

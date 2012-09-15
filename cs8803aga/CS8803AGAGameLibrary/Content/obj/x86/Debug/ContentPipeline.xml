@@ -6,10 +6,10 @@
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

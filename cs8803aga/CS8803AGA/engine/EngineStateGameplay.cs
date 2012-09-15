@@ -32,7 +32,10 @@ namespace CS8803AGA.engine
                 (PlayerController)CharacterController.construct(ci, new Vector2(600, 400), true);
 
             Point startPoint = new Point(0, 0);
-            Area.makeTestArea(startPoint);
+            // Area.makeTestArea(startPoint);
+
+            Area.makeGameArea(startPoint);
+
             GameplayManager.initialize(this, player, WorldManager.GetArea(startPoint));
         }
 

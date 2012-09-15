@@ -5,3 +5,10 @@ C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAC
 C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\obj\Zune\Debug\ResolveAssemblyReference.cache
 C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\obj\Zune\Debug\QuestAdaptationContentPipeline.dll
 C:\Users\Marshall\Google Drive\Game AI\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\obj\Zune\Debug\QuestAdaptationContentPipeline.pdb
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.pdb
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\CS8803AGAGameLibrary.dll
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\CS8803AGAGameLibrary.pdb
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\obj\Zune\Debug\ResolveAssemblyReference.cache
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\obj\Zune\Debug\QuestAdaptationContentPipeline.dll
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\obj\Zune\Debug\QuestAdaptationContentPipeline.pdb

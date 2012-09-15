@@ -15,13 +15,13 @@ namespace CS8803AGA.engine
         {
             List<string> menuOptions = new List<string>();
             menuOptions.Add(c_StartGame);
-            menuOptions.Add("Dummy 1");
-            menuOptions.Add("Dummy 2");
-            menuOptions.Add("Dummy 3");
-            menuOptions.Add("Dummy 4");
-            menuOptions.Add("Dummy 5");
-            menuOptions.Add("Dummy 6");
-            menuOptions.Add("Dummy 7");
+            //menuOptions.Add("Dummy 1");
+            //menuOptions.Add("Dummy 2");
+            //menuOptions.Add("Dummy 3");
+            //menuOptions.Add("Dummy 4");
+            //menuOptions.Add("Dummy 5");
+            //menuOptions.Add("Dummy 6");
+            //menuOptions.Add("Dummy 7");
 
             Point temp = m_engine.GraphicsDevice.Viewport.TitleSafeArea.Center;
             m_menuList = new MenuList(menuOptions, new Vector2(temp.X, temp.Y - 200));
