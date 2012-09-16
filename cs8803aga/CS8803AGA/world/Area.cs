@@ -475,20 +475,20 @@ namespace CS8803AGA
         #endregion
 
 
-        public static Area makeGameArea(Point startPoint, GameState game)
+        public static Area makeGameArea(Point startPoint)
         {
             Area start = null;
-            for (int r = 0; r < game.Map.MapRows; r++)
+            for (int r = 0; r < GameplayManager.Game.Map.MapRows; r++)
             {
-                for (int c = 0; c < game.Map.MapCols; c++)
+                for (int c = 0; c < GameplayManager.Game.Map.MapCols; c++)
                 {
                     if (r == 0 && c == 0)
                     {
-                        start = makeAreaFromMapScreen(r, c, game.Map.getMapScreen(r, c));
+                        start = makeAreaFromMapScreen(r, c, GameplayManager.Game.Map.getMapScreen(r, c));
                     }
                     else
                     {
-                        makeAreaFromMapScreen(r, c, game.Map.getMapScreen(r, c));
+                        makeAreaFromMapScreen(r, c, GameplayManager.Game.Map.getMapScreen(r, c));
                     }
                 }
             }
@@ -498,9 +498,9 @@ namespace CS8803AGA
             Area south;
             Area east;
             Area west;
-            for (int r = 0; r < game.Map.MapRows; r++)
+            for (int r = 0; r < GameplayManager.Game.Map.MapRows; r++)
             {
-                for (int c = 0; c < game.Map.MapCols; c++)
+                for (int c = 0; c < GameplayManager.Game.Map.MapCols; c++)
                 {
                     a = WorldManager.GetArea(new Point(r, c));
                     north = null;
@@ -516,11 +516,11 @@ namespace CS8803AGA
                     {
                         west = WorldManager.GetArea(new Point(r, c - 1));
                     }
-                    if (c < (game.Map.MapCols - 1))
+                    if (c < (GameplayManager.Game.Map.MapCols - 1))
                     {
                         east = WorldManager.GetArea(new Point(r, c + 1));
                     }
-                    if (r < (game.Map.MapRows - 1))
+                    if (r < (GameplayManager.Game.Map.MapRows - 1))
                     {
                         south = WorldManager.GetArea(new Point(r + 1, c));
                     }
@@ -576,6 +576,17 @@ namespace CS8803AGA
                         (tt == MapScreen.TileType.ROCK) ? 6 : 3;
                 }
             }
+
+            foreach (CS8803AGA.story.map.MapScreen.CharacterRecord cr in mapScreen.Characters)
+            {
+                CharacterInfo ci = GlobalHelper.loadContent<CharacterInfo>(@"Characters/Riedl");
+                Vector2 pos = new Vector2(a.getTileRectangle(cr.c, cr.r).X, a.getTileRectangle(cr.c, cr.r).Y);
+                CharacterController cc = CharacterController.construct(ci, pos, cr.character.ID);
+                GameplayManager.Game.Characters.Add(cr.character);
+                a.add(cc);
+                cc.AnimationController.requestAnimation("down", AnimationController.AnimationCommand.Play);
+            }
+
             return a;
         }
     }

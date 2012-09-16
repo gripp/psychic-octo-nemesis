@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CS8803AGA.story.characters;
 
 namespace CS8803AGA.story.map
 {
-    class MapScreen
+    abstract class MapScreen
     {
         public const int WIDTH = 32;
         public const int HEIGHT = 16;
@@ -13,15 +14,40 @@ namespace CS8803AGA.story.map
         public enum TileType { GRASS, ROCK, WALL };
         private TileType[,] floor = new TileType[HEIGHT,WIDTH];
 
+        public List<CharacterRecord> Characters
+        {
+            get
+            {
+                return characters;
+            }
+        }
+        private List<CharacterRecord> characters = new List<CharacterRecord>();
+
+        public struct CharacterRecord
+        {
+            public CharacterRecord(int row, int col, Character chrctr)
+            {
+                r = row;
+                c = col;
+                character = chrctr;
+            }
+
+            public int r;
+            public int c;
+            public Character character;
+        }
+
         public MapScreen()
         {
             buildFloor();
             placeCharacters();
         }
 
-        private void placeCharacters()
+        public abstract void placeCharacters();
+
+        protected void placeCharacter(int r, int c, Character chrctr)
         {
-            // Do nothing for now.
+            characters.Add(new CharacterRecord(r, c, chrctr));
         }
 
         private void buildFloor()

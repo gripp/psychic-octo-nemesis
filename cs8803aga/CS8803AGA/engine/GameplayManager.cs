@@ -22,15 +22,14 @@ namespace CS8803AGA.engine
         public static Area ActiveArea { get { return activeArea; } }
         private static Area activeArea = null;
 
-        public static GameState Game { get { return game; } }
+        public static GameState Game { get { return game; } set { game = value; } }
         private static GameState game = null;
 
-        public static void initialize(EngineStateGameplay esg, PlayerController pc, Area startArea, GameState gs)
+        public static void initialize(EngineStateGameplay esg, PlayerController pc, Area startArea)
         {
             GameplayState = esg;
             playerController = pc;
             activeArea = startArea;
-            game = gs;
 
             activeArea.add(pc);
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CS8803AGA.story.characters;
 
 namespace CS8803AGA.story.map
 {
@@ -13,6 +14,11 @@ namespace CS8803AGA.story.map
             {
                 setFloorTile(r, MapScreen.WIDTH - 1, TileType.ROCK);
             }
+        }
+
+        public override void placeCharacters()
+        {
+            this.placeCharacter(5, 10, new Riedl());
         }
     }
 }

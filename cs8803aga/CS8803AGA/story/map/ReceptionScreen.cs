@@ -14,5 +14,10 @@ namespace CS8803AGA.story.map
                 setFloorTile(r, 0, TileType.ROCK);
             }
         }
+
+        public override void placeCharacters()
+        {
+            // Do nothing so far.
+        }
     }
 }

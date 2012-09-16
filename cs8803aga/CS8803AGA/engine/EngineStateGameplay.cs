@@ -35,10 +35,10 @@ namespace CS8803AGA.engine
             Point startPoint = new Point(0, 0);
             // Area.makeTestArea(startPoint);
 
-            GameState game = new GameState();
-            Area.makeGameArea(startPoint, game);
+            GameplayManager.Game = new GameState();
+            Area.makeGameArea(startPoint);
 
-            GameplayManager.initialize(this, player, WorldManager.GetArea(startPoint), game);
+            GameplayManager.initialize(this, player, WorldManager.GetArea(startPoint));
         }
 
         /// <summary>
