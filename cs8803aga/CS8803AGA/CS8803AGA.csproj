@@ -127,6 +127,10 @@
     <Compile Include="story\characters\Riedl.cs" />
     <Compile Include="story\GameState.cs" />
     <Compile Include="story\characters\Character.cs" />
+    <Compile Include="story\map\ReceptionScreen.cs" />
+    <Compile Include="story\map\LabScreen.cs" />
+    <Compile Include="story\map\Map.cs" />
+    <Compile Include="story\map\MapScreen.cs" />
     <Compile Include="ui\MenuList.cs" />
     <Compile Include="utilities\CommonFunctions.cs" />
     <Compile Include="global\Constants.cs" />

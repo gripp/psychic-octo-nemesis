@@ -11,6 +11,7 @@ using CS8803AGA.collision;
 using CS8803AGA.engine;
 using CS8803AGA.story.characters;
 using CS8803AGA.story;
+using CS8803AGA.story.map;
 
 namespace CS8803AGA
 {
@@ -24,8 +25,8 @@ namespace CS8803AGA
         public const int TILE_WIDTH = 40;           // width of a tile, in pixels
         public const int TILE_HEIGHT = 40;          // heigh of a tile, in pixels
 
-        public const int WIDTH_IN_TILES = 32;       // number of tiles in the width of an area
-        public const int HEIGHT_IN_TILES = 16;      // number of tiles in height of an area
+        public const int WIDTH_IN_TILES = MapScreen.WIDTH;       // number of tiles in the width of an area
+        public const int HEIGHT_IN_TILES = MapScreen.HEIGHT;      // number of tiles in height of an area
 
         public Point GlobalLocation                 // x,y coordinate of the area in the world (can be negative)
         { get; protected set; }
@@ -476,6 +477,62 @@ namespace CS8803AGA
 
         public static Area makeGameArea(Point startPoint, GameState game)
         {
+            Area start = null;
+            for (int r = 0; r < game.Map.MapRows; r++)
+            {
+                for (int c = 0; c < game.Map.MapCols; c++)
+                {
+                    if (r == 0 && c == 0)
+                    {
+                        start = makeAreaFromMapScreen(r, c, game.Map.getMapScreen(r, c));
+                    }
+                    else
+                    {
+                        makeAreaFromMapScreen(r, c, game.Map.getMapScreen(r, c));
+                    }
+                }
+            }
+
+            Area a;
+            Area north;
+            Area south;
+            Area east;
+            Area west;
+            for (int r = 0; r < game.Map.MapRows; r++)
+            {
+                for (int c = 0; c < game.Map.MapCols; c++)
+                {
+                    a = WorldManager.GetArea(new Point(r, c));
+                    north = null;
+                    south = null;
+                    east = null;
+                    west = null;
+
+                    if (r > 0)
+                    {
+                        north = WorldManager.GetArea(new Point(r - 1, c));
+                    }
+                    if (c > 0)
+                    {
+                        west = WorldManager.GetArea(new Point(r, c - 1));
+                    }
+                    if (c < (game.Map.MapCols - 1))
+                    {
+                        east = WorldManager.GetArea(new Point(r, c + 1));
+                    }
+                    if (r < (game.Map.MapRows - 1))
+                    {
+                        south = WorldManager.GetArea(new Point(r + 1, c));
+                    }
+
+                    a.initializeTileColliders();
+                    a.initializeAreaTransitions(north, south, east, west);
+                }
+            }
+
+            return start;
+
+            /* This is the old code, that made a single blank area here for no reason.
             Area a = new Area(@"Sprites/TileSet1", startPoint);
 
             // default area
@@ -502,9 +559,23 @@ namespace CS8803AGA
             a.add(cc);
             cc.AnimationController.requestAnimation("down", AnimationController.AnimationCommand.Play);
 
-            a.initializeTileColliders();
-            a.initializeAreaTransitions(null, null, null, null);
+            return a;
+            */
+        }
 
+        private static Area makeAreaFromMapScreen(int row, int col, MapScreen mapScreen)
+        {
+            Area a = new Area(@"Sprites/TileSet1", new Point(row,col));
+            CS8803AGA.story.map.MapScreen.TileType tt;
+            for (int r = 0; r < HEIGHT_IN_TILES; r++)
+            {
+                for (int c = 0; c < WIDTH_IN_TILES; c++)
+                {
+                    tt = mapScreen.getFloorTile(r, c);
+                    a.Tiles[c, r] = (tt == MapScreen.TileType.WALL) ? 4 :
+                        (tt == MapScreen.TileType.ROCK) ? 6 : 3;
+                }
+            }
             return a;
         }
     }
