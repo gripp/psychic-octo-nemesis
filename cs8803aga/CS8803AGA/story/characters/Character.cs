@@ -26,11 +26,21 @@ namespace CS8803AGA.story.characters
         }
         private int id = -2;
 
+        public string StartingAnimation
+        {
+            get
+            {
+                return startingAnimation;
+            }
+        }
+        private string startingAnimation = "down";
+
         public Character()
         {
             id = ID_COUNTER;
         }
 
         public abstract string getDialogue();
+        public abstract string getName();
     }
 }

@@ -5,16 +5,16 @@ using System.Text;
 
 namespace CS8803AGA.story.characters
 {
-    class Riedl : Character
+    class Receptionist : Character
     {
         public override string getDialogue()
         {
-            return "I've nothing to say!";
+            return "Do you have your graduation form?\nNo?\nWell then you can't see the registrar yet.\nGo finish your research.";
         }
 
         public override string getName()
         {
-            return "DR. RIEDL";
+            return "RECEPTIONIST";
         }
     }
 }

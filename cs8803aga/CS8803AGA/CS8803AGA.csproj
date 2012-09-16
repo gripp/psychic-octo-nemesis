@@ -124,6 +124,7 @@
     <Compile Include="rendering\LineDrawer.cs" />
     <Compile Include="rendering\textures\DrawCommand.cs" />
     <Compile Include="rendering\textures\TextureDrawer.cs" />
+    <Compile Include="story\characters\Receptionist.cs" />
     <Compile Include="story\characters\Riedl.cs" />
     <Compile Include="story\GameState.cs" />
     <Compile Include="story\characters\Character.cs" />

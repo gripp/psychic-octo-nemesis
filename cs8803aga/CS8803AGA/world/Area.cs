@@ -572,7 +572,7 @@ namespace CS8803AGA
                 for (int c = 0; c < WIDTH_IN_TILES; c++)
                 {
                     tt = mapScreen.getFloorTile(r, c);
-                    a.Tiles[c, r] = (tt == MapScreen.TileType.WALL) ? 4 :
+                    a.Tiles[c, r] = (tt == MapScreen.TileType.WALL || tt == MapScreen.TileType.DESK) ? 4 :
                         (tt == MapScreen.TileType.ROCK) ? 6 : 3;
                 }
             }
