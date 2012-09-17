@@ -587,6 +587,11 @@ namespace CS8803AGA
                 cc.AnimationController.requestAnimation("down", AnimationController.AnimationCommand.Play);
             }
 
+            foreach (KeyCheck kc in mapScreen.Triggers)
+            {
+                a.add(kc);
+            }
+
             return a;
         }
     }

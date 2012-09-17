@@ -101,17 +101,14 @@ namespace CS8803AGA.controllers
             {
                 if (c != this.m_collider && c.m_type == ColliderType.NPC)
                 {
-                    string text = "";
                     foreach (Character npc in GameplayManager.Game.Characters)
                     {
                         if (npc.ID == c.NPC_ID)
                         {
-                            text = npc.getDialogue();
-                            break;
+                            npc.act(this.m_collider, false);
                         }
                     }
 
-                    EngineManager.pushState(new EngineStateDialogue(text));
                     InputSet.getInstance().setAllToggles();
                     return;
                 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CS8803AGA.collision;
 
 namespace CS8803AGA.story.characters
 {
@@ -40,7 +41,10 @@ namespace CS8803AGA.story.characters
             id = ID_COUNTER;
         }
 
-        public abstract string getDialogue();
-        public abstract string getName();
+        public string getDialogue() { return getDialogue(false); }
+
+        public abstract string getDialogue(bool shouting);
+
+        public abstract void act(Collider mover, bool shouting);
     }
 }

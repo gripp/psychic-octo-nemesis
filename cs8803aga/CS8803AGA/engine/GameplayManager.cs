@@ -64,5 +64,10 @@ namespace CS8803AGA.engine
         {
             // TODO
         }
+
+        public static void say(string text)
+        {
+            EngineManager.pushState(new EngineStateDialogue(text));
+        }
     }
 }

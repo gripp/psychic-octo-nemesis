@@ -16,9 +16,10 @@ namespace CS8803AGA.story.map
             }
         }
 
-        public override void placeCharacters()
+        public override void init()
         {
-            this.placeCharacter(5, 10, new Riedl());
+            this.placeCharacter(9, 3, new Riedl());
+            this.placeCharacter(2, 20, new SIMA());
         }
     }
 }

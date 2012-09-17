@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CS8803AGA.story.characters;
+using Microsoft.Xna.Framework;
 
 namespace CS8803AGA.story.map
 {
@@ -12,7 +13,7 @@ namespace CS8803AGA.story.map
         public const int HEIGHT = 16;
 
         public enum TileType { DESK, GRASS, ROCK, WALL };
-        private TileType[,] floor = new TileType[HEIGHT,WIDTH];
+        private TileType[,] floor = new TileType[HEIGHT, WIDTH];
 
         public List<CharacterRecord> Characters
         {
@@ -22,6 +23,15 @@ namespace CS8803AGA.story.map
             }
         }
         private List<CharacterRecord> characters = new List<CharacterRecord>();
+
+        public List<KeyCheck> Triggers
+        {
+            get
+            {
+                return triggers;
+            }
+        }
+        private List<KeyCheck> triggers = new List<KeyCheck>();
 
         public struct CharacterRecord
         {
@@ -40,10 +50,15 @@ namespace CS8803AGA.story.map
         public MapScreen()
         {
             buildFloor();
-            placeCharacters();
+            init();
         }
 
-        public abstract void placeCharacters();
+        public abstract void init();
+
+        protected void placeTrigger(KeyCheck check)
+        {
+            triggers.Add(check);
+        }
 
         protected void placeCharacter(int r, int c, Character chrctr)
         {
@@ -75,6 +90,17 @@ namespace CS8803AGA.story.map
         public TileType getFloorTile(int r, int c)
         {
             return floor[r, c];
+        }
+
+        protected static Rectangle calculateBounds(/* Area owner, */ Point tilePos)
+        {
+            int tileWidth = 40;// owner.TileSet.tileWidth;
+            int tileHeight = 40; // owner.TileSet.tileHeight;
+            return new Rectangle(
+                tileWidth * tilePos.X,
+                tileHeight * tilePos.Y,
+                tileWidth,
+                tileHeight);
         }
     }
 }
