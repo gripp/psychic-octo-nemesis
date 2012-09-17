@@ -20,7 +20,7 @@ namespace CS8803AGA.story.characters
             }
             else if (hasForm)
             {
-                return "REGISTRAR: What's that?\nOf course I'll sign your GRADUATION APPLICATION for you.\nWhy would I make this difficult?";
+                return "REGISTRAR: What's that?\nOf course I'll sign your GRADUATION APPLICATION for you.\nWhy would I make this difficult?\n\n\n\n(The REGISTRAR has signed your GRADUATION APPLICATION.)";
             }
             else
             {

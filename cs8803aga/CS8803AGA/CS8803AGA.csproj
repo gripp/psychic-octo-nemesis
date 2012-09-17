@@ -12,7 +12,8 @@
     <XnaFrameworkVersion>v3.1</XnaFrameworkVersion>
     <XnaPlatform>Windows</XnaPlatform>
     <XnaCrossPlatformGroupID>2e0c5f7e-3cf7-4eca-a4dd-e3b0f0ad4661</XnaCrossPlatformGroupID>
-    <ApplicationIcon>packaging\Game.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
     <Thumbnail>packaging\GameThumbnail.png</Thumbnail>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -42,6 +43,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <PlatformTarget>x86</PlatformTarget>
     <XnaCompressContent>false</XnaCompressContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
@@ -137,6 +139,8 @@
     <Compile Include="story\map\LabScreen.cs" />
     <Compile Include="story\map\Map.cs" />
     <Compile Include="story\map\MapScreen.cs" />
+    <Compile Include="story\maze\Cell.cs" />
+    <Compile Include="story\maze\Maze.cs" />
     <Compile Include="ui\MenuList.cs" />
     <Compile Include="utilities\CommonFunctions.cs" />
     <Compile Include="global\Constants.cs" />
