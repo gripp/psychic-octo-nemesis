@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using CS8803AGA.engine;
 using CS8803AGA.collision;
+using CS8803AGAGameLibrary;
 
 namespace CS8803AGA.story.characters
 {
@@ -111,6 +112,11 @@ namespace CS8803AGA.story.characters
                 GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_SIGNED_FORM]);
             playerWon= (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_WON) &&
                             GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON]);
+        }
+
+        public override CharacterInfo getCharacterInfo()
+        {
+            return GlobalHelper.loadContent<CharacterInfo>(@"Characters/Riedl");
         }
     }
 }

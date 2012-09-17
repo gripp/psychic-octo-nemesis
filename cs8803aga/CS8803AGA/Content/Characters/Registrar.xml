@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent>
   <Asset Type="CS8803AGAGameLibrary.CharacterInfo">
-    <animationTexturePath>Animation/Textures/Riedl</animationTexturePath>
-    <animationDataPath>Animation/Data/Riedl</animationDataPath>
+    <animationTexturePath>Animation/Textures/Registrar</animationTexturePath>
+    <animationDataPath>Animation/Data/Registrar</animationDataPath>
     <collisionBox>-20 34 38 20</collisionBox>
     <speed>5</speed>
     <scale>2.0</scale>

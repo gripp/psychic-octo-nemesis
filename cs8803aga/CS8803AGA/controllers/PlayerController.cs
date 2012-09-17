@@ -52,7 +52,8 @@ namespace CS8803AGA.controllers
             float angle =
                 CommonFunctions.getAngle(new Vector2(dx, dy));
 
-            string animName = angleTo4WayAnimation(angle);
+            // string animName = angleTo4WayAnimation(angle);
+            string animName = (dx <= 0) ? "left" : "right";
             AnimationController.requestAnimation(animName, AnimationController.AnimationCommand.Play);
 
             if (true /* TODO - checks for paralysis, etc here */)

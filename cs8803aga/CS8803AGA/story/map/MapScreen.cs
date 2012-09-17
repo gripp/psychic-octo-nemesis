@@ -12,7 +12,7 @@ namespace CS8803AGA.story.map
         public const int WIDTH = 32;
         public const int HEIGHT = 16;
 
-        public enum TileType { DESK, GRASS, ROCK, WALL };
+        public enum TileType { DESK_BOTTOM, DESK_LEFT, GRASS, ROCK, WALL };
         private TileType[,] floor = new TileType[HEIGHT, WIDTH];
 
         public List<CharacterRecord> Characters

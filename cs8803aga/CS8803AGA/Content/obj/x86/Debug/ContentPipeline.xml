@@ -53,7 +53,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\mask.xnb</Output>
-      <Time>2012-09-10T12:34:08.4752753-04:00</Time>
+      <Time>2012-09-17T10:16:29.6773445-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\blank.bmp</Source>
@@ -71,7 +71,7 @@
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\grassRock.xnb</Output>
-      <Time>2012-09-10T12:34:09.7033455-04:00</Time>
+      <Time>2012-09-17T09:43:00.3204158-04:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\Caption.png</Source>
@@ -458,7 +458,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TileSet1.xnb</Output>
-      <Time>2012-09-10T12:34:10.5553943-04:00</Time>
+      <Time>2012-09-17T09:47:54.6642513-04:00</Time>
     </Item>
     <Item>
       <Source>Characters\Jason.xml</Source>
@@ -521,7 +521,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Jason.xnb</Output>
-      <Time>2012-09-10T12:34:07.8092372-04:00</Time>
+      <Time>2012-09-17T10:18:13.3212726-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Ness.xml</Source>
@@ -539,7 +539,115 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Riedl.xnb</Output>
-      <Time>2012-09-10T12:34:09.0083058-04:00</Time>
+      <Time>2012-09-17T09:14:41.5972544-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\SIMA.png</Source>
+      <Name>Animation\Textures\SIMA</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\SIMA.xnb</Output>
+      <Time>2012-09-17T08:55:33.0965639-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\SIMA.xml</Source>
+      <Name>Characters\SIMA</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\SIMA.xnb</Output>
+      <Time>2012-09-17T09:10:34.4211168-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\SIMA.xml</Source>
+      <Name>Animation\Data\SIMA</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\SIMA.xnb</Output>
+      <Time>2012-09-17T09:07:59.6052618-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\Riedl.xml</Source>
+      <Name>Animation\Data\Riedl</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Riedl.xnb</Output>
+      <Time>2012-09-17T09:15:48.2990696-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Riedl.png</Source>
+      <Name>Animation\Textures\Riedl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Riedl.xnb</Output>
+      <Time>2012-09-17T09:16:19.8578746-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Receptionist.png</Source>
+      <Name>Animation\Textures\Receptionist</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Receptionist.xnb</Output>
+      <Time>2012-09-17T09:20:14.5492982-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\Receptionist.xml</Source>
+      <Name>Animation\Data\Receptionist</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Receptionist.xnb</Output>
+      <Time>2012-09-17T09:22:52.4683306-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Receptionist.xml</Source>
+      <Name>Characters\Receptionist</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Receptionist.xnb</Output>
+      <Time>2012-09-17T09:21:33.9518398-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Registrar.png</Source>
+      <Name>Animation\Textures\Registrar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Registrar.xnb</Output>
+      <Time>2012-09-17T09:29:36.7154523-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Data\Registrar.xml</Source>
+      <Name>Animation\Data\Registrar</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Registrar.xnb</Output>
+      <Time>2012-09-17T09:30:26.609306-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Registrar.xml</Source>
+      <Name>Characters\Registrar</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Registrar.xnb</Output>
+      <Time>2012-09-17T09:30:48.7705736-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Characters\Copy of Jason.xml</Source>
+      <Name>Characters\Copy of Jason</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Copy of Jason.xnb</Output>
+      <Time>2012-09-17T10:04:56.4746956-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

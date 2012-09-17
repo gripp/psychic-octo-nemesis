@@ -58,6 +58,18 @@ Content\Animation\Data\DarkKnight.xnb
 Content\Animation\Data\Jason.xnb
 Content\Animation\Data\Ness.xnb
 Content\Characters\Riedl.xnb
+Content\Animation\Textures\SIMA.xnb
+Content\Characters\SIMA.xnb
+Content\Animation\Data\SIMA.xnb
+Content\Animation\Data\Riedl.xnb
+Content\Animation\Textures\Riedl.xnb
+Content\Animation\Textures\Receptionist.xnb
+Content\Animation\Data\Receptionist.xnb
+Content\Characters\Receptionist.xnb
+Content\Animation\Textures\Registrar.xnb
+Content\Animation\Data\Registrar.xnb
+Content\Characters\Registrar.xnb
+Content\Characters\Copy of Jason.xnb
 Content\Audio\sounds.xgs
 Content\Audio\waves1.xwb
 Content\Audio\sounds1.xsb

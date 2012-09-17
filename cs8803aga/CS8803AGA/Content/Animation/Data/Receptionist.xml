@@ -39,7 +39,7 @@
         <name>down</name>
         <sprites>
           <Item>
-            <box>0 0 40 60</box>
+            <box>0 0 20 30</box>
             <duration>7</duration>
             <action Null="true" />
             <offset>0 0</offset>

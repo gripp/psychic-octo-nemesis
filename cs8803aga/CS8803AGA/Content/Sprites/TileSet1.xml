@@ -49,6 +49,21 @@
         <passable>true</passable>
       </Item>
       <Item>
+        <passable>false</passable>
+      </Item>
+      <Item>
+        <passable>false</passable>
+      </Item>
+      <Item>
+        <passable>false</passable>
+      </Item>
+      <Item>
+        <passable>true</passable>
+      </Item>
+      <Item>
+        <passable>true</passable>
+      </Item>
+      <Item>
         <passable>true</passable>
       </Item>
     </tileInfos>

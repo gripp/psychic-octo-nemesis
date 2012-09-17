@@ -572,14 +572,17 @@ namespace CS8803AGA
                 for (int c = 0; c < WIDTH_IN_TILES; c++)
                 {
                     tt = mapScreen.getFloorTile(r, c);
-                    a.Tiles[c, r] = (tt == MapScreen.TileType.WALL || tt == MapScreen.TileType.DESK) ? 4 :
-                        (tt == MapScreen.TileType.ROCK) ? 6 : 3;
+                    a.Tiles[c, r] = (tt == MapScreen.TileType.WALL) ? 4 :
+                        (tt == MapScreen.TileType.ROCK) ? 6 :
+                        (tt == MapScreen.TileType.DESK_BOTTOM) ? 15 :
+                        (tt == MapScreen.TileType.DESK_LEFT) ? 16 :
+                        3;
                 }
             }
 
             foreach (CS8803AGA.story.map.MapScreen.CharacterRecord cr in mapScreen.Characters)
             {
-                CharacterInfo ci = GlobalHelper.loadContent<CharacterInfo>(@"Characters/Riedl");
+                CharacterInfo ci = cr.character.getCharacterInfo();
                 Vector2 pos = new Vector2(a.getTileRectangle(cr.c, cr.r).X, a.getTileRectangle(cr.c, cr.r).Y);
                 CharacterController cc = CharacterController.construct(ci, pos, cr.character.ID);
                 GameplayManager.Game.Characters.Add(cr.character);

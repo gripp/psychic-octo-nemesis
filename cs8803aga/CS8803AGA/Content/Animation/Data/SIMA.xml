@@ -6,25 +6,7 @@
         <name>up</name>
         <sprites>
           <Item>
-            <box>0 0 70 50</box>
-            <duration>7</duration>
-            <action Null="true" />
-            <offset>0 0</offset>
-          </Item>
-          <Item>
-            <box>70 0 70 50</box>
-            <duration>7</duration>
-            <action Null="true" />
-            <offset>0 0</offset>
-          </Item>
-          <Item>
-            <box>140 0 70 50</box>
-            <duration>7</duration>
-            <action Null="true" />
-            <offset>0 0</offset>
-          </Item>
-          <Item>
-            <box>210 0 70 50</box>
+            <box>0 0 40 40</box>
             <duration>7</duration>
             <action Null="true" />
             <offset>0 0</offset>
@@ -39,7 +21,7 @@
         <name>down</name>
         <sprites>
           <Item>
-            <box>0 0 40 60</box>
+            <box>0 0 40 40</box>
             <duration>7</duration>
             <action Null="true" />
             <offset>0 0</offset>

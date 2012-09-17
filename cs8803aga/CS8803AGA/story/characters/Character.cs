@@ -46,5 +46,7 @@ namespace CS8803AGA.story.characters
         public abstract string getDialogue(bool shouting);
 
         public abstract void act(Collider mover, bool shouting);
+
+        public abstract CS8803AGAGameLibrary.CharacterInfo getCharacterInfo();
     }
 }

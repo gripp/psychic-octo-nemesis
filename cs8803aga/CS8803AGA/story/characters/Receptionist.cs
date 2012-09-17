@@ -6,6 +6,7 @@ using CS8803AGA.engine;
 using CS8803AGA.controllers;
 using Microsoft.Xna.Framework;
 using CS8803AGA.collision;
+using CS8803AGAGameLibrary;
 
 namespace CS8803AGA.story.characters
 {
@@ -17,22 +18,22 @@ namespace CS8803AGA.story.characters
                 !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM]))
             {
-                return "RECEPTIONIST: Do you have your graduation form?\nNo?\nWell then you can't see the registrar yet.\nGo finish your research.";
+                return "RECEPTIONIST: Do you have your GRADUATION APPLICATION?\nNo?\nWell then you can't see the REGISTRAR yet.\nGo finish your research.";
             }
             else if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM]))
             {
-                return "RECEPTIONIST: You can't go through there without a graduation form.\nGo finish your research.";
+                return "RECEPTIONIST: You can't go through there without a GRADUATION APPLICATION.\nGo finish your research.";
             }
             else if (!shouting && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN]))
             {
-                return "RECEPTIONIST: You seem to have finished your research.\nCongratulations!\nGo get your graduation form signed by the registrar.";
+                return "RECEPTIONIST: You seem to have finished your research.\nCongratulations!\nGo get your GRADUATION APPLICATION signed by the REGISTRAR.";
             }
             else if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN]))
             {
-                return "RECEPTIONIST: You can't go through there without a graduation form.\nWhat?\nOh. You have the form.\nWell go on through!";
+                return "RECEPTIONIST: You can't go through there without a GRADUATION APPLICATION.\nWhat?\nOh. You have the form.\nWell go on through!";
             }
             else if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_SIGNED_FORM) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_SIGNED_FORM]))
@@ -88,6 +89,11 @@ namespace CS8803AGA.story.characters
                     mover.handleMovement(new Vector2(-20, 0));
                 }
             }
+        }
+
+        public override CharacterInfo getCharacterInfo()
+        {
+            return GlobalHelper.loadContent<CharacterInfo>(@"Characters/Receptionist");
         }
     }
 }

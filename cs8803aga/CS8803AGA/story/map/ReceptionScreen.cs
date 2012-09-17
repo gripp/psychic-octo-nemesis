@@ -25,15 +25,15 @@ namespace CS8803AGA.story.map
             setFloorTile(MapScreen.HEIGHT / 2, MapScreen.WIDTH - 1, TileType.ROCK);
 
             // Open 
-            for (int c = MapScreen.WIDTH - 1; c > MapScreen.WIDTH - 7; c--)
+            for (int c = MapScreen.WIDTH - 2; c > MapScreen.WIDTH - 7; c--)
             {
                 if (c == MapScreen.WIDTH - 6)
                 {
-                    setFloorTile(1, c, TileType.DESK);
-                    setFloorTile(2, c, TileType.DESK);
-                    setFloorTile(3, c, TileType.DESK);
+                    setFloorTile(1, c, TileType.DESK_LEFT);
+                    setFloorTile(2, c, TileType.DESK_LEFT);
+                    setFloorTile(3, c, TileType.DESK_LEFT);
                 }
-                setFloorTile(4, c, TileType.DESK);
+                setFloorTile(4, c, TileType.DESK_BOTTOM);
             }
         }
 
