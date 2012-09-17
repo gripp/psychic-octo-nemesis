@@ -42,7 +42,7 @@ namespace CS8803AGA.engine
 
         public override void draw()
         {
-            EngineManager.peekBelowState(this).draw();
+             EngineManager.peekBelowState(this).draw();
 
             DrawCommand td = DrawBuffer.getInstance().DrawCommands.pushGet();
             Point p = m_engine.GraphicsDevice.Viewport.TitleSafeArea.Center;
@@ -52,6 +52,11 @@ namespace CS8803AGA.engine
 
             // WorldManager.DrawMap(new Vector2(300, 100), 600, 500, Constants.DepthDialogueText);
             FontMap.getInstance().getFont(FontEnum.Kootenay14).drawString(this.m_text, new Vector2(300, 100), Color.Black);
+        }
+
+        public override string getStateType()
+        {
+            return "EngineStateDialogue";
         }
     }
 }

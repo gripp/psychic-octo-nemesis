@@ -151,3 +151,5 @@ C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Deb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Registrar.xnb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Registrar.xnb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Copy of Jason.xnb
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Picture Puzzle.exe
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Picture Puzzle.pdb

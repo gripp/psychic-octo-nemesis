@@ -1,0 +1,9 @@
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\bin\Debug\Picture Puzzle.exe.config
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\bin\Debug\Picture Puzzle.exe
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\bin\Debug\Picture Puzzle.pdb
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\obj\Debug\PicturePuzzle.PuzzleForm.resources
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\obj\Debug\PicturePuzzle.Properties.Resources.resources
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\obj\Debug\PicturePuzzle.csproj.GenerateResource.Cache
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\obj\Debug\Picture Puzzle.exe
+C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\Picture Puzzle\obj\Debug\Picture Puzzle.pdb

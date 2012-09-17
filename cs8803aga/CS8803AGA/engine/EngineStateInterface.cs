@@ -38,5 +38,7 @@ namespace CS8803AGA.engine
         /// Draw the current state of the frame
         /// </summary>
         void draw();
+
+        string getStateType();
     }
 }

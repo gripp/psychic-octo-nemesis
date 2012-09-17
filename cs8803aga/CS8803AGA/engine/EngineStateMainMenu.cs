@@ -61,5 +61,10 @@ namespace CS8803AGA.engine
         {
             m_menuList.draw();
         }
+
+        public override string getStateType()
+        {
+            return "EngineStateMainMenu";
+        }
     }
 }

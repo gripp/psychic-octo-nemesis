@@ -68,5 +68,9 @@ namespace CS8803AGA.engine
                 true, Color.White, 0f, 1f);
         }
 
+        public string getStateType()
+        {
+            return "EngineStateSplash";
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using CS8803AGA.collision;
 using CS8803AGA.engine;
 using CS8803AGAGameLibrary;
+using System.Threading;
 
 namespace CS8803AGA.story.characters
 {
@@ -54,6 +55,16 @@ namespace CS8803AGA.story.characters
             setFlags();
             GameplayManager.say(getDialogue(shouting));
 
+            Thread t = new Thread(new ThreadStart(this.actHelper));
+            t.Start();
+            while (!t.IsAlive) ;
+        }
+        private void actHelper()
+        {
+            while (EngineManager.peekAtState().getStateType().CompareTo("EngineStateDialogue") == 0)
+            {
+                // Wait.
+            }
             if (completedPuzzle3)
             {
                 // Do nothing.
@@ -61,22 +72,24 @@ namespace CS8803AGA.story.characters
             else if (hasForm)
             {
                 // Run puzzle three and get results. Did the player succeed?
-                bool result = true;
-                GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_3] = result;
+                GameplayManager.runPuzzle(3);
             }
             else if (openedPuzzle2 && !completedPuzzle2)
             {
                 // Run puzzle three and get results. Did the player succeed?
+                GameplayManager.runPuzzle(2);
                 bool result = true;
                 GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2] = result;
             }
             else if (openedPuzzle1 && !completedPuzzle1)
             {
                 // Run puzzle three and get results. Did the player succeed?
+                GameplayManager.runPuzzle(1);
                 bool result = true;
                 GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_1] = result;
             }
         }
+        
 
         private void setFlags()
         {

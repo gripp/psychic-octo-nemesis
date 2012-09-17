@@ -13,6 +13,7 @@
 
         public abstract void draw();
 
+        public abstract string getStateType();
     }
     
 }

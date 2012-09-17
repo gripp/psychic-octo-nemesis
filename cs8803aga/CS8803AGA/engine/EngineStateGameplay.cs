@@ -131,5 +131,10 @@ namespace CS8803AGA.engine
             GameplayManager.GameplayState = null;
             WorldManager.reset();
         }
+
+        public override string getStateType()
+        {
+            return "EngineStateGameplay";
+        }
     }
 }

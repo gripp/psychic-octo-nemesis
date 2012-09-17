@@ -69,5 +69,10 @@ namespace CS8803AGA.engine
         {
             EngineManager.pushState(new EngineStateDialogue(text));
         }
+
+        internal static void runPuzzle(int p)
+        {
+            EngineManager.pushState(new EngineStatePuzzle(p));
+        }
     }
 }

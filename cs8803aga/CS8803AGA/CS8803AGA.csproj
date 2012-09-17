@@ -106,6 +106,7 @@
     <Compile Include="controllers\GameObject.cs" />
     <Compile Include="controllers\PlayerController.cs" />
     <Compile Include="controllers\Trigger.cs" />
+    <Compile Include="engine\EngineStatePuzzle.cs" />
     <Compile Include="engine\EngineManager.cs" />
     <Compile Include="engine\EngineStateAbstract.cs" />
     <Compile Include="engine\EngineStateDialogue.cs" />
@@ -212,6 +213,10 @@
     <ProjectReference Include="..\CS8803AGAGameLibrary\CS8803AGAGameLibrary.csproj">
       <Project>{2F639B52-5C36-4053-96E2-60F429E8850D}</Project>
       <Name>CS8803AGAGameLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Picture Puzzle\PicturePuzzle.csproj">
+      <Project>{7DD79197-B4B9-4EDA-B362-37CACBFC740D}</Project>
+      <Name>PicturePuzzle</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

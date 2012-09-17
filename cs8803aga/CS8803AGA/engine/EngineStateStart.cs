@@ -241,5 +241,10 @@ namespace CS8803AGA.engine
             Settings.getInstance().loadSettingsFromFile();
         }
 
+
+        public override string getStateType()
+        {
+            return "EngineStateStart";
+        }
     }
 }

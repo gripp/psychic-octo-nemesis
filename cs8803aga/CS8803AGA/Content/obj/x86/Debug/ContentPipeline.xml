@@ -539,7 +539,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Riedl.xnb</Output>
-      <Time>2012-09-17T09:14:41.5972544-04:00</Time>
+      <Time>2012-09-17T11:56:48.1365807-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\SIMA.png</Source>
@@ -557,7 +557,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\SIMA.xnb</Output>
-      <Time>2012-09-17T09:10:34.4211168-04:00</Time>
+      <Time>2012-09-17T11:56:13.5416019-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\SIMA.xml</Source>

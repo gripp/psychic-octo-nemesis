@@ -46,5 +46,10 @@ namespace CS8803AGA.engine
 
             WorldManager.DrawMap(m_displayOffset, 600, 500, Constants.DepthDialogueText);
         }
+
+        public override string getStateType()
+        {
+            return "EngineStateMap";
+        }
     }
 }
