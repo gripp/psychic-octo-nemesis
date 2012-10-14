@@ -59,16 +59,17 @@ namespace CS8803AGA.engine
             area.GameObjects.ForEach(i => { if (!i.isAlive() && i is ICollidable) ((ICollidable)i).getCollider().unregister(); });
             area.GameObjects.RemoveAll(i => !i.isAlive());
 
-            if (InputSet.getInstance().getButton(InputsEnum.LEFT_TRIGGER))
-            {
-                InputSet.getInstance().setToggle(InputsEnum.LEFT_TRIGGER);
+            // This is the code to add a house when the mouse is clicked. We don't need this.
+            //if (InputSet.getInstance().getButton(InputsEnum.LEFT_TRIGGER))
+            //{
+            //    InputSet.getInstance().setToggle(InputsEnum.LEFT_TRIGGER);
 
-                Vector2 rclickspot = new Vector2(InputSet.getInstance().getRightDirectionalX(), InputSet.getInstance().getRightDirectionalY());
-                DecorationSet ds = DecorationSet.construct("World/town");
-                Decoration d = ds.makeDecoration("house1", rclickspot);
+            //    Vector2 rclickspot = new Vector2(InputSet.getInstance().getRightDirectionalX(), InputSet.getInstance().getRightDirectionalY());
+            //    DecorationSet ds = DecorationSet.construct("World/town");
+            //    Decoration d = ds.makeDecoration("house1", rclickspot);
 
-                GameplayManager.ActiveArea.add(d);
-            }
+            //    GameplayManager.ActiveArea.add(d);
+            //}
         }
 
         public override void draw()

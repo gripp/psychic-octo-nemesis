@@ -127,6 +127,8 @@
     <Compile Include="rendering\LineDrawer.cs" />
     <Compile Include="rendering\textures\DrawCommand.cs" />
     <Compile Include="rendering\textures\TextureDrawer.cs" />
+    <Compile Include="story\characters\Microwave.cs" />
+    <Compile Include="story\characters\Food.cs" />
     <Compile Include="story\characters\Registrar.cs" />
     <Compile Include="story\characters\SIMA.cs" />
     <Compile Include="story\characters\Receptionist.cs" />
