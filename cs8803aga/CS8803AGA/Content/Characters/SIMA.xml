@@ -3,7 +3,7 @@
   <Asset Type="CS8803AGAGameLibrary.CharacterInfo">
     <animationTexturePath>Animation/Textures/SIMA</animationTexturePath>
     <animationDataPath>Animation/Data/SIMA</animationDataPath>
-    <collisionBox>-30 -30 60 80</collisionBox>
+    <collisionBox>-30 -30 60 60</collisionBox>
     <speed>5</speed>
     <scale>1.5</scale>
   </Asset>

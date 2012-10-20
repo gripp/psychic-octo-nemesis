@@ -38,6 +38,12 @@ Content\Sprites\town.xnb
 Content\Sprites\graveyard.xnb
 Content\Sprites\reducedtown.xnb
 Content\Sprites\reducedtrees.xnb
+Content\Animation\Textures\SIMA.xnb
+Content\Animation\Textures\Riedl.xnb
+Content\Animation\Textures\Receptionist.xnb
+Content\Animation\Textures\Registrar.xnb
+Content\Animation\Textures\Food.xnb
+Content\Animation\Textures\Microwave.xnb
 Content\SpriteFonts\Kootenay.xnb
 Content\SpriteFonts\Kootenay48.xnb
 Content\SpriteFonts\Kootenay8.xnb
@@ -58,19 +64,14 @@ Content\Animation\Data\DarkKnight.xnb
 Content\Animation\Data\Jason.xnb
 Content\Animation\Data\Ness.xnb
 Content\Characters\Riedl.xnb
-Content\Animation\Textures\SIMA.xnb
 Content\Characters\SIMA.xnb
 Content\Animation\Data\SIMA.xnb
 Content\Animation\Data\Riedl.xnb
-Content\Animation\Textures\Riedl.xnb
-Content\Animation\Textures\Receptionist.xnb
 Content\Animation\Data\Receptionist.xnb
 Content\Characters\Receptionist.xnb
-Content\Animation\Textures\Registrar.xnb
 Content\Animation\Data\Registrar.xnb
 Content\Characters\Registrar.xnb
 Content\Characters\Copy of Jason.xnb
-Content\Animation\Textures\Food.xnb
 Content\Characters\Cake.xnb
 Content\Animation\Data\Chicken.xnb
 Content\Characters\Lobster.xnb
@@ -83,7 +84,6 @@ Content\Animation\Data\Steak.xnb
 Content\Animation\Data\Lobster.xnb
 Content\Characters\Microwave.xnb
 Content\Animation\Data\Microwave.xnb
-Content\Animation\Textures\Microwave.xnb
 Content\Audio\sounds.xgs
 Content\Audio\waves1.xwb
 Content\Audio\sounds1.xsb

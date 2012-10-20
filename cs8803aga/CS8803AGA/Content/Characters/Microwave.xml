@@ -3,7 +3,7 @@
   <Asset Type="CS8803AGAGameLibrary.CharacterInfo">
     <animationTexturePath>Animation/Textures/Microwave</animationTexturePath>
     <animationDataPath>Animation/Data/Microwave</animationDataPath>
-    <collisionBox>-14 22 28 10</collisionBox>
+    <collisionBox>-40 -40 80 80</collisionBox>
     <speed>15</speed>
     <scale>2</scale>
   </Asset>

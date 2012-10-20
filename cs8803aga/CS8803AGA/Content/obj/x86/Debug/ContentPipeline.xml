@@ -362,6 +362,60 @@
       <Time>2012-09-10T12:34:09.8933564-04:00</Time>
     </Item>
     <Item>
+      <Source>Animation\Textures\SIMA.png</Source>
+      <Name>Animation\Textures\SIMA</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\SIMA.xnb</Output>
+      <Time>2012-09-17T08:55:33.0965639-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Riedl.png</Source>
+      <Name>Animation\Textures\Riedl</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Riedl.xnb</Output>
+      <Time>2012-09-17T09:16:19.8578746-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Receptionist.png</Source>
+      <Name>Animation\Textures\Receptionist</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Receptionist.xnb</Output>
+      <Time>2012-09-17T09:20:14.5492982-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Registrar.png</Source>
+      <Name>Animation\Textures\Registrar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Registrar.xnb</Output>
+      <Time>2012-09-17T09:29:36.7154523-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Food.png</Source>
+      <Name>Animation\Textures\Food</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Food.xnb</Output>
+      <Time>2012-10-14T15:40:08.388812-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Animation\Textures\Microwave.png</Source>
+      <Name>Animation\Textures\Microwave</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Microwave.xnb</Output>
+      <Time>2012-10-14T17:01:41.1362058-04:00</Time>
+    </Item>
+    <Item>
       <Source>SpriteFonts\Kootenay.spritefont</Source>
       <Name>SpriteFonts\Kootenay</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -542,22 +596,13 @@
       <Time>2012-09-17T11:56:48.1365807-04:00</Time>
     </Item>
     <Item>
-      <Source>Animation\Textures\SIMA.png</Source>
-      <Name>Animation\Textures\SIMA</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\SIMA.xnb</Output>
-      <Time>2012-09-17T08:55:33.0965639-04:00</Time>
-    </Item>
-    <Item>
       <Source>Characters\SIMA.xml</Source>
       <Name>Characters\SIMA</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\SIMA.xnb</Output>
-      <Time>2012-09-17T11:56:13.5416019-04:00</Time>
+      <Time>2012-10-16T18:26:19.0135779-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\SIMA.xml</Source>
@@ -578,24 +623,6 @@
       <Time>2012-09-17T09:15:48.2990696-04:00</Time>
     </Item>
     <Item>
-      <Source>Animation\Textures\Riedl.png</Source>
-      <Name>Animation\Textures\Riedl</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Riedl.xnb</Output>
-      <Time>2012-09-17T09:16:19.8578746-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Animation\Textures\Receptionist.png</Source>
-      <Name>Animation\Textures\Receptionist</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Receptionist.xnb</Output>
-      <Time>2012-09-17T09:20:14.5492982-04:00</Time>
-    </Item>
-    <Item>
       <Source>Animation\Data\Receptionist.xml</Source>
       <Name>Animation\Data\Receptionist</Name>
       <Importer>XmlImporter</Importer>
@@ -612,15 +639,6 @@
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Receptionist.xnb</Output>
       <Time>2012-09-17T09:21:33.9518398-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Animation\Textures\Registrar.png</Source>
-      <Name>Animation\Textures\Registrar</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Registrar.xnb</Output>
-      <Time>2012-09-17T09:29:36.7154523-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Registrar.xml</Source>
@@ -650,22 +668,13 @@
       <Time>2012-09-17T10:04:56.4746956-04:00</Time>
     </Item>
     <Item>
-      <Source>Animation\Textures\Food.png</Source>
-      <Name>Animation\Textures\Food</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Food.xnb</Output>
-      <Time>2012-10-14T15:40:08.388812-04:00</Time>
-    </Item>
-    <Item>
       <Source>Characters\Cake.xml</Source>
       <Name>Characters\Cake</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Cake.xnb</Output>
-      <Time>2012-10-14T15:56:48.673025-04:00</Time>
+      <Time>2012-10-16T18:22:36.3728436-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Chicken.xml</Source>
@@ -683,7 +692,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Lobster.xnb</Output>
-      <Time>2012-10-14T15:56:55.946441-04:00</Time>
+      <Time>2012-10-16T18:23:44.1397196-04:00</Time>
     </Item>
     <Item>
       <Source>Characters\Chicken.xml</Source>
@@ -692,7 +701,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Chicken.xnb</Output>
-      <Time>2012-10-14T15:56:53.638309-04:00</Time>
+      <Time>2012-10-16T18:23:44.2597265-04:00</Time>
     </Item>
     <Item>
       <Source>Characters\Pizza.xml</Source>
@@ -701,7 +710,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Pizza.xnb</Output>
-      <Time>2012-10-14T15:56:58.0815631-04:00</Time>
+      <Time>2012-10-16T18:23:43.8197013-04:00</Time>
     </Item>
     <Item>
       <Source>Characters\Steak.xml</Source>
@@ -710,7 +719,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Steak.xnb</Output>
-      <Time>2012-10-14T15:56:33.9011801-04:00</Time>
+      <Time>2012-10-16T18:23:43.6416912-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Cake.xml</Source>
@@ -755,7 +764,7 @@
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Microwave.xnb</Output>
-      <Time>2012-10-14T16:55:49.4460902-04:00</Time>
+      <Time>2012-10-16T18:26:56.3967161-04:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Microwave.xml</Source>
@@ -765,15 +774,6 @@
       <Options>None</Options>
       <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Microwave.xnb</Output>
       <Time>2012-10-14T16:56:35.4377208-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Animation\Textures\Microwave.png</Source>
-      <Name>Animation\Textures\Microwave</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Microwave.xnb</Output>
-      <Time>2012-10-14T17:01:41.1362058-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -788,7 +788,7 @@
     <Assemblies>
       <Assembly>
         <Key>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll</Key>
-        <Value>2012-09-10T12:38:27.8411102-04:00</Value>
+        <Value>2012-10-16T18:19:19.638591-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
@@ -816,7 +816,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\CS8803AGAGameLibrary.dll</Key>
-        <Value>2012-09-10T12:38:26.7620484-04:00</Value>
+        <Value>2012-10-16T18:19:18.1965086-04:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>

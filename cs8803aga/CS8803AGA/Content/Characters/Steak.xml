@@ -3,8 +3,8 @@
   <Asset Type="CS8803AGAGameLibrary.CharacterInfo">
     <animationTexturePath>Animation/Textures/Food</animationTexturePath>
     <animationDataPath>Animation/Data/Steak</animationDataPath>
-    <collisionBox>-14 22 28 10</collisionBox>
+    <collisionBox>-20 -20 40 40</collisionBox>
     <speed>15</speed>
-    <scale>2</scale>
+    <scale>1</scale>
   </Asset>
 </XnaContent>

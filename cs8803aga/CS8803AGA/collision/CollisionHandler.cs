@@ -29,8 +29,10 @@ namespace CS8803AGA.collision
                 case ColliderType.PC:
                     return handlePCMovement(mover, other, deltaPosition, out allowedMovement);
                     // break;
-                //case ColliderType.NPC:
-                //    break;
+                case ColliderType.NPC:
+                    allowedMovement = deltaPosition;
+                    return true;
+                    //break;
                 //case ColliderType.Effect:
                 //    break;
                 //case ColliderType.Movable:

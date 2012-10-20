@@ -6,6 +6,8 @@ using CS8803AGA.collision;
 using CS8803AGA.engine;
 using CS8803AGAGameLibrary;
 using System.Threading;
+using Microsoft.Xna.Framework;
+using CS8803AGA.story.map;
 
 namespace CS8803AGA.story.characters
 {
@@ -53,11 +55,19 @@ namespace CS8803AGA.story.characters
         public override void act(Collider mover, bool shouting)
         {
             setFlags();
-            GameplayManager.say(getDialogue(shouting));
+            if (!openedPuzzle1 || completedPuzzle1)
+            {
+                GameplayManager.say(getDialogue(shouting));
+            }
+            else
+            {
+                GameplayManager.move(this.ID, LabScreen.LOCATIONS[LabScreen.LabLocation.PIZZA]);
+            }
 
-            Thread t = new Thread(new ThreadStart(this.actHelper));
-            t.Start();
-            while (!t.IsAlive) ;
+
+            //Thread t = new Thread(new ThreadStart(this.actHelper));
+            //t.Start();
+            //while (!t.IsAlive) ;
         }
         private void actHelper()
         {
@@ -89,7 +99,7 @@ namespace CS8803AGA.story.characters
                 GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_1] = result;
             }
         }
-        
+
 
         private void setFlags()
         {

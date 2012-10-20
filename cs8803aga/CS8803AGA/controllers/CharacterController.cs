@@ -9,6 +9,13 @@ namespace CS8803AGA.controllers
 {
     public class CharacterController : ICollidable
     {
+        public int NpcID
+        {
+            get
+            {
+                return m_npc_id;
+            }
+        }
         private int m_npc_id;
 
         public int Health { get; set; }
@@ -50,12 +57,12 @@ namespace CS8803AGA.controllers
             cc.AnimationController.Scale = ci.scale;
 
             Rectangle bounds = ci.collisionBox;
-            bounds.Offset((int)cc.m_position.X,(int)cc.m_position.Y);
+            bounds.Offset((int)cc.m_position.X, (int)cc.m_position.Y);
             cc.m_collider = new Collider(cc, bounds, type, cc.m_npc_id);
 
             cc.m_speed = ci.speed;
 
-            cc.m_previousAngle = (float)Math.PI/2;
+            cc.m_previousAngle = (float)Math.PI / 2;
 
             return cc;
         }
@@ -80,9 +87,23 @@ namespace CS8803AGA.controllers
             Health = 2;
         }
 
+        private Point m_destination = new Point(-1, -1);
+
         public virtual void update()
         {
-            // TODO
+            if (m_destination.X != -1 && m_destination.Y != -1)
+            {
+                if (DrawPosition.X == m_destination.X && DrawPosition.Y == m_destination.Y)
+                {
+                    m_destination = new Point(-1, -1);
+                }
+                else
+                {
+                    float dx = (DrawPosition.X == m_destination.X) ? 0 : (DrawPosition.X > m_destination.X) ? -1 * m_speed : m_speed;
+                    float dy = (DrawPosition.Y == m_destination.Y) ? 0 : (DrawPosition.Y > m_destination.Y) ? -1 * m_speed : m_speed;
+                    m_collider.handleMovement(new Vector2(dx, dy));
+                }
+            }
         }
 
         public virtual void draw()
@@ -181,5 +202,10 @@ namespace CS8803AGA.controllers
         }
 
         #endregion
+
+        internal void moveTo(Point dest)
+        {
+            m_destination = dest;
+        }
     }
 }
