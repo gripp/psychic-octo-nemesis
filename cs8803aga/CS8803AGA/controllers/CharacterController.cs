@@ -4,6 +4,7 @@ using CS8803AGAGameLibrary;
 using CS8803AGA.collision;
 using CS8803AGA.engine;
 using CS8803AGA.actions;
+using CS8803AGA.story;
 
 namespace CS8803AGA.controllers
 {
@@ -96,6 +97,7 @@ namespace CS8803AGA.controllers
                 if (DrawPosition.X == m_destination.X && DrawPosition.Y == m_destination.Y)
                 {
                     m_destination = new Point(-1, -1);
+                    GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
                 }
                 else
                 {

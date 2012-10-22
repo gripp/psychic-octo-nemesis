@@ -35,7 +35,7 @@ namespace CS8803AGA.devices
         // ------------------
         // Currently the Left and Right triggers are hardcoded to the mouse
         // buttons, and the right directional is hardcoded to mouse movement.
-        protected Keys LEFT_DIR_UP = Keys.W;
+        protected Keys LEFT_DIR_UP = Keys.E;
         protected Keys LEFT_DIR_DOWN = Keys.S;
         protected Keys LEFT_DIR_LEFT = Keys.A;
         protected Keys LEFT_DIR_RIGHT = Keys.D;
@@ -45,8 +45,8 @@ namespace CS8803AGA.devices
         protected Keys BUTTON_2 = Keys.LeftShift;
         protected Keys BUTTON_3 = Keys.X;
         protected Keys BUTTON_4 = Keys.C;
-        protected Keys LEFT_BUMPER = Keys.Q;
-        protected Keys RIGHT_BUMPER = Keys.E;
+        protected Keys LEFT_BUMPER = Keys.W;
+        protected Keys RIGHT_BUMPER = Keys.T;
 
         /// <summary>
         /// Default constructor.

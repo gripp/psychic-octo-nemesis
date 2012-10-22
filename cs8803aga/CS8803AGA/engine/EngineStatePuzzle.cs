@@ -24,13 +24,13 @@ namespace CS8803AGA.engine
                 switch (PUZZLE_NUMBER)
                 {
                     case 3:
-                        GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_3] = pf.Solved;
+                        // GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_3] = pf.Solved;
                         break;
                     case 2:
-                        GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2] = pf.Solved;
+                        // GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2] = pf.Solved;
                         break;
                     default:
-                        GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_1] = pf.Solved;
+                        // GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_1] = pf.Solved;
                         break;
                 }
                 EngineManager.popState();

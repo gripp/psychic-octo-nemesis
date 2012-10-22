@@ -8,6 +8,7 @@ using CS8803AGA.engine;
 using CS8803AGA.devices;
 using CS8803AGA.collision;
 using CS8803AGA.story.characters;
+using CS8803AGA.story;
 
 namespace CS8803AGA.controllers
 {
@@ -22,46 +23,122 @@ namespace CS8803AGA.controllers
             // nch, should only be called by CharacterController.construct
         }
 
+
+
         public override void update()
         {
             AnimationController.update();
 
-            //if (InputSet.getInstance().getButton(InputsEnum.CONFIRM_BUTTON))
-            //{
-            //    handleInteract();
-            //}
-
-            if (InputSet.getInstance().getButton(InputsEnum.BUTTON_1))
+            List<Collider> collisions = getCollisions();
+            if (collisions.Count == 0)
             {
-                handleInteract();
-
-                // Commenting out these lines should prevent attacking.
-                // string dir = angleTo4WayAnimation(m_previousAngle);
-                // dir = "attack" + dir;
-                // AnimationController.requestAnimation(dir, AnimationController.AnimationCommand.Play);
+                GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = false;
+            }
+            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING])
+            {
+                foreach (Collider c in collisions)
+                {
+                    if (c != this.m_collider && c.m_type == ColliderType.NPC)
+                    {
+                        foreach (Character npc in GameplayManager.Game.Characters)
+                        {
+                            if (npc.ID == c.NPC_ID)
+                            {
+                                if (npc is Riedl)
+                                {
+                                    GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_RIEDL);
+                                }
+                                else if (npc is Microwave) {
+                                    GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_MICROWAVE);
+                                }
+                                else if (npc is Food)
+                                {
+                                    Food f = (Food)npc;
+                                    switch (f.Type)
+                                    {
+                                        case Food.FoodType.CAKE:
+                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_CAKE);
+                                            break;
+                                        case Food.FoodType.CHICKEN:
+                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_CHICKEN);
+                                            break;
+                                        case Food.FoodType.LOBSTER:
+                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_LOBSTER);
+                                            break;
+                                        case Food.FoodType.PIZZA:
+                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_PIZZA);
+                                            break;
+                                        case Food.FoodType.STEAK:
+                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_STEAK);
+                                            break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = false;
             }
 
-            float dx = InputSet.getInstance().getLeftDirectionalX() * m_speed;
-            float dy = InputSet.getInstance().getLeftDirectionalY() * m_speed;
-
-            if (dx == 0 && dy == 0)
+            if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PARALYZED) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED]))
             {
-                return;
+                if (InputSet.getInstance().getButton(InputsEnum.BUTTON_1))
+                {
+                    handleInteract();
+                    if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
+                        GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING])
+                    {
+                        GameplayManager.Game.showSIMA(SIMA.Behavior.INTERACT);
+                    }
+
+                    // Commenting out these lines should prevent attacking.
+                    // string dir = angleTo4WayAnimation(m_previousAngle);
+                    // dir = "attack" + dir;
+                    // AnimationController.requestAnimation(dir, AnimationController.AnimationCommand.Play);
+                }
+
+                float dx = InputSet.getInstance().getLeftDirectionalX() * m_speed;
+                float dy = InputSet.getInstance().getLeftDirectionalY() * m_speed;
+
+                if (dx == 0 && dy == 0)
+                {
+                    return;
+                }
+
+                float angle =
+                    CommonFunctions.getAngle(new Vector2(dx, dy));
+
+                // string animName = angleTo4WayAnimation(angle);
+                string animName = (dx <= 0) ? "left" : "right";
+                AnimationController.requestAnimation(animName, AnimationController.AnimationCommand.Play);
+
+                if (true /* TODO - checks for paralysis, etc here */)
+                {
+                    m_collider.handleMovement(new Vector2(dx, -dy));
+                }
+
+                m_previousAngle = angle;
             }
-
-            float angle =
-                CommonFunctions.getAngle(new Vector2(dx, dy));
-
-            // string animName = angleTo4WayAnimation(angle);
-            string animName = (dx <= 0) ? "left" : "right";
-            AnimationController.requestAnimation(animName, AnimationController.AnimationCommand.Play);
-
-            if (true /* TODO - checks for paralysis, etc here */)
+            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WAITING) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING])
             {
-                m_collider.handleMovement(new Vector2(dx, -dy));
+                if (InputSet.getInstance().getButton(InputsEnum.LEFT_BUMPER))
+                {
+                    // Choose watch.
+                    GameplayManager.Game.resetTask();
+                    GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
+                    GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
+                    GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING] = true;
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.RIGHT_BUMPER))
+                {
+                    // Choose try.
+                    GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
+                    GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] = true;
+                }
             }
-
-            m_previousAngle = angle;
         }
 
         /// <summary>
@@ -69,6 +146,27 @@ namespace CS8803AGA.controllers
         /// Perty hackish.
         /// </summary>
         private void handleInteract()
+        {
+            List<Collider> queries = getCollisions();
+            foreach (Collider c in queries)
+            {
+                if (c != this.m_collider && c.m_type == ColliderType.NPC)
+                {
+                    foreach (Character npc in GameplayManager.Game.Characters)
+                    {
+                        if (npc.ID == c.NPC_ID)
+                        {
+                            npc.act(this.m_collider, false);
+                        }
+                    }
+
+                    InputSet.getInstance().setAllToggles();
+                    return;
+                }
+            }
+        }
+
+        private List<Collider> getCollisions()
         {
             string facing = angleTo4WayAnimation(m_previousAngle);
             DoubleRect queryRectangle;
@@ -98,22 +196,7 @@ namespace CS8803AGA.controllers
             }
 
             List<Collider> queries = m_collider.queryDetector(queryRectangle);
-            foreach (Collider c in queries)
-            {
-                if (c != this.m_collider && c.m_type == ColliderType.NPC)
-                {
-                    foreach (Character npc in GameplayManager.Game.Characters)
-                    {
-                        if (npc.ID == c.NPC_ID)
-                        {
-                            npc.act(this.m_collider, false);
-                        }
-                    }
-
-                    InputSet.getInstance().setAllToggles();
-                    return;
-                }
-            }
+            return queries;
         }
     }
 }

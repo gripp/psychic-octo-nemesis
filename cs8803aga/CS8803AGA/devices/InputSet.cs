@@ -364,7 +364,6 @@ namespace CS8803AGA.devices
         RIGHT_TRIGGER,
         LEFT_BUMPER,
         RIGHT_BUMPER,
-        
         LENGTH
     }
 

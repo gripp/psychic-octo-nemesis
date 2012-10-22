@@ -78,6 +78,7 @@ namespace CS8803AGA.engine
 
         internal static void move(int id, Point destination)
         {
+            GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = true;
             foreach (IGameObject obj in ActiveArea.GameObjects)
             {
                 CharacterController cc;

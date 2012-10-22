@@ -14,6 +14,13 @@ namespace CS8803AGA.story.characters
     {
         public enum FoodType { CHICKEN, LOBSTER, PIZZA, STEAK, CAKE };
 
+        public FoodType Type
+        {
+            get
+            {
+                return type;
+            }
+        }
         private FoodType type;
 
         public Food(FoodType tp)
