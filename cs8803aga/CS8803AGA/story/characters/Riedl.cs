@@ -19,6 +19,7 @@ namespace CS8803AGA.story.characters
         //bool hasForm;
         bool hasSignature;
         bool playerWon;
+        bool simaWatching;
 
         public override string getDialogue(bool shouting)
         {
@@ -71,7 +72,11 @@ namespace CS8803AGA.story.characters
         public override void act(Collider mover, bool shouting)
         {
             setFlags();
-            GameplayManager.say(getDialogue(shouting));
+
+            if (!simaWatching)
+            {
+                GameplayManager.say(getDialogue(shouting));
+            }
 
             if (completedPuzzle && hasSignature)
             {
@@ -115,6 +120,8 @@ namespace CS8803AGA.story.characters
                 GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_SIGNED_FORM]);
             playerWon = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_WON) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON]);
+            simaWatching = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING]);
         }
 
         public override CharacterInfo getCharacterInfo()

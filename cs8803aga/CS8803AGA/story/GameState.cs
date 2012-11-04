@@ -5,6 +5,7 @@ using System.Text;
 using System.Collections;
 using CS8803AGA.story.characters;
 using CS8803AGA.story.map;
+using CS8803AGA.story.behaviors;
 
 namespace CS8803AGA.story
 {
@@ -53,7 +54,7 @@ namespace CS8803AGA.story
         }
         private Dictionary<GameFlag, bool> keys = new Dictionary<GameFlag, bool>();
 
-        public void showSIMA(SIMA.Behavior action)
+        public void showSIMA(Behavior action)
         {
             foreach (Character sima in Characters)
             {

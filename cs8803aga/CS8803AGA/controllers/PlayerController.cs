@@ -9,6 +9,8 @@ using CS8803AGA.devices;
 using CS8803AGA.collision;
 using CS8803AGA.story.characters;
 using CS8803AGA.story;
+using CS8803AGA.story.behaviors;
+using CS8803AGA.story.map;
 
 namespace CS8803AGA.controllers
 {
@@ -34,8 +36,10 @@ namespace CS8803AGA.controllers
             {
                 GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = false;
             }
-            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING])
+            else if ((GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING]) &&
+                !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COLLISION_HANDLED) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED]))
             {
                 foreach (Collider c in collisions)
                 {
@@ -47,10 +51,10 @@ namespace CS8803AGA.controllers
                             {
                                 if (npc is Riedl)
                                 {
-                                    GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_RIEDL);
+                                    GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.RIEDL));
                                 }
                                 else if (npc is Microwave) {
-                                    GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_MICROWAVE);
+                                    GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.MICROWAVE));
                                 }
                                 else if (npc is Food)
                                 {
@@ -58,27 +62,27 @@ namespace CS8803AGA.controllers
                                     switch (f.Type)
                                     {
                                         case Food.FoodType.CAKE:
-                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_CAKE);
+                                            GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.CAKE));
                                             break;
                                         case Food.FoodType.CHICKEN:
-                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_CHICKEN);
+                                            GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.CHICKEN));
                                             break;
                                         case Food.FoodType.LOBSTER:
-                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_LOBSTER);
+                                            GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.LOBSTER));
                                             break;
                                         case Food.FoodType.PIZZA:
-                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_PIZZA);
+                                            GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.PIZZA));
                                             break;
                                         case Food.FoodType.STEAK:
-                                            GameplayManager.Game.showSIMA(SIMA.Behavior.GOTO_STEAK);
+                                            GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.STEAK));
                                             break;
                                     }
                                 }
                             }
                         }
+                        GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = true;
                     }
                 }
-                GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = false;
             }
 
             if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PARALYZED) &&
@@ -90,7 +94,7 @@ namespace CS8803AGA.controllers
                     if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
                         GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING])
                     {
-                        GameplayManager.Game.showSIMA(SIMA.Behavior.INTERACT);
+                        GameplayManager.Game.showSIMA(new InteractBehavior());
                     }
 
                     // Commenting out these lines should prevent attacking.

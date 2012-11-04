@@ -9,6 +9,7 @@ using System.Threading;
 using Microsoft.Xna.Framework;
 using CS8803AGA.story.map;
 using System.ComponentModel;
+using CS8803AGA.story.behaviors;
 
 namespace CS8803AGA.story.characters
 {
@@ -22,47 +23,8 @@ namespace CS8803AGA.story.characters
         // bool hasForm;
         bool watching;
 
-        public enum Behavior
-        {
-            GOTO_BASE,
-            GOTO_CAKE,
-            GOTO_CHICKEN,
-            GOTO_LOBSTER,
-            GOTO_MICROWAVE,
-            GOTO_PIZZA,
-            GOTO_RIEDL,
-            GOTO_STEAK,
-            INTERACT
-        };
-
-        public static string getBehaviorDescription(Behavior b)
-        {
-            switch (b)
-            {
-                case Behavior.GOTO_BASE:
-                    return "Return to base.";
-                case Behavior.GOTO_CAKE:
-                    return "Go to cake.";
-                case Behavior.GOTO_CHICKEN:
-                    return "Go to chicken.";
-                case Behavior.GOTO_LOBSTER:
-                    return "Go to lobster.";
-                case Behavior.GOTO_MICROWAVE:
-                    return "Go to microwave.";
-                case Behavior.GOTO_PIZZA:
-                    return "Go to pizza.";
-                case Behavior.GOTO_RIEDL:
-                    return "Go to Riedl.";
-                case Behavior.GOTO_STEAK:
-                    return "Go to steak.";
-                case Behavior.INTERACT:
-                    return "Interact.";
-                default:
-                    return "";
-            }
-        }
-
-        private Queue<Behavior> task;
+        private LinkedList<Behavior> example;
+        private Behavior startPoint = null;
 
         public override string getDialogue(bool shouting)
         {
@@ -88,10 +50,10 @@ namespace CS8803AGA.story.characters
             //}
             else if (watching)
             {
-                string dialogue = "SIMA: Alright. I got it:\n";
-                while (task.Count > 0)
+                string dialogue = "SIMA: Alright. I got it:\n\n";
+                for(LinkedList<Behavior>.Enumerator e = example.GetEnumerator(); e.MoveNext();)
                 {
-                    dialogue += getBehaviorDescription(task.Dequeue());
+                    dialogue += e.Current.getDescription();
                     dialogue += "\n";
                 }
                 return dialogue;
@@ -111,11 +73,50 @@ namespace CS8803AGA.story.characters
             setFlags();
             if (watching)
             {
+                if (example.Count > 0)
+                {
+                    if (startPoint == null)
+                    {
+                        Behavior last = null;
+                        foreach (Behavior b in example)
+                        {
+                            if (last == null)
+                            {
+                                startPoint = b;
+                                last = startPoint;
+                            }
+                            else
+                            {
+                                last.setNext(b);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        List<LinkedList<Behavior>> paths = getAllPaths(startPoint);
+                        int[,] lcsGrid = getLCSGrid(example, paths[0]);
+                        int bestPath = 0;
+                        int[,] hold;
+                        for (int i = 1; i < paths.Count; i++)
+                        {
+                            hold = getLCSGrid(example, paths[i]);
+                            if (hold[hold.GetLength(0) - 1, hold.GetLength(1) - 1] > lcsGrid[lcsGrid.GetLength(0) - 1, lcsGrid.GetLength(1) - 1])
+                            {
+                                lcsGrid = hold;
+                                bestPath = i;
+                            }
+                        }
+
+                        LinkedList<Behavior> lcs = getLCS(lcsGrid, example, paths[bestPath], example.Count, paths[bestPath].Count);
+
+                        // Now I've got everything I need to form the new task structure. Look at the window and synthesize!
+                    }
+                }
                 GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING] = false;
             }
             else if (openedPuzzle && !completedPuzzle)
             {
-                task = new Queue<Behavior>();
+                example = new LinkedList<Behavior>();
                 GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = true;
                 GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = true;
             }
@@ -126,36 +127,148 @@ namespace CS8803AGA.story.characters
             //while (!t.IsAlive) ;
         }
 
-        private void actHelper()
+        private List<LinkedList<Behavior>> getAllPaths(Behavior start)
         {
-            //while (EngineManager.peekAtState().getStateType().CompareTo("EngineStateDialogue") == 0)
-            //{
-            //    // Wait.
-            //}
-            //if (completedPuzzle3)
-            //{
-            //    // Do nothing.
-            //}
-            //else if (hasForm)
-            //{
-            //    // Run puzzle three and get results. Did the player succeed?
-            //    GameplayManager.runPuzzle(3);
-            //}
-            //else if (openedPuzzle2 && !completedPuzzle2)
-            //{
-            //    // Run puzzle three and get results. Did the player succeed?
-            //    GameplayManager.runPuzzle(2);
-            //    bool result = true;
-            //    GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2] = result;
-            //}
-            //else if (openedPuzzle1 && !completedPuzzle1)
-            //{
-            //    // Run puzzle three and get results. Did the player succeed?
-            //    GameplayManager.runPuzzle(1);
-            //    bool result = true;
-            //    GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_1] = result;
-            //}
+            List<LinkedList<Behavior>> allPaths = new List<LinkedList<Behavior>>();
+            LinkedList<Behavior> list = new LinkedList<Behavior>();
+
+            for (Behavior b = start; b.getNext() != null;)
+            {
+                if (b is ComboBehavior)
+                {
+                    LinkedList<Behavior> firstHalf;
+                    List<LinkedList<Behavior>> secondHalves;
+                    foreach (Behavior h in ((ComboBehavior)b).getAllBranches())
+                    {
+                        secondHalves = getAllPaths(h);
+                        foreach (LinkedList<Behavior> secondHalf in secondHalves)
+                        {
+                            firstHalf = copyList(list);
+                            foreach (Behavior r in secondHalf)
+                            {
+                                firstHalf.AddLast(r);
+                            }
+                            allPaths.Add(firstHalf);
+                        }
+                    }
+                    list = null;
+                    break;
+                }
+                else
+                {
+                    list.AddLast(b);
+                }
+            }
+
+            if (list != null)
+            {
+                allPaths.Add(list);
+            }
+            return allPaths;
         }
+
+        private LinkedList<Behavior> copyList(LinkedList<Behavior> list)
+        {
+            LinkedList<Behavior> copy = new LinkedList<Behavior>();
+            foreach (Behavior b in list)
+            {
+                copy.AddLast(b.makeCopy());
+            }
+
+            return copy;
+        }
+
+        public static LinkedList<Behavior> getLCS(int[,] grid, LinkedList<Behavior> sequenceA, LinkedList<Behavior> sequenceB, int i, int j)
+        {
+            if (i == 0 || j == 0)
+            {
+                return new LinkedList<Behavior>();
+            }
+            else if (sequenceA.ElementAt(i).compareTo(sequenceB.ElementAt(j)) == 0)
+            {
+                LinkedList<Behavior> hold = getLCS(grid, sequenceA, sequenceB, i - 1, j - 1);
+                hold.AddLast(sequenceA.ElementAt(i));
+                return hold;
+            }
+            else
+            {
+                if (grid[i, j - 1] > grid[i - 1, j])
+                {
+                    return getLCS(grid, sequenceA, sequenceB, i, j - 1);
+                }
+                else
+                {
+                    return getLCS(grid, sequenceA, sequenceB, i - 1, j);
+                }
+            }
+        }
+
+        public static int[,] getLCSGrid(LinkedList<Behavior> sequenceA, LinkedList<Behavior> sequenceB)
+        {
+            int[,] grid = new int[sequenceA.Count + 1, sequenceB.Count + 1];
+            int i;
+            int j;
+
+            for (i = 0; i < grid.GetLength(0); i++)
+            {
+                grid[i, 0] = 0;
+            }
+            for (i = 0; i < grid.GetLength(1); i++)
+            {
+                grid[0, i] = 0;
+            }
+
+            i = 1;
+            j = 1;
+            for (LinkedList<Behavior>.Enumerator a = sequenceA.GetEnumerator(); a.MoveNext(); i++)
+            {
+                for (LinkedList<Behavior>.Enumerator b = sequenceB.GetEnumerator(); b.MoveNext(); j++)
+                {
+                    if (a.Current.compareTo(b.Current) == 0)
+                    {
+                        grid[i, j] = grid[i-1, j-1] + 1;
+                    }
+                    else
+                    {
+                        grid[i, j] = Math.Max(grid[i, j - 1], grid[i - 1, j]);
+                    }
+                }
+            }
+
+            return grid;
+        }
+
+        // This might later be used to spawn extra threads. But right now, we don't need it.
+        //private void actHelper()
+        //{
+        //    while (EngineManager.peekAtState().getStateType().CompareTo("EngineStateDialogue") == 0)
+        //    {
+        //        // Wait.
+        //    }
+        //    if (completedPuzzle3)
+        //    {
+        //        // Do nothing.
+        //    }
+        //    else if (hasForm)
+        //    {
+        //        // Run puzzle three and get results. Did the player succeed?
+        //        GameplayManager.runPuzzle(3);
+        //    }
+        //    else if (openedPuzzle2 && !completedPuzzle2)
+        //    {
+        //        // Run puzzle three and get results. Did the player succeed?
+        //        GameplayManager.runPuzzle(2);
+        //        bool result = true;
+        //        GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2] = result;
+        //    }
+        //    else if (openedPuzzle1 && !completedPuzzle1)
+        //    {
+        //        // Run puzzle three and get results. Did the player succeed?
+        //        GameplayManager.runPuzzle(1);
+        //        bool result = true;
+        //        GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_1] = result;
+        //    }
+        //}
 
         private void setFlags()
         {
@@ -180,11 +293,11 @@ namespace CS8803AGA.story.characters
             return GlobalHelper.loadContent<CharacterInfo>(@"Characters/SIMA");
         }
 
-        public void show(SIMA.Behavior action)
+        public void show(Behavior action)
         {
-            task.Enqueue(action);
+            example.AddLast(action);
         }
 
-        public void resetTask() { task = new Queue<Behavior>(); }
+        public void resetTask() { example = new LinkedList<Behavior>(); }
     }
 }
