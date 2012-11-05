@@ -5,11 +5,15 @@ using System.Text;
 using CS8803AGA.engine;
 using CS8803AGA.collision;
 using CS8803AGAGameLibrary;
+using CS8803AGA.story.behaviors;
+using CS8803AGA.story.map;
 
 namespace CS8803AGA.story.characters
 {
     class Riedl : Character
     {
+        public static LabScreen.LabLocation TASTE = acquireTaste();
+
         bool explained;
         //bool openedPuzzle1;
         //bool openedPuzzle2;
@@ -20,6 +24,100 @@ namespace CS8803AGA.story.characters
         bool hasSignature;
         bool playerWon;
         bool simaWatching;
+
+        public static LabScreen.LabLocation acquireTaste()
+        {
+            return LabScreen.LabLocation.CHICKEN;
+
+            switch (RandomManager.get().Next(4))
+            {
+                case 0:
+                    return LabScreen.LabLocation.CHICKEN;
+                case 1:
+                    return LabScreen.LabLocation.LOBSTER;
+                case 2:
+                    return LabScreen.LabLocation.PIZZA;
+                default:
+                    return LabScreen.LabLocation.STEAK;
+            }
+        }
+
+        public struct Evaluation
+        {
+            public string explanation;
+            public bool successful;
+        }
+
+        public static Evaluation evaluateTask(LinkedList<Behavior> attempt)
+        {
+            bool rightFood = false;
+            bool hasFood = false;
+            bool hasHotFood = false;
+            bool deliveredFood = false;
+            bool hasCake = false;
+            bool delieveredCake = false;
+
+            Behavior last = null;
+            for (LinkedList<Behavior>.Enumerator e = attempt.GetEnumerator(); e.MoveNext(); )
+            {
+                if (e.Current is InteractBehavior && last != null)
+                {
+                    if (last is GoToBehavior)
+                    {
+                        GoToBehavior gtb = (GoToBehavior)last;
+                        if (gtb.getLocation() == LabScreen.LabLocation.CHICKEN ||
+                            gtb.getLocation() == LabScreen.LabLocation.LOBSTER ||
+                            gtb.getLocation() == LabScreen.LabLocation.PIZZA ||
+                            gtb.getLocation() == LabScreen.LabLocation.STEAK)
+                        {
+                            hasFood = true;
+                            rightFood = (gtb.getLocation() == TASTE);
+                        }
+                        else if (gtb.getLocation() == LabScreen.LabLocation.CAKE)
+                        {
+                            hasCake = true;
+                        }
+                        else if (gtb.getLocation() == LabScreen.LabLocation.MICROWAVE && hasFood)
+                        {
+                            hasHotFood = true;
+                        }
+                        else if (gtb.getLocation() == LabScreen.LabLocation.RIEDL)
+                        {
+                            deliveredFood = deliveredFood || hasFood;
+                            delieveredCake = delieveredCake || hasCake;
+                        }
+                    }
+                }
+
+                last = e.Current;
+            }
+
+            Evaluation response = new Evaluation();
+            response.successful = (hasHotFood && rightFood && deliveredFood && delieveredCake);
+
+            if (response.successful)
+            {
+                response.explanation = "Well done! SIMA's got it!";
+            }
+            else if (!deliveredFood)
+            {
+                response.explanation = "Where is my food?";
+            }
+            else if (!hasHotFood)
+            {
+                response.explanation = "This food is cold.";
+            }
+            else if (!rightFood)
+            {
+                response.explanation = "That's not the food I wanted.";
+            }
+            else if (!delieveredCake)
+            {
+                response.explanation = "Where is my cake?";
+            }
+
+            return response;
+        }
 
         public override string getDialogue(bool shouting)
         {

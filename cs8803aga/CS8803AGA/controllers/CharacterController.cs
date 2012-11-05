@@ -5,6 +5,10 @@ using CS8803AGA.collision;
 using CS8803AGA.engine;
 using CS8803AGA.actions;
 using CS8803AGA.story;
+using CS8803AGA.story.behaviors;
+using System.Collections.Generic;
+using CS8803AGA.story.map;
+using CS8803AGA.story.characters;
 
 namespace CS8803AGA.controllers
 {
@@ -27,6 +31,8 @@ namespace CS8803AGA.controllers
         protected int m_speed;
 
         protected float m_previousAngle;
+        private LinkedList<Behavior>.Enumerator task;
+        private Riedl.Evaluation eval;
 
         /// <summary>
         /// Factory method to create CharacterControllers
@@ -92,18 +98,37 @@ namespace CS8803AGA.controllers
 
         public virtual void update()
         {
-            if (m_destination.X != -1 && m_destination.Y != -1)
+            if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_ACTING) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] && this.NpcID == GameplayManager.Game.getSIMA().ID)
             {
-                if (DrawPosition.X == m_destination.X && DrawPosition.Y == m_destination.Y)
+                if (m_destination.X != -1 && m_destination.Y != -1)
                 {
-                    m_destination = new Point(-1, -1);
-                    GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
+                    if (DrawPosition.X == m_destination.X && DrawPosition.Y == m_destination.Y)
+                    {
+                        m_destination = new Point(-1, -1);
+                    }
+                    else
+                    {
+                        float dx = (DrawPosition.X == m_destination.X) ? 0 : (DrawPosition.X > m_destination.X) ? -1 * m_speed : m_speed;
+                        float dy = (DrawPosition.Y == m_destination.Y) ? 0 : (DrawPosition.Y > m_destination.Y) ? -1 * m_speed : m_speed;
+                        m_collider.handleMovement(new Vector2(dx, dy));
+                    }
+                }
+                else if (task.MoveNext())
+                {
+                    if (task.Current is GoToBehavior)
+                    {
+                        m_destination = LabScreen.LOCATIONS[((GoToBehavior)task.Current).getLocation()];
+                    }
+                }
+                else if (DrawPosition.X != LabScreen.LOCATIONS[LabScreen.LabLocation.SIMA].X ||
+                    DrawPosition.Y != LabScreen.LOCATIONS[LabScreen.LabLocation.SIMA].Y)
+                {
+                    m_destination = LabScreen.LOCATIONS[LabScreen.LabLocation.SIMA];
                 }
                 else
                 {
-                    float dx = (DrawPosition.X == m_destination.X) ? 0 : (DrawPosition.X > m_destination.X) ? -1 * m_speed : m_speed;
-                    float dy = (DrawPosition.Y == m_destination.Y) ? 0 : (DrawPosition.Y > m_destination.Y) ? -1 * m_speed : m_speed;
-                    m_collider.handleMovement(new Vector2(dx, dy));
+                    GameplayManager.Game.getSIMA().finishAttempt(eval);
                 }
             }
         }
@@ -208,6 +233,12 @@ namespace CS8803AGA.controllers
         internal void moveTo(Point dest)
         {
             m_destination = dest;
+        }
+
+        internal void setTask(LinkedList<Behavior> steps)
+        {
+            eval = Riedl.evaluateTask(steps);
+            task = steps.GetEnumerator();
         }
     }
 }

@@ -95,5 +95,25 @@ namespace CS8803AGA.engine
                 }
             }
         }
+
+        internal static void invokeSIMA()
+        {
+            SIMA sima = Game.getSIMA();
+            foreach (IGameObject obj in ActiveArea.GameObjects)
+            {
+                CharacterController cc;
+
+                // If this is a character...
+                if (obj is CharacterController)
+                {
+                    // and it's the right character...
+                    cc = (CharacterController)obj;
+                    if (cc.NpcID == sima.ID)
+                    {
+                        cc.setTask(sima.getTaskAttempt());
+                    }
+                }
+            }
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace CS8803AGA.story.behaviors
             }
             else
             {
-                return next[(new Random()).Next(next.Count - 1)];
+                return next[RandomManager.get().Next(next.Count)];
             }
         }
 

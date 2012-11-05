@@ -139,6 +139,7 @@ namespace CS8803AGA.controllers
                 else if (InputSet.getInstance().getButton(InputsEnum.RIGHT_BUMPER))
                 {
                     // Choose try.
+                    GameplayManager.invokeSIMA();
                     GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
                     GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] = true;
                 }

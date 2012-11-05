@@ -56,13 +56,19 @@ namespace CS8803AGA.story
 
         public void showSIMA(Behavior action)
         {
+            getSIMA().show(action);
+        }
+
+        public SIMA getSIMA()
+        {
             foreach (Character sima in Characters)
             {
                 if (sima is SIMA)
                 {
-                    ((SIMA)sima).show(action);
+                    return ((SIMA)sima);
                 }
             }
+            return null;
         }
 
         public GameState()
@@ -72,13 +78,7 @@ namespace CS8803AGA.story
 
         internal void resetTask()
         {
-            foreach (Character sima in Characters)
-            {
-                if (sima is SIMA)
-                {
-                    ((SIMA)sima).resetTask();
-                }
-            }
+            getSIMA().resetTask();
         }
     }
 }

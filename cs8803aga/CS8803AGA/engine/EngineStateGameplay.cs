@@ -108,22 +108,22 @@ namespace CS8803AGA.engine
                                         Color.AliceBlue);
                 }
                 
-                foreach (Collider collider in node.quadObjects)
-                {
-                    DoubleRect dr2 = collider.Bounds;
-                    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
-                                    new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
-                                    Color.LimeGreen);
-                    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
-                                        new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
-                                        Color.LimeGreen);
-                    LineDrawer.drawLine(new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
-                                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
-                                        Color.LimeGreen);
-                    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
-                                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
-                                        Color.LimeGreen);
-                }
+                //foreach (Collider collider in node.quadObjects)
+                //{
+                //    DoubleRect dr2 = collider.Bounds;
+                //    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
+                //                    new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
+                //                    Color.LimeGreen);
+                //    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
+                //                        new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
+                //                        Color.LimeGreen);
+                //    LineDrawer.drawLine(new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
+                //                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
+                //                        Color.LimeGreen);
+                //    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
+                //                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
+                //                        Color.LimeGreen);
+                //}
             }
         }
 

@@ -26,6 +26,19 @@ namespace CS8803AGA.story.characters
         private LinkedList<Behavior> example;
         private Behavior startPoint = null;
 
+        public LinkedList<Behavior> getTaskAttempt()
+        {
+            LinkedList<Behavior> taskAttempt = new LinkedList<Behavior>();
+            for (Behavior node = startPoint; node != null; node = node.getNext())
+            {
+                if (!(node is ComboBehavior))
+                {
+                    taskAttempt.AddLast(node);
+                }
+            }
+            return taskAttempt;
+        }
+
         public override string getDialogue(bool shouting)
         {
             if (completedPuzzle)
@@ -463,5 +476,18 @@ namespace CS8803AGA.story.characters
         }
 
         public void resetTask() { example = new LinkedList<Behavior>(); }
+
+        internal void finishAttempt(Riedl.Evaluation eval)
+        {
+            GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE] =
+                GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE) ?
+                GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE] || eval.successful :
+                eval.successful;
+            GameplayManager.say("RIEDL: " + eval.explanation);
+            GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
+            GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] = false;
+            GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
+            GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING] = false;
+        }
     }
 }
