@@ -83,12 +83,13 @@ namespace CS8803AGA.story.characters
                             if (last == null)
                             {
                                 startPoint = b;
-                                last = startPoint;
                             }
                             else
                             {
                                 last.setNext(b);
                             }
+
+                            last = b;
                         }
                     }
                     else
@@ -107,9 +108,16 @@ namespace CS8803AGA.story.characters
                             }
                         }
 
+                        startPoint = null;
                         LinkedList<Behavior> lcs = getLCS(lcsGrid, example, paths[bestPath], example.Count, paths[bestPath].Count);
+                        
+                        startPoint = mergePaths(example, paths[bestPath], lcs);
+                        paths.RemoveAt(bestPath);
 
-                        // Now I've got everything I need to form the new task structure. Look at the window and synthesize!
+                        foreach (LinkedList<Behavior> llb in paths)
+                        {
+                            foldIn(llb, lcs);
+                        }
                     }
                 }
                 GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING] = false;
@@ -127,12 +135,168 @@ namespace CS8803AGA.story.characters
             //while (!t.IsAlive) ;
         }
 
+        private void foldIn(LinkedList<Behavior> llb, LinkedList<Behavior> lcs)
+        {
+            bool go;
+            bool start = true;
+            bool pause = false;
+            Behavior holdCurrent;
+            Behavior holdLast;
+            Behavior node = startPoint;
+            Behavior lineStart;
+            LinkedList<Behavior>.Enumerator e = llb.GetEnumerator();
+
+            for (LinkedList<Behavior>.Enumerator lcsEnumerator = lcs.GetEnumerator(); pause || lcsEnumerator.MoveNext(); )
+            {
+                if (!start)
+                {
+                    node = lcsEnumerator.Current;
+                }
+
+                lineStart = null;
+
+                holdLast = null;
+                go = e.MoveNext();
+                while (go && e.Current.compareTo(lcsEnumerator.Current) != 0)
+                {
+                    holdCurrent = e.Current.makeCopy();
+                    if (lineStart == null)
+                    {
+                        lineStart = holdCurrent;
+                    }
+                    else
+                    {
+                        holdLast.setNext(holdCurrent);
+                    }
+                    holdLast = holdCurrent;
+                    go = e.MoveNext();
+                }
+                if (lineStart != null && go)
+                {
+                    holdLast.setNext(node);
+                }
+
+                if (node is ComboBehavior)
+                {
+                    bool moveOn = false;
+                    foreach (Behavior b in ((ComboBehavior)node).getAllBranches())
+                    {
+                        if (b.compareTo(lcsEnumerator.Current) == 0 && lineStart == null)
+                        {
+                            moveOn = true;
+                            break;
+                        }
+                    }
+                    if (!moveOn)
+                    {
+                        node.setNext(lineStart == null ? lcsEnumerator.Current : lineStart);
+                    }
+                }
+                // Make a combo behavior if this isn't just the same LCS node.
+                else if (!(lineStart == null && node.compareTo(lcsEnumerator.Current) == 0))
+                {
+                    ComboBehavior cb = new ComboBehavior();
+                    cb.setNext(node);
+                    cb.setNext(lcsEnumerator.Current);
+                    startPoint = cb;
+                }
+                else
+                {
+                    lineStart = lcsEnumerator.Current;
+                    pause = start;
+                }
+
+                start = false;
+            }
+        }
+
+        private Behavior mergePaths(LinkedList<Behavior> list1, LinkedList<Behavior> list2, LinkedList<Behavior> lcs)
+        {
+            Behavior start = null;
+            Behavior last = null;
+            Behavior line1Start = null;
+            Behavior line2Start = null;
+            Behavior holdLast;
+            Behavior holdCurrent;
+            LinkedList<Behavior>.Enumerator enumerator1 = list1.GetEnumerator();
+            LinkedList<Behavior>.Enumerator enumerator2 = list2.GetEnumerator();
+
+            for (LinkedList<Behavior>.Enumerator lcsEnumerator = lcs.GetEnumerator(); lcsEnumerator.MoveNext(); )
+            {
+                line1Start = null;
+                line2Start = null;
+                
+                holdLast = null;
+                while (enumerator1.MoveNext() && enumerator1.Current.compareTo(lcsEnumerator.Current) != 0)
+                {
+                    holdCurrent = enumerator1.Current.makeCopy();
+                    if (line1Start == null)
+                    {
+                        line1Start = holdCurrent;
+                    }
+                    else
+                    {
+                        holdLast.setNext(holdCurrent);
+                    }
+                    holdLast = holdCurrent;
+                }
+                if (line1Start != null)
+                {
+                    holdLast.setNext(lcsEnumerator.Current);
+                }
+
+                holdLast = null;
+                while (enumerator2.MoveNext() && enumerator2.Current.compareTo(lcsEnumerator.Current) != 0)
+                {
+                    holdCurrent = enumerator2.Current.makeCopy();
+                    if (line2Start == null)
+                    {
+                        line2Start = holdCurrent;
+                    }
+                    else
+                    {
+                        holdLast.setNext(holdCurrent);
+                    }
+                    holdLast = holdCurrent;
+                }
+                if (line2Start != null)
+                {
+                    holdLast.setNext(lcsEnumerator.Current);
+                }
+
+                if (line1Start == null && line2Start == null)
+                {
+                    holdCurrent = lcsEnumerator.Current;
+                }
+                else
+                {
+                    holdCurrent = new ComboBehavior();
+
+                    holdCurrent.setNext(line1Start == null ? lcsEnumerator.Current : line1Start);
+                    holdCurrent.setNext(line2Start == null ? lcsEnumerator.Current : line2Start);
+                }
+
+                if (start == null)
+                {
+                    start = holdCurrent;
+                }
+                else
+                {
+                    last.setNext(holdCurrent);
+                }
+
+                last = lcsEnumerator.Current;
+            }
+
+            return start;
+        }
+
         private List<LinkedList<Behavior>> getAllPaths(Behavior start)
         {
             List<LinkedList<Behavior>> allPaths = new List<LinkedList<Behavior>>();
             LinkedList<Behavior> list = new LinkedList<Behavior>();
 
-            for (Behavior b = start; b.getNext() != null;)
+            for (Behavior b = start; b != null; b = b.getNext())
             {
                 if (b is ComboBehavior)
                 {
@@ -184,10 +348,10 @@ namespace CS8803AGA.story.characters
             {
                 return new LinkedList<Behavior>();
             }
-            else if (sequenceA.ElementAt(i).compareTo(sequenceB.ElementAt(j)) == 0)
+            else if (sequenceA.ElementAt(i - 1).compareTo(sequenceB.ElementAt(j - 1)) == 0)
             {
                 LinkedList<Behavior> hold = getLCS(grid, sequenceA, sequenceB, i - 1, j - 1);
-                hold.AddLast(sequenceA.ElementAt(i));
+                hold.AddLast(sequenceA.ElementAt(i - 1).makeCopy());
                 return hold;
             }
             else
@@ -219,9 +383,9 @@ namespace CS8803AGA.story.characters
             }
 
             i = 1;
-            j = 1;
             for (LinkedList<Behavior>.Enumerator a = sequenceA.GetEnumerator(); a.MoveNext(); i++)
             {
+                j = 1;
                 for (LinkedList<Behavior>.Enumerator b = sequenceB.GetEnumerator(); b.MoveNext(); j++)
                 {
                     if (a.Current.compareTo(b.Current) == 0)
