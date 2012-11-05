@@ -44,6 +44,7 @@ namespace CS8803AGA.story.characters
 
         public struct Evaluation
         {
+            public string description;
             public string explanation;
             public bool successful;
         }
@@ -56,10 +57,12 @@ namespace CS8803AGA.story.characters
             bool deliveredFood = false;
             bool hasCake = false;
             bool delieveredCake = false;
+            string description="";
 
             Behavior last = null;
             for (LinkedList<Behavior>.Enumerator e = attempt.GetEnumerator(); e.MoveNext(); )
             {
+                description += e.Current.getDescription() + "\n";
                 if (e.Current is InteractBehavior && last != null)
                 {
                     if (last is GoToBehavior)
@@ -93,6 +96,7 @@ namespace CS8803AGA.story.characters
             }
 
             Evaluation response = new Evaluation();
+            response.description = description;
             response.successful = (hasHotFood && rightFood && deliveredFood && delieveredCake);
 
             if (response.successful)

@@ -483,7 +483,7 @@ namespace CS8803AGA.story.characters
                 GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE) ?
                 GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE] || eval.successful :
                 eval.successful;
-            GameplayManager.say("RIEDL: " + eval.explanation);
+            GameplayManager.say("SIMA: Here's what I did:\n" + eval.description + "\n\nRIEDL: " + eval.explanation);
             GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
             GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] = false;
             GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
