@@ -156,6 +156,7 @@
     <Compile Include="story\behaviors\ComboBehavior.cs" />
     <Compile Include="story\behaviors\InteractBehavior.cs" />
     <Compile Include="story\behaviors\GoToBehavior.cs" />
+    <Compile Include="story\characters\Dean.cs" />
     <Compile Include="story\characters\Microwave.cs" />
     <Compile Include="story\characters\Food.cs" />
     <Compile Include="story\characters\Registrar.cs" />

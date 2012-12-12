@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace CS8803AGA.story.map
 {
-    abstract class MapScreen
+    public abstract class MapScreen
     {
         public const int WIDTH = 32;
         public const int HEIGHT = 16;

@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 
 namespace CS8803AGA.story.map
 {
-    class LabScreen : MapScreen
+    public class LabScreen : MapScreen
     {
         public enum LabLocation { CAKE, CHICKEN, LOBSTER, MICROWAVE, PIZZA, RIEDL, SIMA, STEAK };
 
@@ -42,6 +42,8 @@ namespace CS8803AGA.story.map
             this.placeCharacter(LOCATIONS[LabLocation.STEAK].Y / 40, LOCATIONS[LabLocation.STEAK].X / 40, new Food(Food.FoodType.STEAK));
             this.placeCharacter(LOCATIONS[LabLocation.CAKE].Y / 40, LOCATIONS[LabLocation.CAKE].X / 40, new Food(Food.FoodType.CAKE));
             this.placeCharacter(LOCATIONS[LabLocation.MICROWAVE].Y / 40, LOCATIONS[LabLocation.MICROWAVE].X / 40, new Microwave());
+
+            this.placeCharacter(3, MapScreen.WIDTH - 2, new Dean());
         }
     }
 }

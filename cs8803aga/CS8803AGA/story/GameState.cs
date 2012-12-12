@@ -13,33 +13,55 @@ namespace CS8803AGA.story
     {
         public enum GameFlag
         {
-            ACCESSED_PUZZLE,
-            //ACCESSED_PUZZLE_2,
-            COLLISION_HANDLED,
-            COMPLETED_PUZZLE,
-            //COMPLETED_PUZZLE_2,
-            //COMPLETED_PUZZLE_3,
-            //PLAYER_HAS_GRADUATION_FORM,
-            PARALYZED,
+            DEAN_WAITING,
+
+            PLAYER_ACCESSED_PUZZLE,
+            PLAYER_COMPLETED_PUZZLE,
+            PLAYER_PARALYZED,
             PLAYER_WON,
-            REGISTRAR_DOOR_IS_OPEN, 
+
+            // These are things that the player can do
+            // to influence Riedl's opinion of her. They
+            // are ordered from least to most influential.
+            PLAYER_SHOOK_RIEDL_HAND, // 1
+            PLAYER_TOLD_RIEDL_JOKE, // 5
+            PLAYER_DISCUSSED_RIEDL_THEORY, // 6
+            PLAYER_ACED_TEST, // 3
+            PLAYER_TURNED_IN_RIEDL_PROJECT, // 4
+            PLAYER_WROTE_RIEDL_THESIS, // 2
+            PLAYER_REQUESTED_FUNDING,
+
+            // These are things she can do with the dean...
+            PLAYER_SHOOK_DEAN_HAND, // 1
+            PLAYER_TOLD_DEAN_JOKE, // 5
+            PLAYER_DISCUSSED_EDUCATIONAL_THEORY, // 6
+            PLAYER_EXPLAINED_THESIS, // 2
+            PLAYER_REQUESTED_SCHOLARSHIP,
+
+            REGISTRAR_DOOR_IS_OPEN,
             REGISTRAR_SIGNED_FORM,
-            //RIEDL_HAS_EXPLAINED
+
+            RIEDL_WAITING,
+
             SIMA_ACTING,
             SIMA_WAITING,
-            SIMA_WATCHING
+            SIMA_WATCHING,
+
+            SYSTEM_HANDLED_COLLISION
         };
         public List<Character> Characters
         {
             get
-            { 
+            {
                 return characters;
             }
         }
         private List<Character> characters = new List<Character>();
 
-        public Map Map {
-            get {
+        public Map Map
+        {
+            get
+            {
                 return map;
             }
         }
@@ -71,6 +93,18 @@ namespace CS8803AGA.story
             return null;
         }
 
+        public Riedl getRiedl()
+        {
+            foreach (Character riedl in Characters)
+            {
+                if (riedl is Riedl)
+                {
+                    return ((Riedl)riedl);
+                }
+            }
+            return null;
+        }
+
         public GameState()
         {
             map = new Map();
@@ -79,6 +113,24 @@ namespace CS8803AGA.story
         internal void resetTask()
         {
             getSIMA().resetTask();
+        }
+
+        //internal void addEvidence(int strength)
+        //{
+        //    getRiedl().Mind.addEvidance(strength);
+        //    getDean().Mind.addEvidance(strength);
+        //}
+
+        public Dean getDean()
+        {
+            foreach (Character dean in Characters)
+            {
+                if (dean is Dean)
+                {
+                    return ((Dean)dean);
+                }
+            }
+            return null;
         }
     }
 }

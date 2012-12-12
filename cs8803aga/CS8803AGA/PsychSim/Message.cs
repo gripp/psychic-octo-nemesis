@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CS8803AGA.PsychSim
 {
-    enum Message
+    public enum Message
     {
         askStatus,
         askFunding,

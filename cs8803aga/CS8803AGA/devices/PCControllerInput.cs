@@ -42,9 +42,13 @@ namespace CS8803AGA.devices
         protected Keys CONFIRM = Keys.Enter;
         protected Keys CANCEL = Keys.Escape;
         protected Keys BUTTON_1 = Keys.Space;
-        protected Keys BUTTON_2 = Keys.LeftShift;
-        protected Keys BUTTON_3 = Keys.X;
-        protected Keys BUTTON_4 = Keys.C;
+        protected Keys BUTTON_2 = Keys.D1;
+        protected Keys BUTTON_3 = Keys.D2;
+        protected Keys BUTTON_4 = Keys.D3;
+        protected Keys BUTTON_5 = Keys.D4;
+        protected Keys BUTTON_6 = Keys.D5;
+        protected Keys BUTTON_7 = Keys.D6;
+        protected Keys BUTTON_8 = Keys.D7;
         protected Keys LEFT_BUMPER = Keys.W;
         protected Keys RIGHT_BUMPER = Keys.T;
 

@@ -41,8 +41,8 @@ namespace CS8803AGA.story.characters
 
         private void setFlags()
         {
-            hasForm = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE]);
+            hasForm = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE]);
             hasSignature = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_SIGNED_FORM) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_SIGNED_FORM]);
         }

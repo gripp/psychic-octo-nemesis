@@ -44,6 +44,7 @@ Content\Animation\Textures\Receptionist.xnb
 Content\Animation\Textures\Registrar.xnb
 Content\Animation\Textures\Food.xnb
 Content\Animation\Textures\Microwave.xnb
+Content\Animation\Textures\Dean.xnb
 Content\SpriteFonts\Kootenay.xnb
 Content\SpriteFonts\Kootenay48.xnb
 Content\SpriteFonts\Kootenay8.xnb
@@ -84,6 +85,8 @@ Content\Animation\Data\Steak.xnb
 Content\Animation\Data\Lobster.xnb
 Content\Characters\Microwave.xnb
 Content\Animation\Data\Microwave.xnb
+Content\Animation\Data\Dean.xnb
+Content\Characters\Dean.xnb
 Content\Audio\sounds.xgs
 Content\Audio\waves1.xwb
 Content\Audio\sounds1.xsb

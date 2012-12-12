@@ -7,15 +7,33 @@ using CS8803AGA.collision;
 using CS8803AGAGameLibrary;
 using CS8803AGA.story.behaviors;
 using CS8803AGA.story.map;
+using CS8803AGA.PsychSim;
 
 namespace CS8803AGA.story.characters
 {
-    class Riedl : Character
+    public class Riedl : Character
     {
         public static LabScreen.LabLocation TASTE = acquireTaste();
 
+        public enum ThingToDoToRiedl
+        {
+            SHAKE_HAND = 1,
+            TELL_JOKE = 2,
+            DISCUSS_THEORY = 3,
+            ACE_TEST = 4,
+            DO_PROJECT = 9,
+            PRESENT_THESIS = 10,
+            REQUEST_FUNDING
+        };
+
+        public Model Mind
+        {
+            get { return mnd; }
+        }
+        private Model mnd = new Model();
+
         bool explained;
-        //bool openedPuzzle1;
+        bool openedPuzzle;
         //bool openedPuzzle2;
         bool completedPuzzle;
         //bool completedPuzzle2;
@@ -27,8 +45,6 @@ namespace CS8803AGA.story.characters
 
         public static LabScreen.LabLocation acquireTaste()
         {
-            return LabScreen.LabLocation.CHICKEN;
-
             switch (RandomManager.get().Next(4))
             {
                 case 0:
@@ -57,7 +73,7 @@ namespace CS8803AGA.story.characters
             bool deliveredFood = false;
             bool hasCake = false;
             bool delieveredCake = false;
-            string description="";
+            string description = "";
 
             Behavior last = null;
             for (LinkedList<Behavior>.Enumerator e = attempt.GetEnumerator(); e.MoveNext(); )
@@ -183,6 +199,12 @@ namespace CS8803AGA.story.characters
             if (completedPuzzle && hasSignature)
             {
                 GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON] = true;
+                GameplayManager.say(getDialogue(shouting));
+            }
+            else if (openedPuzzle && !completedPuzzle)
+            {
+                GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_WAITING] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
             }
             //if (completedPuzzle2 && !hasForm)
             //{
@@ -195,23 +217,23 @@ namespace CS8803AGA.story.characters
             if (!explained)
             {
                 // GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED] = true;
-                GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE] = true;
                 // GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM] = true;
             }
         }
 
         private void setFlags()
         {
-            explained = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE]);
+            explained = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE]);
             //explained = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.RIEDL_HAS_EXPLAINED) &&
             //    GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED]);
             //openedPuzzle1 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE_1) &&
             //    GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE_1]);
             //openedPuzzle2 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE_2) &&
             //    GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE_2]);
-            completedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE]);
+            completedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_COMPLETED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_COMPLETED_PUZZLE]);
             //completedPuzzle2 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE_2) &&
             //    GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2]);
             //completedPuzzle3 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE_3) &&

@@ -21,7 +21,7 @@ namespace CS8803AGA.PsychSim
             CS8803AGA.PsychSim.State.Action a = prof.getAction();
             Cell<Double> c = prof.getState();
 
-            Model.addEvidanceAll(l, 9);
+            Model.addEvidenceAll(l, 9);
 
 
             prof.message(Message.askNoFunding, dean);
@@ -29,7 +29,7 @@ namespace CS8803AGA.PsychSim
 
             a = prof.getAction();
             c = prof.getState();
-            Model.addEvidanceAll(l, 11);
+            Model.addEvidenceAll(l, 11);
 
             dean.message(Message.submitApplication, prof);
             application = true;

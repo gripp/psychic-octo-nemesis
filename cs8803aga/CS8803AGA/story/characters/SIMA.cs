@@ -139,7 +139,7 @@ namespace CS8803AGA.story.characters
             {
                 example = new LinkedList<Behavior>();
                 GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = true;
-                GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
             }
             GameplayManager.say(getDialogue(shouting));
 
@@ -449,12 +449,12 @@ namespace CS8803AGA.story.characters
 
         private void setFlags()
         {
-            openedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE]);
+            openedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE]);
             //openedPuzzle2 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE_2) &&
             //    GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE_2]);
-            completedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE]);
+            completedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_COMPLETED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_COMPLETED_PUZZLE]);
             //completedPuzzle2 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE_2) &&
             //    GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2]);
             //completedPuzzle3 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE_3) &&
@@ -479,12 +479,12 @@ namespace CS8803AGA.story.characters
 
         internal void finishAttempt(Riedl.Evaluation eval)
         {
-            GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE] =
-                GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE) ?
-                GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE] || eval.successful :
+            GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_COMPLETED_PUZZLE] =
+                GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_COMPLETED_PUZZLE) ?
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_COMPLETED_PUZZLE] || eval.successful :
                 eval.successful;
             GameplayManager.say("SIMA: Here's what I did:\n" + eval.description + "\n\nRIEDL: " + eval.explanation);
-            GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
+            GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
             GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] = false;
             GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
             GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING] = false;

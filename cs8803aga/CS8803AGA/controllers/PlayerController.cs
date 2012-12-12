@@ -34,12 +34,12 @@ namespace CS8803AGA.controllers
             List<Collider> collisions = getCollisions();
             if (collisions.Count == 0)
             {
-                GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = false;
+                GameplayManager.Game.Keys[GameState.GameFlag.SYSTEM_HANDLED_COLLISION] = false;
             }
             else if ((GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
                 GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING]) &&
-                !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COLLISION_HANDLED) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED]))
+                !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SYSTEM_HANDLED_COLLISION) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.SYSTEM_HANDLED_COLLISION]))
             {
                 foreach (Collider c in collisions)
                 {
@@ -53,7 +53,8 @@ namespace CS8803AGA.controllers
                                 {
                                     GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.RIEDL));
                                 }
-                                else if (npc is Microwave) {
+                                else if (npc is Microwave)
+                                {
                                     GameplayManager.Game.showSIMA(new GoToBehavior(LabScreen.LabLocation.MICROWAVE));
                                 }
                                 else if (npc is Food)
@@ -80,13 +81,13 @@ namespace CS8803AGA.controllers
                                 }
                             }
                         }
-                        GameplayManager.Game.Keys[GameState.GameFlag.COLLISION_HANDLED] = true;
+                        GameplayManager.Game.Keys[GameState.GameFlag.SYSTEM_HANDLED_COLLISION] = true;
                     }
                 }
             }
 
-            if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PARALYZED) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED]))
+            if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_PARALYZED) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED]))
             {
                 if (InputSet.getInstance().getButton(InputsEnum.BUTTON_1))
                 {
@@ -133,7 +134,7 @@ namespace CS8803AGA.controllers
                     // Choose watch.
                     GameplayManager.Game.resetTask();
                     GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
-                    GameplayManager.Game.Keys[GameState.GameFlag.PARALYZED] = false;
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
                     GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING] = true;
                 }
                 else if (InputSet.getInstance().getButton(InputsEnum.RIGHT_BUMPER))
@@ -142,6 +143,97 @@ namespace CS8803AGA.controllers
                     GameplayManager.invokeSIMA();
                     GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WAITING] = false;
                     GameplayManager.Game.Keys[GameState.GameFlag.SIMA_ACTING] = true;
+                }
+            }
+            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.DEAN_WAITING) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.DEAN_WAITING])
+            {
+                if (InputSet.getInstance().getButton(InputsEnum.BUTTON_2)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND]))
+                {
+                    // PLAYER_SHOOK_HAND
+                    GameplayManager.Game.getDean().Mind.addEvidence(2);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_3)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE]))
+                {
+                    // Tell a joke...
+                    GameplayManager.Game.getDean().Mind.addEvidence(1);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_4)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY]))
+                {
+                    // Discuss educational theory...
+                    GameplayManager.Game.getDean().Mind.addEvidence(10);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_5)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_EXPLAINED_THESIS)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS]))
+                {
+                    // Talk about your thesis...
+                    GameplayManager.Game.getDean().Mind.addEvidence(5);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_6)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP]))
+                {
+                    // Request a scholarship...
+                    GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication, GameplayManager.Game.getRiedl().Mind);
+                }
+            }
+            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.RIEDL_WAITING) && GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_WAITING])
+            {
+                if (InputSet.getInstance().getButton(InputsEnum.BUTTON_2)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_SHOOK_RIEDL_HAND)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_RIEDL_HAND]))
+                {
+                    // PLAYER_SHOOK_HAND
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(1);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_3)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_WROTE_RIEDL_THESIS)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WROTE_RIEDL_THESIS]))
+                {
+                    // PLAYER_WROTE_THESIS
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(10);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_4)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACED_TEST)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACED_TEST]))
+                {
+                    // PLAYER_ACED_TEST
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(4);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_5)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TURNED_IN_RIEDL_PROJECT)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TURNED_IN_RIEDL_PROJECT]))
+                {
+                    // PLAYER_TURNED_IN_PROJECT
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(9);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_6) &&
+                    !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TOLD_RIEDL_JOKE)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_RIEDL_JOKE]))
+                {
+                    // PLAYER_TOLD_JOKE
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(2);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_7)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_DISCUSSED_RIEDL_THEORY)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_RIEDL_THEORY]))
+                {
+                    // PLAYER_DISCUSSED_THEORY
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(3);
+                }
+                else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_8)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_FUNDING)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_FUNDING]))
+                {
+                    // Request funding...
+                    GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding, GameplayManager.Game.getDean().Mind);
                 }
             }
         }

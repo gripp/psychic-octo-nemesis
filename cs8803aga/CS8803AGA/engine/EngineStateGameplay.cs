@@ -21,11 +21,12 @@ namespace CS8803AGA.engine
         /// Also creates and initializes a PlayerController and starting Area.
         /// </summary>
         /// <param name="engine">Engine instance for the game.</param>
-        public EngineStateGameplay(Engine engine) : base(engine)
+        public EngineStateGameplay(Engine engine)
+            : base(engine)
         {
             if (GameplayManager.GameplayState != null)
                 throw new Exception("Only one EngineStateGameplay allowed at once!");
-             
+
 
             CharacterInfo ci = GlobalHelper.loadContent<CharacterInfo>(@"Characters/Jason");
 
@@ -107,23 +108,23 @@ namespace CS8803AGA.engine
                                         new Vector2((float)dr.X + (float)dr.Width, (float)dr.Y + (float)dr.Height),
                                         Color.AliceBlue);
                 }
-                
-                //foreach (Collider collider in node.quadObjects)
-                //{
-                //    DoubleRect dr2 = collider.Bounds;
-                //    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
-                //                    new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
-                //                    Color.LimeGreen);
-                //    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
-                //                        new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
-                //                        Color.LimeGreen);
-                //    LineDrawer.drawLine(new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
-                //                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
-                //                        Color.LimeGreen);
-                //    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
-                //                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
-                //                        Color.LimeGreen);
-                //}
+
+                foreach (Collider collider in node.quadObjects)
+                {
+                    DoubleRect dr2 = collider.Bounds;
+                    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
+                                    new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
+                                    Color.LimeGreen);
+                    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y),
+                                        new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
+                                        Color.LimeGreen);
+                    LineDrawer.drawLine(new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y),
+                                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
+                                        Color.LimeGreen);
+                    LineDrawer.drawLine(new Vector2((float)dr2.X, (float)dr2.Y + (float)dr2.Height),
+                                        new Vector2((float)dr2.X + (float)dr2.Width, (float)dr2.Y + (float)dr2.Height),
+                                        Color.LimeGreen);
+                }
             }
         }
 

@@ -1,5 +1,6 @@
 Content\Sprites\RPG\FadeScreen2.xnb
 Content\Sprites\RPG\Caption.xnb
+Content\Animation\Textures\Receptionist.xnb
 Content\Sprites\trees.xnb
 Content\Sprites\RPG\TickMark.xnb
 Content\Sprites\RPG\StatsBorderTable.xnb
@@ -77,13 +78,15 @@ Content\Characters\Chicken.xnb
 Content\Animation\Data\Registrar.xnb
 Content\World\trees.xnb
 Content\Audio\effects\bang_3.xnb
+Content\Animation\Data\Dean.xnb
+Content\Characters\Dean.xnb
 Content\Characters\Copy of Jason.xnb
 Content\Sprites\graveyard.xnb
 Content\Animation\Textures\mask.xnb
 Content\World\graveyard.xnb
 Content\Sprites\RPG\InfoDisplay.xnb
 Content\Animation\Textures\Salsa_walk.xnb
-Content\Animation\Textures\Receptionist.xnb
+Content\Animation\Textures\Dean.xnb
 Content\Sprites\RPG\SeparationLine.xnb
 Content\Sprites\RPG\CaptionBackGroundLarge.xnb
 Content\Sprites\RPG\GoldIcon.xnb

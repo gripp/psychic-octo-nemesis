@@ -7,7 +7,7 @@ using CS8803AGA.PsychSim.State;
 
 namespace CS8803AGA.PsychSim
 {
-    class Model
+    public class Model
     {
         MDPPolicyIteration mdp;
         POMDP p;
@@ -32,7 +32,7 @@ namespace CS8803AGA.PsychSim
             return s;
         }
 
-        public void addEvidance(double e)
+        public void addEvidence(double e)
         {
             p.updateBelief(CS8803AGA.PsychSim.State.Action.Up, e);
         }
@@ -58,11 +58,11 @@ namespace CS8803AGA.PsychSim
                 default: break;
             }
         }
-        public static void addEvidanceAll(List<Model> l, double e)
+        public static void addEvidenceAll(List<Model> l, double e)
         {
             foreach (Model m in l)
             {
-                   m.addEvidance(e);
+                   m.addEvidence(e);
             }
             
         }

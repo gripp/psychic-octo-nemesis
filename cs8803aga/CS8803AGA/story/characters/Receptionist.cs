@@ -15,13 +15,13 @@ namespace CS8803AGA.story.characters
         public override string getDialogue(bool shouting)
         {
             if (!shouting &&
-                !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE]))
+                !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE]))
             {
                 return "RECEPTIONIST: Do you have your GRADUATION APPLICATION?\nNo?\nWell then you can't see the REGISTRAR yet.\nGo finish your research.";
             }
-            else if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE]))
+            else if (!(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) &&
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE]))
             {
                 return "RECEPTIONIST: You can't go through there without a GRADUATION APPLICATION.\nGo finish your research.";
             }
@@ -68,7 +68,7 @@ namespace CS8803AGA.story.characters
                 GameplayManager.say(getDialogue(shouting));
             }
             // else if (have the graduation form)
-            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE) && GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE])
+            else if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE])
             {
                 // Announce that the door has been opened.
                 GameplayManager.say(getDialogue(shouting));
