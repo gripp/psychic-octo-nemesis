@@ -165,18 +165,18 @@ namespace CS8803AGA.story.characters
             }
             else if (f_registrarDoorIsOpen && !f_playerHasSignature && f_playerCompletedPuzzle)
             {
-                return "DR. RIEDL: Congratulations!\nYour research is complete.\n"
+                return "RIEDL: Congratulations!\nYour research is complete.\n"
                     + "Go get your GRADUATION APPLICATION signed by the REGISTRAR\nso that you can graduate.";
             }
             else if (!f_playerHasSignature && !f_playerCompletedPuzzle && f_playerAccessedPuzzle)
             {
-                return "DR. RIEDL: You can now do research with SIMA so you graduate.\n"
+                return "RIEDL: You can now do research with SIMA so you graduate.\n"
                     + "I trust you to do good work. That's why I assigned you this project.\n"
                     + "And dont' forget to get your GRADUATION APPLICATION signed.";
             }
             else if (!f_explained)
             {
-                return "DR. RIEDL: Welcome to the lab, young Computer Scientist.\n"
+                return "RIEDL: Welcome to the lab, young Computer Scientist.\n"
                     + "You are here to complete your Master's degree under my tutilege.\nI am Dr. Riedl.\n\n"
                     + getOptions();
             }
@@ -186,11 +186,11 @@ namespace CS8803AGA.story.characters
             }
             else if (!f_registrarDoorIsOpen && f_explained && f_riedlFatigue)
             {
-                return "Shouldn't you be talking to someone else?";
+                return "RIEDL: Shouldn't you be talking to someone else?";
             }
             else if (f_registrarDoorIsOpen && !f_playerAccessedPuzzle)
             {
-                return "DR. RIEDL: The work you have done seems like it should be sufficient.\n"
+                return "RIEDL: The work you have done seems like it should be sufficient.\n"
                     + "Go get your GRADUATION APPLICATION signed by the REGISTRAR\nso that you can graduate.";
             }
             else
@@ -285,6 +285,10 @@ namespace CS8803AGA.story.characters
                 GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED] = true;
                 GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_WAITING] = true;
                 GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
+            }
+            else if (f_riedlFatigue)
+            {
+                GameplayManager.Game.updateState();
             }
             GameplayManager.say(getDialogue(shouting));
         }

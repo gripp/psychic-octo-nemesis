@@ -186,7 +186,8 @@ namespace CS8803AGA.story
             Keys[GameFlag.REGISTRAR_DOOR_IS_OPEN] =
                 (Keys.ContainsKey(GameFlag.REGISTRAR_DOOR_IS_OPEN) && Keys[GameFlag.REGISTRAR_DOOR_IS_OPEN])
                 || getRiedl().Mind.SIMProject1
-                || getRiedl().Mind.SIMProject2;
+                || getRiedl().Mind.SIMProject2
+                || ((Keys.ContainsKey(GameFlag.RIEDL_FATIGUE) && Keys[GameFlag.RIEDL_FATIGUE]) && (Keys.ContainsKey(GameFlag.DEAN_FATIGUE) && Keys[GameFlag.DEAN_FATIGUE]));
 
             Keys[GameFlag.PLAYER_WON_SCHOLARSHIP] =
                 (Keys.ContainsKey(GameFlag.PLAYER_WON_SCHOLARSHIP) && Keys[GameFlag.PLAYER_WON_SCHOLARSHIP])

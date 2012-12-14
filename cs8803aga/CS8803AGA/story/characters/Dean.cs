@@ -71,7 +71,7 @@ namespace CS8803AGA.story.characters
             }
             else
             {
-                return "I've nothing to say, apparently.";
+                return "DEAN: Very nice to meet you.";
             }
         }
 
@@ -138,6 +138,10 @@ namespace CS8803AGA.story.characters
             {
                 GameplayManager.Game.Keys[GameState.GameFlag.DEAN_WAITING] = true;
                 GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
+            }
+            else if (f_deanFatigue)
+            {
+                GameplayManager.Game.updateState();
             }
 
             GameplayManager.say(getDialogue(shouting));
