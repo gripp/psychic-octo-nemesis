@@ -52,6 +52,7 @@ namespace CS8803AGA.PsychSim
             if (c.getX() == 3 && c.getY() == 3)
             {
                 SIMProject1 = true;
+                SIMProject2 = false;
             }
 
         }

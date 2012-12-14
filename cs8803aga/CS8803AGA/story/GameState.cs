@@ -49,6 +49,10 @@ namespace CS8803AGA.story
             SIMA_WAITING,
             SIMA_WATCHING,
 
+            SIMA_PROJECT1_FINISHED,
+            SIMA_PROJECT2_FINISHED,
+
+
             SYSTEM_HANDLED_COLLISION
         };
         public List<Character> Characters
@@ -137,6 +141,26 @@ namespace CS8803AGA.story
 
         internal string getOutcome()
         {
+            var r = getRiedl();
+            var d = getDean();
+
+            if (GameFlag.SIMA_PROJECT1_FINISHED)
+            {
+                if (d.Mind.gotScholarship()) { }
+                
+            }
+            else if (GameFlag.SIMA_PROJECT2_FINISHED)
+            {
+                if (d.Mind.gotScholarship()) { }
+
+            }
+            else 
+            {
+                if (r.Mind.gaveFunding) { }
+                if (d.Mind.gotScholarship()) { }
+
+            }
+
             throw new NotImplementedException();
         }
     }

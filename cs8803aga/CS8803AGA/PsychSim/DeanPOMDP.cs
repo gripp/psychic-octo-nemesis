@@ -77,5 +77,19 @@ namespace CS8803AGA.PsychSim
             return l;
 
         }
+
+        public bool gotScholarship()
+        {
+            if (scholarship) {
+
+                Random r = new Random();
+                int i = r.Next(100);
+                if (i < 30)
+                {
+                    return true;
+                }
+            }
+            return scholarship;
+        }
     }
 }
