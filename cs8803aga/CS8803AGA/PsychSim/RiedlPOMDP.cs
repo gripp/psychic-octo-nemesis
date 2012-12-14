@@ -40,7 +40,7 @@ namespace CS8803AGA.PsychSim
                 {
                     l.Add(Riedl.ThingToDoToRiedl.REQUEST_FUNDING);
                 }
-                SIMProject2 = true;
+                // SIMProject2 = true;
                 if (!l.Contains(Riedl.ThingToDoToRiedl.PRESENT_THESIS) && !l.Contains(Riedl.ThingToDoToRiedl.DO_PROJECT))
                 {
                     l.Add(Riedl.ThingToDoToRiedl.PRESENT_THESIS);

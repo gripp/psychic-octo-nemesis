@@ -172,26 +172,31 @@ namespace CS8803AGA.story.characters
                 case ThingToDoToDean.DISCUSS_THEORY:
                     dialog = "DEAN: Your stances are so interesting!\n"
                         + "I love it when students take an interest in the direction of their education!";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY] = true;
                     GameplayManager.Game.getDean().Mind.addEvidence(10);
                     break;
                 case ThingToDoToDean.PRESENT_THESIS:
                     dialog = "DEAN: I think I understand.\n"
                         + "Computer Science isn't really my field, but you're clearly very intelligent.";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN] = true;
                     GameplayManager.Game.getDean().Mind.addEvidence(5);
                     break;
                 case ThingToDoToDean.REQUEST_SCHOLARSHIP:
                     dialog = "DEAN: I'll think about it...";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP] = true;
                     GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication);
                     GameplayManager.Game.getRiedl().Mind.message(Message.notify);
                     break;
                 case ThingToDoToDean.SHAKE_HAND:
                     dialog = "DEAN: Nice to meet you, too.\n"
                         + "I'm a bit busy, but I do enjoy talking to students now and again.";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND] = true;
                     GameplayManager.Game.getDean().Mind.addEvidence(2);
                     break;
                 case ThingToDoToDean.TELL_JOKE:
                     dialog = "DEAN: I don't get it.\n"
                         + "If you don't mind, I have some work to do...";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE] = true;
                     GameplayManager.Game.getDean().Mind.addEvidence(1);
                     break;
             }

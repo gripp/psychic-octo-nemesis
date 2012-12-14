@@ -320,32 +320,39 @@ namespace CS8803AGA.story.characters
                 case ThingToDoToRiedl.ACE_TEST:
                     dialog = "RIEDL: Wow. You got an A on that test?\n"
                         + "A lot of students were complaining about how difficult it was.";
-                    GameplayManager.Game.getRiedl().Mind.addEvidence(4);
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACED_TEST] = true;
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(7);
                     break;
                 case ThingToDoToRiedl.DISCUSS_THEORY:
                     dialog = "RIEDL: I'm happy that you take the time to actually read papers.";
-                    GameplayManager.Game.getRiedl().Mind.addEvidence(3);
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_RIEDL_THEORY] = true;
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(6);
                     break;
                 case ThingToDoToRiedl.DO_PROJECT:
                     dialog = "RIEDL: This project looked like it took a whole lot of work.\n"
                         + "You did this in your spare time? Very impressive!";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TURNED_IN_RIEDL_PROJECT] = true;
                     GameplayManager.Game.getRiedl().Mind.addEvidence(9);
                     break;
                 case ThingToDoToRiedl.PRESENT_THESIS:
                     dialog = "RIEDL: Your conclusions in this paper are fascinating.\n"
                         + "This may be publishable work.";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WROTE_RIEDL_THESIS] = true;
                     GameplayManager.Game.getRiedl().Mind.addEvidence(10);
                     break;
                 case ThingToDoToRiedl.REQUEST_FUNDING:
                     dialog = "RIEDL: I'll think about it.";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_FUNDING] = true;
                     GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding);
                     break;
                 case ThingToDoToRiedl.SHAKE_HAND:
                     dialog = "RIEDL: Thank you for introducing yourself.";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_RIEDL_HAND] = true;
                     GameplayManager.Game.getRiedl().Mind.addEvidence(1);
                     break;
                 case ThingToDoToRiedl.TELL_JOKE:
                     dialog = "RIEDL: Ha! That's a good one. I do enjoy a joke now and again.";
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_RIEDL_JOKE] = true;
                     GameplayManager.Game.getRiedl().Mind.addEvidence(2);
                     break;
             }
