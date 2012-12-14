@@ -76,7 +76,53 @@ namespace CS8803AGA.story.characters
 
         private string getOptions()
         {
-            throw new NotImplementedException();
+            List<ThingToDoToRiedl> options = new List<ThingToDoToRiedl>();
+
+            if (options.Count == 0)
+            {
+                return "";
+            }
+            else
+            {
+                string optionsString = "SYSTEM: What would you like to do?\n";
+
+                if (options.Contains(ThingToDoToDean.SHAKE_HAND)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND]))
+                {
+                    optionsString += "   1: Shake the DEAN's hand.";
+                }
+
+                if (options.Contains(ThingToDoToDean.TELL_JOKE)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE]))
+                {
+                    optionsString += "   2: Tell the DEAN a joke.";
+                }
+
+                if (options.Contains(ThingToDoToDean.DISCUSS_THEORY)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY]))
+                {
+                    optionsString += "   3: Discuss educational theory with the DEAN.";
+                }
+
+                if (options.Contains(ThingToDoToDean.PRESENT_THESIS)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN]))
+                {
+                    optionsString += "   4: Tell the DEAN about a paper you wrote.";
+                }
+
+                if (options.Contains(ThingToDoToDean.REQUEST_SCHOLARSHIP)
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP]))
+                {
+                    optionsString += "   5: Apply for a scholarship.";
+                }
+
+                return optionsString;
+            }
         }
 
         public override void act(Collider mover, bool shouting)

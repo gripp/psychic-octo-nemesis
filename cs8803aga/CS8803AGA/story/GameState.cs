@@ -33,10 +33,10 @@ namespace CS8803AGA.story
 
             // These are things she can do with the dean...
             PLAYER_SHOOK_DEAN_HAND, // 1
-            PLAYER_TOLD_DEAN_JOKE, // 5
-            PLAYER_DISCUSSED_EDUCATIONAL_THEORY, // 6
-            PLAYER_EXPLAINED_THESIS, // 2
-            PLAYER_REQUESTED_SCHOLARSHIP,
+            PLAYER_TOLD_DEAN_JOKE, // 2
+            PLAYER_DISCUSSED_EDUCATIONAL_THEORY, // 3
+            PLAYER_EXPLAINED_THESIS_TO_DEAN, // 4
+            PLAYER_REQUESTED_SCHOLARSHIP, // 5
             PLAYER_WON_SCHOLARSHIP,
 
             REGISTRAR_DOOR_IS_OPEN,

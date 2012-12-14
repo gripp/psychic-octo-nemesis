@@ -195,7 +195,26 @@ namespace CS8803AGA.story.characters
 
         private string getOptions()
         {
-            throw new NotImplementedException();
+            List<ThingToDoToRiedl> options = new List<ThingToDoToRiedl>();
+
+            if (options.Count == 0)
+            {
+                return "";
+            }
+            else
+            {
+                string optionsString = "SYSTEM: What would you like to do?\n";
+
+                if (options.Contains(ThingToDoToRiedl.SHAKE_HAND)) { optionsString += "   1: Shake RIEDL's hand."; }
+                if (options.Contains(ThingToDoToRiedl.PRESENT_THESIS)) { optionsString += "   2: Tell RIEDL about a paper you wrote."; }
+                if (options.Contains(ThingToDoToRiedl.ACE_TEST)) { optionsString += "   3: Tell RIEDL about a test you aced."; }
+                if (options.Contains(ThingToDoToRiedl.DO_PROJECT)) { optionsString += "   4: Tell RIEDL about a project you did."; }
+                if (options.Contains(ThingToDoToRiedl.TELL_JOKE)) { optionsString += "   5: Tell RIEDL a joke."; }
+                if (options.Contains(ThingToDoToRiedl.DISCUSS_THEORY)) { optionsString += "   6: Discuss computational theory with RIEDL."; }
+                if (options.Contains(ThingToDoToRiedl.REQUEST_FUNDING)) { optionsString += "   7: Request funding."; }
+
+                return optionsString;
+            }
         }
 
         public override void act(Collider mover, bool shouting)
