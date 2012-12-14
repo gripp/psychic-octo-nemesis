@@ -110,17 +110,25 @@ namespace CS8803AGA.story.characters
             {
                 case ThingToDoToDean.DISCUSS_THEORY:
                     GameplayManager.Game.getDean().Mind.addEvidence(10);
+                    GameplayManager.say("DEAN: Your stances are so interesting!\n"
+                        + "I love it when students take an interest in the direction of their education!");
                     break;
                 case ThingToDoToDean.PRESENT_THESIS:
                     GameplayManager.Game.getDean().Mind.addEvidence(5);
+                    GameplayManager.say("DEAN: I think I understand.\n"
+                        + "Computer Science isn't really my field, but you're clearly very intelligent.");
                     break;
                 case ThingToDoToDean.REQUEST_SCHOLARSHIP:
                     GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication, GameplayManager.Game.getRiedl().Mind);
                     break;
                 case ThingToDoToDean.SHAKE_HAND:
+                    GameplayManager.say("DEAN: Nice to meet you, too.\n"
+                        + "I'm a bit busy, but I do enjoy talking to students now and again.");
                     GameplayManager.Game.getDean().Mind.addEvidence(2);
                     break;
                 case ThingToDoToDean.TELL_JOKE:
+                    GameplayManager.say("DEAN: I don't get it.\n"
+                        + "If you don't mind, I have some work to do...");
                     GameplayManager.Game.getDean().Mind.addEvidence(1);
                     break;
             }

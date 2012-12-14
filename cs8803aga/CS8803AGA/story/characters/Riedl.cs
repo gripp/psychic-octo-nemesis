@@ -229,24 +229,33 @@ namespace CS8803AGA.story.characters
             switch (thingToDoToRiedl)
             {
                 case ThingToDoToRiedl.ACE_TEST:
+                    GameplayManager.say("RIEDL: Wow. You got an A on that test?\n"
+                        + "A lot of students were complaining about how difficult it was.");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(4);
                     break;
                 case ThingToDoToRiedl.DISCUSS_THEORY:
+                    GameplayManager.say("RIEDL: I'm happy that you take the time to actually read papers.");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(3);
                     break;
                 case ThingToDoToRiedl.DO_PROJECT:
+                    GameplayManager.say("RIEDL: This project looked like it took a whole lot of work.\n"
+                        + "You did this in your spare time? Very impressive!");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(9);
                     break;
                 case ThingToDoToRiedl.PRESENT_THESIS:
+                    GameplayManager.say("RIEDL: Your conclusions in this paper are fascinating.\n"
+                        + "This may be publishable work.");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(10);
                     break;
                 case ThingToDoToRiedl.REQUEST_FUNDING:
                     GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding, GameplayManager.Game.getDean().Mind);
                     break;
                 case ThingToDoToRiedl.SHAKE_HAND:
+                    GameplayManager.say("RIEDL: Thank you for introducing yourself.");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(1);
                     break;
                 case ThingToDoToRiedl.TELL_JOKE:
+                    GameplayManager.say("RIEDL: Ha! That's a good one. I do enjoy a joke now and again.");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(2);
                     break;
             }
