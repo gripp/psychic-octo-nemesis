@@ -37,11 +37,13 @@ namespace CS8803AGA.story
             PLAYER_DISCUSSED_EDUCATIONAL_THEORY, // 6
             PLAYER_EXPLAINED_THESIS, // 2
             PLAYER_REQUESTED_SCHOLARSHIP,
+            PLAYER_WON_SCHOLARSHIP,
 
             REGISTRAR_DOOR_IS_OPEN,
             REGISTRAR_SIGNED_FORM,
 
             RIEDL_WAITING,
+            RIEDL_HAS_EXPLAINED,
 
             SIMA_ACTING,
             SIMA_WAITING,
@@ -131,6 +133,11 @@ namespace CS8803AGA.story
                 }
             }
             return null;
+        }
+
+        internal string getOutcome()
+        {
+            throw new NotImplementedException();
         }
     }
 }

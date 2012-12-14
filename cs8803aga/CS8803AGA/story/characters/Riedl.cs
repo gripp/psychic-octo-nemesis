@@ -32,16 +32,12 @@ namespace CS8803AGA.story.characters
         }
         private Model mnd = new Model();
 
-        bool explained;
-        bool openedPuzzle;
-        //bool openedPuzzle2;
-        bool completedPuzzle;
-        //bool completedPuzzle2;
-        //bool completedPuzzle3;
-        //bool hasForm;
-        bool hasSignature;
-        bool playerWon;
-        bool simaWatching;
+        bool f_explained;
+        bool f_playerAccessedPuzzle;
+        bool f_playerCompletedPuzzle;
+        bool f_playerHasSignature;
+        bool f_playerWon;
+        bool f_registrarDoorIsOpen;
 
         public static LabScreen.LabLocation acquireTaste()
         {
@@ -141,45 +137,55 @@ namespace CS8803AGA.story.characters
 
         public override string getDialogue(bool shouting)
         {
-            if (playerWon)
+            if (f_playerWon)
             {
-                return "DR. RIEDL: Now that you have graduated, I guess you should find a job.\nI can't help you with that.\nGood luck.";
+                return "DR. RIEDL: Now that you have graduated, I guess you should find a job.\n"
+                    + "I can't help you with that.\nGood luck.";
             }
-            else if (hasSignature && completedPuzzle)
+            else if (f_playerHasSignature && f_playerCompletedPuzzle)
             {
-                return "DR. RIEDL: Excellent work!\nWith your research complete and approval from the REGISTRAR,\nI feel comfortable signing off on your graduation.\nYour parents will be so proud.";
+                return "DR. RIEDL: Excellent work!\n"
+                    + "With your research complete and approval from the REGISTRAR,\n"
+                    + "I feel comfortable signing off on your graduation.\nYour parents will be so proud.\n\n"
+                    + GameplayManager.Game.getOutcome();
             }
-            else if (hasSignature && !completedPuzzle)
+            else if (f_playerHasSignature && !f_playerCompletedPuzzle && f_playerAccessedPuzzle)
             {
-                return "DR. RIEDL: Good.\nYou got your GRADUATION APPLICATION signed.\nNow finalize your research so you graduate.";
+                return "DR. RIEDL: Good.\nYou got your GRADUATION APPLICATION signed.\n"
+                    + "Now finalize your research with SIMA so you graduate.\n"
+                    + "I trust you to do good work. That's why I assigned you this project.";
             }
-            else if (!hasSignature && completedPuzzle)
+            else if (f_playerHasSignature && !f_playerAccessedPuzzle)
             {
-                return "DR. RIEDL: Congratulations!\nYour research is complete.\nGo get your GRADUATION APPLICATION signed by the REGISTRAR\nso that you can graduate.";
+                return "DR. RIEDL: With the work you've done and approval from the REGISTRAR,\n"
+                    + "I feel comfortable signing off on your graduation.\nYour parents will be so proud.\n\n"
+                    + GameplayManager.Game.getOutcome();
             }
-            //else if (hasForm)
-            //{
-            //    return "DR. RIEDL: Go get your GRADUATION APPLICATION signed by the REGISTRAR\nand finalize your results.";
-            //}
-            //else if (completedPuzzle2)
-            //{
-            //    return "DR. RIEDL: Wow!\nYour latest results are even more exciting.\nYour graduation is approaching quickly.\nGo get this GRADUATION APPLICATION signed by the REGISTRAR,\nthen finalize your research with SIMA.\n\n\n\n(You got a GRADUATION APPLICATION.)";
-            //}
-            //else if (openedPuzzle2)
-            //{
-            //    return "DR. RIEDL: Shouldn't you be working on your research?";
-            //}
-            //else if (completedPuzzle1)
-            //{
-            //    return "DR. RIEDL: Aha!\nI see that you have completed the first phase of your research.\nCongratulations.\nYou still have a long way to go, though.\nWhy don't you head back over to SIMA and do some more work.";
-            //}
-            //else if (openedPuzzle1)
-            //{
-            //    return "DR. RIEDL: Go power up SIMA and begin your research.";
-            //}
-            else if (!explained)
+            else if (f_registrarDoorIsOpen && !f_playerHasSignature && f_playerCompletedPuzzle)
             {
-                return "DR. RIEDL: Welcome to the lab, young Computer Scientist.\nYou are here to complete your Master's project under my tutilege.\nI am Dr. Riedl.\nHead over to the computer system and start working.\nYou will need to show it how to make me lunch.\nPlus, go get your GRADUATION APPLICATION signed by the REGISTRAR.\n\n\n\n(You got a GRADUATION APPLICATION.)";
+                return "DR. RIEDL: Congratulations!\nYour research is complete.\n"
+                    + "Go get your GRADUATION APPLICATION signed by the REGISTRAR\nso that you can graduate.";
+            }
+            else if (!f_playerHasSignature && !f_playerCompletedPuzzle && f_playerAccessedPuzzle)
+            {
+                return "DR. RIEDL: Go finalize your research with SIMA so you graduate.\n"
+                    + "I trust you to do good work. That's why I assigned you this project.\n"
+                    + "And dont' forget to get your GRADUATION APPLICATION signed.";
+            }
+            else if (!f_explained)
+            {
+                return "DR. RIEDL: Welcome to the lab, young Computer Scientist.\n"
+                    + "You are here to complete your Master's degree under my tutilege.\nI am Dr. Riedl.\n\n"
+                    + getOptions();
+            }
+            else if (!f_registrarDoorIsOpen && f_explained)
+            {
+                return getOptions();
+            }
+            else if (f_registrarDoorIsOpen && !f_playerAccessedPuzzle)
+            {
+                return "DR. RIEDL: The work you have done seems like it should be sufficient.\n"
+                    + "Go get your GRADUATION APPLICATION signed by the REGISTRAR\nso that you can graduate.";
             }
             else
             {
@@ -187,70 +193,64 @@ namespace CS8803AGA.story.characters
             }
         }
 
+        private string getOptions()
+        {
+            throw new NotImplementedException();
+        }
+
         public override void act(Collider mover, bool shouting)
         {
             setFlags();
-
-            if (!simaWatching)
-            {
-                GameplayManager.say(getDialogue(shouting));
-            }
-
-            if (completedPuzzle && hasSignature)
-            {
-                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON] = true;
-                GameplayManager.say(getDialogue(shouting));
-            }
-            else if (openedPuzzle && !completedPuzzle)
-            {
-                GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_WAITING] = true;
-                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
-            }
-            //if (completedPuzzle2 && !hasForm)
-            //{
-            //    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM] = true;
-            //}
-            //if (completedPuzzle1)
-            //{
-            //    GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE_2] = true;
-            //}
-            if (!explained)
-            {
-                // GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED] = true;
-                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE] = true;
-                // GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM] = true;
-            }
         }
 
         private void setFlags()
         {
-            explained = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE]);
-            //explained = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.RIEDL_HAS_EXPLAINED) &&
-            //    GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED]);
-            //openedPuzzle1 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE_1) &&
-            //    GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE_1]);
-            //openedPuzzle2 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.ACCESSED_PUZZLE_2) &&
-            //    GameplayManager.Game.Keys[GameState.GameFlag.ACCESSED_PUZZLE_2]);
-            completedPuzzle = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_COMPLETED_PUZZLE) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_COMPLETED_PUZZLE]);
-            //completedPuzzle2 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE_2) &&
-            //    GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_2]);
-            //completedPuzzle3 = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.COMPLETED_PUZZLE_3) &&
-            //    GameplayManager.Game.Keys[GameState.GameFlag.COMPLETED_PUZZLE_3]);
-            //hasForm = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM) &&
-            //    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAS_GRADUATION_FORM]);
-            hasSignature = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_SIGNED_FORM) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_SIGNED_FORM]);
-            playerWon = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_WON) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON]);
-            simaWatching = (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.SIMA_WATCHING) &&
-                GameplayManager.Game.Keys[GameState.GameFlag.SIMA_WATCHING]);
+            f_explained = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.RIEDL_HAS_EXPLAINED)
+                && GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED];
+            f_playerAccessedPuzzle = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE];
+            f_playerCompletedPuzzle = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_COMPLETED_PUZZLE)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_COMPLETED_PUZZLE];
+            f_playerHasSignature = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_SIGNED_FORM)
+                && GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_SIGNED_FORM];
+            f_playerWon = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_WON)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON];
+            f_registrarDoorIsOpen = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN)
+                && GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN];
         }
 
         public override CharacterInfo getCharacterInfo()
         {
             return GlobalHelper.loadContent<CharacterInfo>(@"Characters/Riedl");
+        }
+
+        internal void simulate(ThingToDoToRiedl thingToDoToRiedl)
+        {
+            switch (thingToDoToRiedl)
+            {
+                case ThingToDoToRiedl.ACE_TEST:
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(4);
+                    break;
+                case ThingToDoToRiedl.DISCUSS_THEORY:
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(3);
+                    break;
+                case ThingToDoToRiedl.DO_PROJECT:
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(9);
+                    break;
+                case ThingToDoToRiedl.PRESENT_THESIS:
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(10);
+                    break;
+                case ThingToDoToRiedl.REQUEST_FUNDING:
+                    GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding, GameplayManager.Game.getDean().Mind);
+                    break;
+                case ThingToDoToRiedl.SHAKE_HAND:
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(1);
+                    break;
+                case ThingToDoToRiedl.TELL_JOKE:
+                    GameplayManager.Game.getRiedl().Mind.addEvidence(2);
+                    break;
+            }
+            GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
         }
     }
 }
