@@ -90,7 +90,7 @@ namespace CS8803AGA.PsychSim
         public List<Riedl.ThingToDoToRiedl> options()
         {
             count++;
-            if (count > 10) l.Clear();
+            if (count > MAX_COUNT) l.Clear();
 
             return l;
         }

@@ -28,6 +28,7 @@ namespace CS8803AGA.story.characters
         }
         private DeanPOMDP mnd = new DeanPOMDP();
 
+        bool f_deanFatigue;
         bool f_playerAccessedPuzzle;
         bool f_playerRequestedScholarship;
         bool f_playerWon;
@@ -40,6 +41,14 @@ namespace CS8803AGA.story.characters
             {
                 return "I heard you graduated. Congratulations!";
             }
+            else if (!f_registrarDoorIsOpen && !f_deanFatigue)
+            {
+                return getOptions();
+            }
+            else if (!f_registrarDoorIsOpen)
+            {
+                return "I am very busy. Go dicuss your issues with your professor.";
+            }
             else if (f_playerAccessedPuzzle && f_playerWonScholarship)
             {
                 return "How is your research going? Congratulations on winning a scholarship!";
@@ -47,10 +56,6 @@ namespace CS8803AGA.story.characters
             else if (!f_playerAccessedPuzzle && f_registrarDoorIsOpen && f_playerWonScholarship)
             {
                 return "How is your degree program going? Congratulations on winning a scholarship!";
-            }
-            else if (!f_playerAccessedPuzzle && !f_registrarDoorIsOpen && f_playerWonScholarship)
-            {
-                return "Congratulations on winning a scholarship!";
             }
             else if (!f_playerAccessedPuzzle && f_playerRequestedScholarship && f_registrarDoorIsOpen && !f_playerWonScholarship)
             {
@@ -64,10 +69,6 @@ namespace CS8803AGA.story.characters
             {
                 return "How is your degree program going?";
             }
-            else if (!f_playerAccessedPuzzle && f_playerRequestedScholarship && !f_registrarDoorIsOpen)
-            {
-                return getOptions();
-            }
             else
             {
                 return "I've nothing to say, apparently.";
@@ -80,7 +81,10 @@ namespace CS8803AGA.story.characters
 
             if (options.Count == 0)
             {
-                return "";
+                GameplayManager.Game.Keys[GameState.GameFlag.DEAN_FATIGUE] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.DEAN_WAITING] = false;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
+                return "SYSTEM: You can't interact with the DEAN anymore!";
             }
             else
             {
@@ -128,11 +132,20 @@ namespace CS8803AGA.story.characters
         public override void act(Collider mover, bool shouting)
         {
             setFlags();
+
+            if (!f_registrarDoorIsOpen && !f_deanFatigue)
+            {
+                GameplayManager.Game.Keys[GameState.GameFlag.DEAN_WAITING] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
+            }
+
             GameplayManager.say(getDialogue(shouting));
         }
 
         private void setFlags()
         {
+            f_deanFatigue = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.DEAN_FATIGUE)
+                && GameplayManager.Game.Keys[GameState.GameFlag.DEAN_FATIGUE];
             f_playerAccessedPuzzle = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACCESSED_PUZZLE)
                 && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACCESSED_PUZZLE];
             f_playerRequestedScholarship = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP)
@@ -155,14 +168,14 @@ namespace CS8803AGA.story.characters
             switch (thingToDoToDean)
             {
                 case ThingToDoToDean.DISCUSS_THEORY:
-                    GameplayManager.Game.getDean().Mind.addEvidence(10);
                     GameplayManager.say("DEAN: Your stances are so interesting!\n"
                         + "I love it when students take an interest in the direction of their education!");
+                    GameplayManager.Game.getDean().Mind.addEvidence(10);
                     break;
                 case ThingToDoToDean.PRESENT_THESIS:
-                    GameplayManager.Game.getDean().Mind.addEvidence(5);
                     GameplayManager.say("DEAN: I think I understand.\n"
                         + "Computer Science isn't really my field, but you're clearly very intelligent.");
+                    GameplayManager.Game.getDean().Mind.addEvidence(5);
                     break;
                 case ThingToDoToDean.REQUEST_SCHOLARSHIP:
                     GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication);
@@ -179,6 +192,7 @@ namespace CS8803AGA.story.characters
                     GameplayManager.Game.getDean().Mind.addEvidence(1);
                     break;
             }
+            GameplayManager.Game.updateState();
             GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
         }
     }

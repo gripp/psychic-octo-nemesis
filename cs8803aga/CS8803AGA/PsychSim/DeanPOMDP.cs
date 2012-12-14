@@ -21,7 +21,6 @@ namespace CS8803AGA.PsychSim
             l.Add(Dean.ThingToDoToDean.SHAKE_HAND);
             l.Add(Dean.ThingToDoToDean.TELL_JOKE);
             l.Add(Dean.ThingToDoToDean.DISCUSS_THEORY);
-
         }
 
         public override void updatePOMDP()
@@ -73,7 +72,7 @@ namespace CS8803AGA.PsychSim
         public List<Dean.ThingToDoToDean> options()
         {
             count++;
-            if (count > 10) l.Clear();
+            if (count > MAX_COUNT) l.Clear();
             return l;
 
         }

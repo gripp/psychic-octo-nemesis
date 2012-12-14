@@ -24,7 +24,6 @@ namespace CS8803AGA.story.characters
             DO_PROJECT = 9,
             PRESENT_THESIS = 10,
             REQUEST_FUNDING,
-            REQUEST_NO_FUNDING
         };
 
         public RiedlPOMDP Mind
@@ -39,6 +38,7 @@ namespace CS8803AGA.story.characters
         bool f_playerHasSignature;
         bool f_playerWon;
         bool f_registrarDoorIsOpen;
+        bool f_riedlFatigue;
 
         public static LabScreen.LabLocation acquireTaste()
         {
@@ -141,7 +141,8 @@ namespace CS8803AGA.story.characters
             if (f_playerWon)
             {
                 return "DR. RIEDL: Now that you have graduated, I guess you should find a job.\n"
-                    + "I can't help you with that.\nGood luck.";
+                    + "I can't help you with that.\nGood luck.\n\n"
+                    + GameplayManager.Game.getOutcome();
             }
             else if (f_playerHasSignature && f_playerCompletedPuzzle)
             {
@@ -169,7 +170,7 @@ namespace CS8803AGA.story.characters
             }
             else if (!f_playerHasSignature && !f_playerCompletedPuzzle && f_playerAccessedPuzzle)
             {
-                return "DR. RIEDL: Go finalize your research with SIMA so you graduate.\n"
+                return "DR. RIEDL: You can now do research with SIMA so you graduate.\n"
                     + "I trust you to do good work. That's why I assigned you this project.\n"
                     + "And dont' forget to get your GRADUATION APPLICATION signed.";
             }
@@ -179,9 +180,13 @@ namespace CS8803AGA.story.characters
                     + "You are here to complete your Master's degree under my tutilege.\nI am Dr. Riedl.\n\n"
                     + getOptions();
             }
-            else if (!f_registrarDoorIsOpen && f_explained)
+            else if (!f_registrarDoorIsOpen && f_explained && !f_riedlFatigue)
             {
                 return getOptions();
+            }
+            else if (!f_registrarDoorIsOpen && f_explained && f_riedlFatigue)
+            {
+                return "Shouldn't you be talking to someone else?";
             }
             else if (f_registrarDoorIsOpen && !f_playerAccessedPuzzle)
             {
@@ -200,7 +205,10 @@ namespace CS8803AGA.story.characters
 
             if (options.Count == 0)
             {
-                return "";
+                GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_FATIGUE] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_WAITING] = false;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
+                return "SYSTEM: You can't interact with RIEDL anymore!";
             }
             else
             {
@@ -221,6 +229,18 @@ namespace CS8803AGA.story.characters
         public override void act(Collider mover, bool shouting)
         {
             setFlags();
+
+            if ((f_playerHasSignature && f_playerCompletedPuzzle) || (f_playerHasSignature && !f_playerAccessedPuzzle))
+            {
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON] = true;
+            }
+            else if ((!f_explained) || (!f_registrarDoorIsOpen && f_explained && !f_riedlFatigue))
+            {
+                GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_HAS_EXPLAINED] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_WAITING] = true;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = true;
+            }
+            GameplayManager.say(getDialogue(shouting));
         }
 
         private void setFlags()
@@ -237,6 +257,8 @@ namespace CS8803AGA.story.characters
                 && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WON];
             f_registrarDoorIsOpen = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN)
                 && GameplayManager.Game.Keys[GameState.GameFlag.REGISTRAR_DOOR_IS_OPEN];
+            f_riedlFatigue = GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.RIEDL_FATIGUE)
+                && GameplayManager.Game.Keys[GameState.GameFlag.RIEDL_FATIGUE];
         }
 
         public override CharacterInfo getCharacterInfo()
@@ -270,9 +292,6 @@ namespace CS8803AGA.story.characters
                 case ThingToDoToRiedl.REQUEST_FUNDING:
                     GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding);
                     break;
-                case ThingToDoToRiedl.REQUEST_NO_FUNDING:
-                    GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askNoFunding);
-                    break;
                 case ThingToDoToRiedl.SHAKE_HAND:
                     GameplayManager.say("RIEDL: Thank you for introducing yourself.");
                     GameplayManager.Game.getRiedl().Mind.addEvidence(1);
@@ -282,6 +301,11 @@ namespace CS8803AGA.story.characters
                     GameplayManager.Game.getRiedl().Mind.addEvidence(2);
                     break;
             }
+            if (thingToDoToRiedl != ThingToDoToRiedl.REQUEST_FUNDING)
+            {
+                GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askNoFunding);
+            }
+            GameplayManager.Game.updateState();
             GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
         }
     }

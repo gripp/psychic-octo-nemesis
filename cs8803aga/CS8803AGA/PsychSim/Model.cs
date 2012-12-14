@@ -15,6 +15,8 @@ namespace CS8803AGA.PsychSim
         public CS8803AGA.PsychSim.State.Action a;
         public Cell<Double> c;
         public int count = 0;
+        public static int MAX_COUNT = 4;
+
         public Model()
         {
             mdp = new MDPPolicyIteration();

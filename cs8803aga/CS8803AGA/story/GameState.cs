@@ -13,6 +13,7 @@ namespace CS8803AGA.story
     {
         public enum GameFlag
         {
+            DEAN_FATIGUE,
             DEAN_WAITING,
 
             PLAYER_ACCESSED_PUZZLE,
@@ -30,6 +31,7 @@ namespace CS8803AGA.story
             PLAYER_TURNED_IN_RIEDL_PROJECT, // 4
             PLAYER_WROTE_RIEDL_THESIS, // 2
             PLAYER_REQUESTED_FUNDING,
+            PLAYER_GOT_FUNDING,
 
             // These are things she can do with the dean...
             PLAYER_SHOOK_DEAN_HAND, // 1
@@ -42,16 +44,13 @@ namespace CS8803AGA.story
             REGISTRAR_DOOR_IS_OPEN,
             REGISTRAR_SIGNED_FORM,
 
+            RIEDL_FATIGUE,
             RIEDL_WAITING,
             RIEDL_HAS_EXPLAINED,
 
             SIMA_ACTING,
             SIMA_WAITING,
             SIMA_WATCHING,
-
-            SIMA_PROJECT1_FINISHED,
-            SIMA_PROJECT2_FINISHED,
-
 
             SYSTEM_HANDLED_COLLISION
         };
@@ -141,27 +140,57 @@ namespace CS8803AGA.story
 
         internal string getOutcome()
         {
-            var r = getRiedl();
-            var d = getDean();
+            string outcome = "";
 
-            if (GameFlag.SIMA_PROJECT1_FINISHED)
+            if (Keys[GameFlag.PLAYER_COMPLETED_PUZZLE])
             {
-                if (d.Mind.gotScholarship()) { }
-                
+                outcome += "You were assigned the SIMA project.\n";
             }
-            else if (GameFlag.SIMA_PROJECT2_FINISHED)
+            else
             {
-                if (d.Mind.gotScholarship()) { }
-
-            }
-            else 
-            {
-                if (r.Mind.gaveFunding) { }
-                if (d.Mind.gotScholarship()) { }
-
+                outcome += "You were not assigned the SIMA project.\n";
             }
 
-            throw new NotImplementedException();
+            if (Keys[GameFlag.PLAYER_WON_SCHOLARSHIP])
+            {
+                outcome += "You received a scholarship.\n";
+            }
+            else
+            {
+                outcome += "You did not receive a scholarship.\n";
+            }
+
+            if (Keys[GameFlag.PLAYER_GOT_FUNDING])
+            {
+                outcome += "You got funding from RIEDL.\n";
+            }
+            else
+            {
+                outcome += "You did not get funding from RIEDL.\n";
+            }
+
+            return outcome;
+        }
+
+        internal void updateState()
+        {
+            Keys[GameFlag.PLAYER_ACCESSED_PUZZLE] =
+                (Keys.ContainsKey(GameFlag.PLAYER_ACCESSED_PUZZLE) && Keys[GameFlag.PLAYER_ACCESSED_PUZZLE])
+                || getRiedl().Mind.SIMProject1;
+
+            Keys[GameFlag.PLAYER_GOT_FUNDING] =
+                (Keys.ContainsKey(GameFlag.PLAYER_GOT_FUNDING) && Keys[GameFlag.PLAYER_GOT_FUNDING])
+                || getRiedl().Mind.gaveFunding;
+
+            Keys[GameFlag.REGISTRAR_DOOR_IS_OPEN] =
+                (Keys.ContainsKey(GameFlag.REGISTRAR_DOOR_IS_OPEN) && Keys[GameFlag.REGISTRAR_DOOR_IS_OPEN])
+                || getRiedl().Mind.SIMProject1
+                || getRiedl().Mind.SIMProject2;
+
+            Keys[GameFlag.PLAYER_WON_SCHOLARSHIP] =
+                (Keys.ContainsKey(GameFlag.PLAYER_WON_SCHOLARSHIP) && Keys[GameFlag.PLAYER_WON_SCHOLARSHIP])
+                || getDean().Mind.scholarship;
+
         }
     }
 }
