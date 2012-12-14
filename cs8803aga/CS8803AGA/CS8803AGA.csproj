@@ -149,6 +149,7 @@
     <Compile Include="PsychSim\State\Sensor.cs" />
     <Compile Include="PsychSim\State\State.cs" />
     <Compile Include="PsychSim\State\StateFactory.cs" />
+    <Compile Include="PsychSim\testProgram.cs" />
     <Compile Include="rendering\Camera.cs" />
     <Compile Include="rendering\fonts\FontDrawCommand.cs" />
     <Compile Include="rendering\LineDrawer.cs" />

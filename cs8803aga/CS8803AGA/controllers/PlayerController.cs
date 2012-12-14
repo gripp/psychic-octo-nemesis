@@ -176,8 +176,8 @@ namespace CS8803AGA.controllers
                     //GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
                 }
                 else if (InputSet.getInstance().getButton(InputsEnum.BUTTON_5)
-                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_EXPLAINED_THESIS)
-                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS]))
+                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN)
+                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN]))
                 {
                     // Talk about your thesis...
                     GameplayManager.Game.getDean().simulate(Dean.ThingToDoToDean.PRESENT_THESIS);

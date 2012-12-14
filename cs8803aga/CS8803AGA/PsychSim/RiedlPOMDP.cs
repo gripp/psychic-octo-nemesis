@@ -16,8 +16,7 @@ namespace CS8803AGA.PsychSim
 
         List<Riedl.ThingToDoToRiedl> l; // list will be empty if no interaction is available
 
-        public RiedlPOMDP()
-            : base()
+        public RiedlPOMDP(): base()
         {
             this.l = new List<Riedl.ThingToDoToRiedl>();
             l.Add(Riedl.ThingToDoToRiedl.SHAKE_HAND);
@@ -35,7 +34,7 @@ namespace CS8803AGA.PsychSim
             a = mdp.getAction(c);
 
 
-            if (c.getX() >= 2 || c.getY() >= 2)
+            if ((c.getX() == 3 && c.getY() >= 2) || (c.getX() >= 2 && c.getY() == 3))
             {
                 if (!askedFunding && !l.Contains(Riedl.ThingToDoToRiedl.REQUEST_FUNDING))
                 {
@@ -50,7 +49,7 @@ namespace CS8803AGA.PsychSim
             }
             c = getNextState(a,c);
 
-            if (c.getX() == 3 || c.getY() == 3)
+            if (c.getX() == 3 && c.getY() == 3)
             {
                 SIMProject1 = true;
             }
@@ -82,6 +81,7 @@ namespace CS8803AGA.PsychSim
 
                 default: break;
             }
+            updatePOMDP();
 
         }
 

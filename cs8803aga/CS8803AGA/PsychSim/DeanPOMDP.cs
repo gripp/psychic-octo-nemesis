@@ -32,7 +32,7 @@ namespace CS8803AGA.PsychSim
             c = p.getState();
             a = mdp.getAction(c);
 
-            if (c.getX() >= 2 || c.getY() >= 2)
+            if ((c.getX() == 3 && c.getY() >= 2) || (c.getX() >= 2 && c.getY() == 3))
             {
                 if (!application && !l.Contains(Dean.ThingToDoToDean.REQUEST_SCHOLARSHIP))
                 {
@@ -47,7 +47,7 @@ namespace CS8803AGA.PsychSim
             }
             c = getNextState(a,c);
 
-            if (c.getX() == 3 || c.getY() == 3)
+            if (c.getX() == 3 && c.getY() == 3)
             {
                 if (!l.Contains(Dean.ThingToDoToDean.REQUEST_SCHOLARSHIP))
                     l.Add(Dean.ThingToDoToDean.REQUEST_SCHOLARSHIP);

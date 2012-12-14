@@ -1,5 +1,5 @@
 using System;
-
+using CS8803AGA.PsychSim;
 namespace CS8803AGA
 {
     static class Program
@@ -9,6 +9,7 @@ namespace CS8803AGA
         /// </summary>
         static void Main(string[] args)
         {
+           // testProgram.test();
             //TestHarness.WorldBuilder.test();
             using (Engine game = new Engine())
             {
