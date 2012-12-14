@@ -30,6 +30,7 @@ namespace CS8803AGA.story
             PLAYER_ACED_TEST, // 3
             PLAYER_TURNED_IN_RIEDL_PROJECT, // 4
             PLAYER_WROTE_RIEDL_THESIS, // 2
+            PLAYER_HAD_FUNDING_OPTION,
             PLAYER_REQUESTED_FUNDING,
             PLAYER_GOT_FUNDING,
 

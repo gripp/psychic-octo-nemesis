@@ -220,7 +220,11 @@ namespace CS8803AGA.story.characters
                 if (options.Contains(ThingToDoToRiedl.DO_PROJECT)) { optionsString += "   4: Tell RIEDL about a project you did."; }
                 if (options.Contains(ThingToDoToRiedl.TELL_JOKE)) { optionsString += "   5: Tell RIEDL a joke."; }
                 if (options.Contains(ThingToDoToRiedl.DISCUSS_THEORY)) { optionsString += "   6: Discuss computational theory with RIEDL."; }
-                if (options.Contains(ThingToDoToRiedl.REQUEST_FUNDING)) { optionsString += "   7: Request funding."; }
+                if (options.Contains(ThingToDoToRiedl.REQUEST_FUNDING))
+                {
+                    optionsString += "   7: Request funding.";
+                    GameplayManager.Game.Keys[PLAYER_HAD_FUNDING_OPTION] = true;
+                }
 
                 return optionsString;
             }
@@ -301,9 +305,12 @@ namespace CS8803AGA.story.characters
                     GameplayManager.Game.getRiedl().Mind.addEvidence(2);
                     break;
             }
-            if (thingToDoToRiedl != ThingToDoToRiedl.REQUEST_FUNDING)
+            if (GameplayManager.Game.Keys.ContainsKey(PLAYER_HAD_FUNDING_OPTION)
+                && GameplayManager.Game.Keys[PLAYER_HAD_FUNDING_OPTION]
+                && thingToDoToRiedl != ThingToDoToRiedl.REQUEST_FUNDING)
             {
                 GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askNoFunding);
+                GameplayManager.Game.Keys[PLAYER_HAD_FUNDING_OPTION] = false;
             }
             GameplayManager.Game.updateState();
             GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
