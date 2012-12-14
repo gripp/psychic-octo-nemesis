@@ -7,8 +7,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Audio\effects\bang_3.xnb</Output>
-      <Time>2012-12-12T15:16:59.4442231-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Audio\effects\bang_3.xnb</Output>
+      <Time>2012-12-12T11:02:46.8557952-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Ness_Walk.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Ness_Walk.xnb</Output>
-      <Time>2012-12-12T15:16:59.4212218-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Ness_Walk.xnb</Output>
+      <Time>2012-12-12T11:02:46.8057902-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Salsa_walk.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Salsa_walk.xnb</Output>
-      <Time>2012-12-12T15:16:59.4272221-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Salsa_walk.xnb</Output>
+      <Time>2012-12-12T11:02:46.8227919-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\splash.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\splash.xnb</Output>
-      <Time>2012-12-12T15:16:59.6712361-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\splash.xnb</Output>
+      <Time>2012-12-12T11:02:47.1398236-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\TitleScreen.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TitleScreen.xnb</Output>
-      <Time>2012-12-12T15:16:59.6082325-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TitleScreen.xnb</Output>
+      <Time>2012-12-12T11:02:47.0808177-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\mask.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\mask.xnb</Output>
-      <Time>2012-12-12T15:16:59.4352226-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\mask.xnb</Output>
+      <Time>2012-12-12T11:02:46.8387935-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\blank.bmp</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
-      <Time>2012-12-12T15:16:59.6092325-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\blank.xnb</Output>
+      <Time>2012-12-12T11:02:47.0818178-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\grassRock.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\grassRock.xnb</Output>
-      <Time>2012-12-12T15:16:59.6382342-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\grassRock.xnb</Output>
+      <Time>2012-12-12T11:02:47.0918188-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\Caption.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Caption.xnb</Output>
-      <Time>2012-12-12T15:16:59.4972261-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Caption.xnb</Output>
+      <Time>2012-12-12T11:02:46.9358032-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\CaptionBackGround.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGround.xnb</Output>
-      <Time>2012-12-12T15:16:59.4982262-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGround.xnb</Output>
+      <Time>2012-12-12T11:02:46.9378034-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\CaptionBackGroundLarge.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGroundLarge.xnb</Output>
-      <Time>2012-12-12T15:16:59.4992262-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CaptionBackGroundLarge.xnb</Output>
+      <Time>2012-12-12T11:02:46.9408037-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\ConversationStrip.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ConversationStrip.xnb</Output>
-      <Time>2012-12-12T15:16:59.5052266-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ConversationStrip.xnb</Output>
+      <Time>2012-12-12T11:02:46.9488045-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\CountShieldWithArrow.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CountShieldWithArrow.xnb</Output>
-      <Time>2012-12-12T15:16:59.5062266-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\CountShieldWithArrow.xnb</Output>
+      <Time>2012-12-12T11:02:46.9528049-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\FadeScreen.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen.xnb</Output>
-      <Time>2012-12-12T15:16:59.5072267-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen.xnb</Output>
+      <Time>2012-12-12T11:02:46.9548051-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\FadeScreen2.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen2.xnb</Output>
-      <Time>2012-12-12T15:16:59.5082267-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\FadeScreen2.xnb</Output>
+      <Time>2012-12-12T11:02:46.9568053-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\GameScreenBkgd.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GameScreenBkgd.xnb</Output>
-      <Time>2012-12-12T15:16:59.5272278-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GameScreenBkgd.xnb</Output>
+      <Time>2012-12-12T11:02:46.9828079-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\GearScoreBoard.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GearScoreBoard.xnb</Output>
-      <Time>2012-12-12T15:16:59.5312281-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GearScoreBoard.xnb</Output>
+      <Time>2012-12-12T11:02:46.9858082-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\GoldIcon.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GoldIcon.xnb</Output>
-      <Time>2012-12-12T15:16:59.5342282-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\GoldIcon.xnb</Output>
+      <Time>2012-12-12T11:02:46.9898086-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\Highlight.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Highlight.xnb</Output>
-      <Time>2012-12-12T15:16:59.5352283-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\Highlight.xnb</Output>
+      <Time>2012-12-12T11:02:46.9918088-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\HighlightLarge.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\HighlightLarge.xnb</Output>
-      <Time>2012-12-12T15:16:59.5372284-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\HighlightLarge.xnb</Output>
+      <Time>2012-12-12T11:02:46.9948091-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\InfoDisplay.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\InfoDisplay.xnb</Output>
-      <Time>2012-12-12T15:16:59.5392285-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\InfoDisplay.xnb</Output>
+      <Time>2012-12-12T11:02:46.9988095-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\LineBorder.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\LineBorder.xnb</Output>
-      <Time>2012-12-12T15:16:59.5412286-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\LineBorder.xnb</Output>
+      <Time>2012-12-12T11:02:47.0018098-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\PlayerSelected.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerSelected.xnb</Output>
-      <Time>2012-12-12T15:16:59.5432287-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerSelected.xnb</Output>
+      <Time>2012-12-12T11:02:47.0048101-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\PlayerUnSelected.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerUnSelected.xnb</Output>
-      <Time>2012-12-12T15:16:59.5442288-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PlayerUnSelected.xnb</Output>
+      <Time>2012-12-12T11:02:47.0078104-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\PopupScreen.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PopupScreen.xnb</Output>
-      <Time>2012-12-12T15:16:59.5562295-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\PopupScreen.xnb</Output>
+      <Time>2012-12-12T11:02:47.0268123-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\ScoreBoard.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScoreBoard.xnb</Output>
-      <Time>2012-12-12T15:16:59.5642299-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScoreBoard.xnb</Output>
+      <Time>2012-12-12T11:02:47.0298126-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\ScrollButtons.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollButtons.xnb</Output>
-      <Time>2012-12-12T15:16:59.5682302-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollButtons.xnb</Output>
+      <Time>2012-12-12T11:02:47.0358132-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\ScrollDown.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollDown.xnb</Output>
-      <Time>2012-12-12T15:16:59.5722304-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollDown.xnb</Output>
+      <Time>2012-12-12T11:02:47.0378134-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\ScrollUp.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollUp.xnb</Output>
-      <Time>2012-12-12T15:16:59.5752306-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\ScrollUp.xnb</Output>
+      <Time>2012-12-12T11:02:47.0398136-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\SelectionArrow.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SelectionArrow.xnb</Output>
-      <Time>2012-12-12T15:16:59.5762306-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SelectionArrow.xnb</Output>
+      <Time>2012-12-12T11:02:47.0418138-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\SeparationLine.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SeparationLine.xnb</Output>
-      <Time>2012-12-12T15:16:59.5772307-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\SeparationLine.xnb</Output>
+      <Time>2012-12-12T11:02:47.043814-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\StatsBorderTable.png</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\StatsBorderTable.xnb</Output>
-      <Time>2012-12-12T15:16:59.5842311-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\StatsBorderTable.xnb</Output>
+      <Time>2012-12-12T11:02:47.0568153-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\TickMark.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TickMark.xnb</Output>
-      <Time>2012-12-12T15:16:59.5972318-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TickMark.xnb</Output>
+      <Time>2012-12-12T11:02:47.063816-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\RPG\TitleBar.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TitleBar.xnb</Output>
-      <Time>2012-12-12T15:16:59.600232-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\RPG\TitleBar.xnb</Output>
+      <Time>2012-12-12T11:02:47.0678164-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\DarkKnight.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\DarkKnight.xnb</Output>
-      <Time>2012-12-12T15:16:59.4142214-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\DarkKnight.xnb</Output>
+      <Time>2012-12-12T11:02:46.7927889-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\trees.png</Source>
@@ -322,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\trees.xnb</Output>
-      <Time>2012-12-12T15:16:59.6932373-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\trees.xnb</Output>
+      <Time>2012-12-12T11:02:47.1918288-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\town.png</Source>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\town.xnb</Output>
-      <Time>2012-12-12T15:16:59.688237-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\town.xnb</Output>
+      <Time>2012-12-12T11:02:47.1828279-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\graveyard.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\graveyard.xnb</Output>
-      <Time>2012-12-12T15:16:59.6432345-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\graveyard.xnb</Output>
+      <Time>2012-12-12T11:02:47.0978194-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\reducedtown.png</Source>
@@ -349,8 +349,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtown.xnb</Output>
-      <Time>2012-12-12T15:16:59.6482347-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtown.xnb</Output>
+      <Time>2012-12-12T11:02:47.10382-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\reducedtrees.png</Source>
@@ -358,8 +358,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtrees.xnb</Output>
-      <Time>2012-12-12T15:16:59.652235-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\reducedtrees.xnb</Output>
+      <Time>2012-12-12T11:02:47.1068203-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\SIMA.png</Source>
@@ -367,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\SIMA.xnb</Output>
-      <Time>2012-12-12T15:16:59.426222-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\SIMA.xnb</Output>
+      <Time>2012-12-12T11:02:46.8197916-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Riedl.png</Source>
@@ -376,8 +376,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Riedl.xnb</Output>
-      <Time>2012-12-12T15:16:59.425222-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Riedl.xnb</Output>
+      <Time>2012-12-12T11:02:46.8167913-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Receptionist.png</Source>
@@ -385,8 +385,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Receptionist.xnb</Output>
-      <Time>2012-12-12T15:16:59.4232219-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Receptionist.xnb</Output>
+      <Time>2012-12-12T11:02:46.8077904-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Registrar.png</Source>
@@ -394,8 +394,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Registrar.xnb</Output>
-      <Time>2012-12-12T15:16:59.4242219-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Registrar.xnb</Output>
+      <Time>2012-12-12T11:02:46.8107907-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Food.png</Source>
@@ -403,8 +403,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Food.xnb</Output>
-      <Time>2012-12-12T15:16:59.4172215-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Food.xnb</Output>
+      <Time>2012-12-12T11:02:46.7967893-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Microwave.png</Source>
@@ -412,8 +412,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Microwave.xnb</Output>
-      <Time>2012-12-12T15:16:59.4202217-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Microwave.xnb</Output>
+      <Time>2012-12-12T11:02:46.80379-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Textures\Dean.png</Source>
@@ -421,8 +421,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Dean.xnb</Output>
-      <Time>2012-12-12T15:25:54.4288224-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Dean.xnb</Output>
+      <Time>2012-12-14T00:00:57.4036583-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Kootenay.spritefont</Source>
@@ -430,8 +430,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay.xnb</Output>
-      <Time>2012-12-12T15:16:59.4752249-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay.xnb</Output>
+      <Time>2012-12-12T11:02:46.9038-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Kootenay48.spritefont</Source>
@@ -439,8 +439,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay48.xnb</Output>
-      <Time>2012-12-12T15:16:59.477225-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay48.xnb</Output>
+      <Time>2012-12-12T11:02:46.9068003-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Kootenay8.spritefont</Source>
@@ -448,8 +448,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay8.xnb</Output>
-      <Time>2012-12-12T15:16:59.4812252-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Kootenay8.xnb</Output>
+      <Time>2012-12-12T11:02:46.913801-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Lindsey.spritefont</Source>
@@ -457,8 +457,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Lindsey.xnb</Output>
-      <Time>2012-12-12T15:16:59.4842254-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Lindsey.xnb</Output>
+      <Time>2012-12-12T11:02:46.9158012-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Miramonte.spritefont</Source>
@@ -466,8 +466,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Miramonte.xnb</Output>
-      <Time>2012-12-12T15:16:59.4872255-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Miramonte.xnb</Output>
+      <Time>2012-12-12T11:02:46.9178014-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\MiramonteBold.spritefont</Source>
@@ -475,8 +475,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\MiramonteBold.xnb</Output>
-      <Time>2012-12-12T15:16:59.4892257-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\MiramonteBold.xnb</Output>
+      <Time>2012-12-12T11:02:46.9208017-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Pericles.spritefont</Source>
@@ -484,8 +484,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pericles.xnb</Output>
-      <Time>2012-12-12T15:16:59.4922258-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pericles.xnb</Output>
+      <Time>2012-12-12T11:02:46.9228019-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\PericlesLight.spritefont</Source>
@@ -493,8 +493,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PericlesLight.xnb</Output>
-      <Time>2012-12-12T15:16:59.4942259-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PericlesLight.xnb</Output>
+      <Time>2012-12-12T11:02:46.9258022-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\Pescadero.spritefont</Source>
@@ -502,8 +502,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pescadero.xnb</Output>
-      <Time>2012-12-12T15:16:59.4942259-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\Pescadero.xnb</Output>
+      <Time>2012-12-12T11:02:46.9278024-05:00</Time>
     </Item>
     <Item>
       <Source>SpriteFonts\PescaderoBold.spritefont</Source>
@@ -511,8 +511,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PescaderoBold.xnb</Output>
-      <Time>2012-12-12T15:16:59.495226-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\SpriteFonts\PescaderoBold.xnb</Output>
+      <Time>2012-12-12T11:02:46.9298026-05:00</Time>
     </Item>
     <Item>
       <Source>Sprites\TileSet1.xml</Source>
@@ -520,8 +520,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TileSet1.xnb</Output>
-      <Time>2012-12-12T15:16:59.6052323-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Sprites\TileSet1.xnb</Output>
+      <Time>2012-12-12T11:02:47.0748171-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Jason.xml</Source>
@@ -529,8 +529,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Jason.xnb</Output>
-      <Time>2012-12-12T15:16:59.4512235-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Jason.xnb</Output>
+      <Time>2012-12-12T11:02:46.8747971-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\DarkKnight.xml</Source>
@@ -538,8 +538,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\DarkKnight.xnb</Output>
-      <Time>2012-12-12T15:16:59.4502234-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\DarkKnight.xnb</Output>
+      <Time>2012-12-12T11:02:46.8727969-05:00</Time>
     </Item>
     <Item>
       <Source>World\trees.xml</Source>
@@ -547,8 +547,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\trees.xnb</Output>
-      <Time>2012-12-12T15:16:59.6972375-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\trees.xnb</Output>
+      <Time>2012-12-12T11:02:47.2008297-05:00</Time>
     </Item>
     <Item>
       <Source>World\town.xml</Source>
@@ -556,8 +556,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\town.xnb</Output>
-      <Time>2012-12-12T15:16:59.6962375-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\town.xnb</Output>
+      <Time>2012-12-12T11:02:47.1978294-05:00</Time>
     </Item>
     <Item>
       <Source>World\graveyard.xml</Source>
@@ -565,8 +565,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\graveyard.xnb</Output>
-      <Time>2012-12-12T15:16:59.6952374-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\World\graveyard.xnb</Output>
+      <Time>2012-12-12T11:02:47.1958292-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\DarkKnight.xml</Source>
@@ -574,8 +574,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\DarkKnight.xnb</Output>
-      <Time>2012-12-12T15:16:59.3612183-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\DarkKnight.xnb</Output>
+      <Time>2012-12-12T11:02:46.7007797-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Jason.xml</Source>
@@ -583,8 +583,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Jason.xnb</Output>
-      <Time>2012-12-12T15:16:59.3672187-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Jason.xnb</Output>
+      <Time>2012-12-12T11:02:46.743784-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Ness.xml</Source>
@@ -592,8 +592,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Ness.xnb</Output>
-      <Time>2012-12-12T15:16:59.3762192-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Ness.xnb</Output>
+      <Time>2012-12-12T11:02:46.7567853-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Riedl.xml</Source>
@@ -601,8 +601,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Riedl.xnb</Output>
-      <Time>2012-12-12T15:16:59.4622241-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Riedl.xnb</Output>
+      <Time>2012-12-12T11:02:46.8907987-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\SIMA.xml</Source>
@@ -610,8 +610,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\SIMA.xnb</Output>
-      <Time>2012-12-12T15:16:59.4652243-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\SIMA.xnb</Output>
+      <Time>2012-12-12T11:02:46.8927989-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\SIMA.xml</Source>
@@ -619,8 +619,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\SIMA.xnb</Output>
-      <Time>2012-12-12T15:16:59.3952203-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\SIMA.xnb</Output>
+      <Time>2012-12-12T11:02:46.773787-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Riedl.xml</Source>
@@ -628,8 +628,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Riedl.xnb</Output>
-      <Time>2012-12-12T15:16:59.3942202-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Riedl.xnb</Output>
+      <Time>2012-12-12T11:02:46.7717868-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Receptionist.xml</Source>
@@ -637,8 +637,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Receptionist.xnb</Output>
-      <Time>2012-12-12T15:16:59.3852197-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Receptionist.xnb</Output>
+      <Time>2012-12-12T11:02:46.7667863-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Receptionist.xml</Source>
@@ -646,8 +646,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Receptionist.xnb</Output>
-      <Time>2012-12-12T15:16:59.4572238-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Receptionist.xnb</Output>
+      <Time>2012-12-12T11:02:46.8847981-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Registrar.xml</Source>
@@ -655,8 +655,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Registrar.xnb</Output>
-      <Time>2012-12-12T15:16:59.3932202-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Registrar.xnb</Output>
+      <Time>2012-12-12T11:02:46.7697866-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Registrar.xml</Source>
@@ -664,8 +664,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Registrar.xnb</Output>
-      <Time>2012-12-12T15:16:59.4582239-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Registrar.xnb</Output>
+      <Time>2012-12-12T11:02:46.8877984-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Copy of Jason.xml</Source>
@@ -673,8 +673,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Copy of Jason.xnb</Output>
-      <Time>2012-12-12T15:16:59.4492234-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Copy of Jason.xnb</Output>
+      <Time>2012-12-12T11:02:46.8687965-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Cake.xml</Source>
@@ -682,8 +682,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Cake.xnb</Output>
-      <Time>2012-12-12T15:16:59.4472232-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Cake.xnb</Output>
+      <Time>2012-12-12T11:02:46.8627959-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Chicken.xml</Source>
@@ -691,8 +691,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Chicken.xnb</Output>
-      <Time>2012-12-12T15:16:59.3582182-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Chicken.xnb</Output>
+      <Time>2012-12-12T11:02:46.6757772-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Lobster.xml</Source>
@@ -700,8 +700,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Lobster.xnb</Output>
-      <Time>2012-12-12T15:16:59.4522235-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Lobster.xnb</Output>
+      <Time>2012-12-12T11:02:46.8777974-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Chicken.xml</Source>
@@ -709,8 +709,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Chicken.xnb</Output>
-      <Time>2012-12-12T15:16:59.4482233-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Chicken.xnb</Output>
+      <Time>2012-12-12T11:02:46.8657962-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Pizza.xml</Source>
@@ -718,8 +718,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Pizza.xnb</Output>
-      <Time>2012-12-12T15:16:59.4552237-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Pizza.xnb</Output>
+      <Time>2012-12-12T11:02:46.8817978-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Steak.xml</Source>
@@ -727,8 +727,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Steak.xnb</Output>
-      <Time>2012-12-12T15:16:59.4682244-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Steak.xnb</Output>
+      <Time>2012-12-12T11:02:46.8947991-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Cake.xml</Source>
@@ -736,8 +736,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Cake.xnb</Output>
-      <Time>2012-12-12T15:16:59.3532179-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Cake.xnb</Output>
+      <Time>2012-12-12T11:02:46.6607757-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Pizza.xml</Source>
@@ -745,8 +745,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Pizza.xnb</Output>
-      <Time>2012-12-12T15:16:59.3822195-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Pizza.xnb</Output>
+      <Time>2012-12-12T11:02:46.763786-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Steak.xml</Source>
@@ -754,8 +754,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Steak.xnb</Output>
-      <Time>2012-12-12T15:16:59.4002206-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Steak.xnb</Output>
+      <Time>2012-12-12T11:02:46.7777874-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Lobster.xml</Source>
@@ -763,8 +763,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Lobster.xnb</Output>
-      <Time>2012-12-12T15:16:59.3692188-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Lobster.xnb</Output>
+      <Time>2012-12-12T11:02:46.7527849-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Microwave.xml</Source>
@@ -772,8 +772,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Microwave.xnb</Output>
-      <Time>2012-12-12T15:16:59.4532236-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Microwave.xnb</Output>
+      <Time>2012-12-12T11:02:46.8787975-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Microwave.xml</Source>
@@ -781,8 +781,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Microwave.xnb</Output>
-      <Time>2012-12-12T15:16:59.3752191-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Microwave.xnb</Output>
+      <Time>2012-12-12T11:02:46.7547851-05:00</Time>
     </Item>
     <Item>
       <Source>Animation\Data\Dean.xml</Source>
@@ -790,8 +790,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Dean.xnb</Output>
-      <Time>2012-12-12T15:26:57.1734112-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Dean.xnb</Output>
+      <Time>2012-12-14T00:00:57.400658-05:00</Time>
     </Item>
     <Item>
       <Source>Characters\Dean.xml</Source>
@@ -799,23 +799,23 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Dean.xnb</Output>
-      <Time>2012-12-12T15:33:27.6847472-05:00</Time>
+      <Output>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Dean.xnb</Output>
+      <Time>2012-12-14T00:00:57.4076587-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll</Key>
-        <Value>2012-12-12T15:31:40.5306183-05:00</Value>
+        <Key>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAContentPipeline\bin\Zune\Debug\QuestAdaptationContentPipeline.dll</Key>
+        <Value>2012-12-14T00:08:53.2162365-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
@@ -842,12 +842,12 @@
         <Value>2009-05-28T00:16:06-04:00</Value>
       </Assembly>
       <Assembly>
-        <Key>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\CS8803AGAGameLibrary.dll</Key>
-        <Value>2012-12-12T15:31:39.3325498-05:00</Value>
+        <Key>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\CS8803AGAGameLibrary.dll</Key>
+        <Value>2012-12-14T00:00:57.5956775-05:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-09-10T12:26:00.5613682-04:00</Value>
+        <Value>2012-09-14T01:31:40.1313725-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

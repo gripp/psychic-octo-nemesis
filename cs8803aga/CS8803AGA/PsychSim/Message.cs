@@ -20,6 +20,7 @@ namespace CS8803AGA.PsychSim
         fundProject,
         proposeproject,
         submitApplication,
+        notify,
         acceptApplication
     }
 }

@@ -122,6 +122,7 @@
     <Compile Include="math\Line.cs" />
     <Compile Include="math\LineSegment.cs" />
     <Compile Include="math\Ray2.cs" />
+    <Compile Include="PsychSim\DeanPOMDP.cs" />
     <Compile Include="PsychSim\MDPPolicyIteration.cs" />
     <Compile Include="PsychSim\MDPPolicyIterationRecursive.cs" />
     <Compile Include="PsychSim\MDPValueIteration.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="PsychSim\Probability\Util.cs" />
     <Compile Include="PsychSim\Probability\ValueIteration.cs" />
     <Compile Include="PsychSim\Program.cs" />
+    <Compile Include="PsychSim\RiedlPOMDP.cs" />
     <Compile Include="PsychSim\State\Action.cs" />
     <Compile Include="PsychSim\State\Cell.cs" />
     <Compile Include="PsychSim\State\Sensor.cs" />

@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 
 using CS8803AGA.PsychSim.State;
+using CS8803AGA.story.characters;
 
 namespace CS8803AGA.PsychSim
 {
     public class Model
     {
-        MDPPolicyIteration mdp;
-        POMDP p;
-
+        public MDPPolicyIteration mdp;
+        public POMDP p;
+        public CS8803AGA.PsychSim.State.Action a;
+        public Cell<Double> c;
+        public int count = 0;
         public Model()
         {
             mdp = new MDPPolicyIteration();
-
             p = new POMDP(mdp.mdp);
             mdp.makePolicy();
         }
@@ -26,6 +28,7 @@ namespace CS8803AGA.PsychSim
             return mdp.getAction(s);
         }
 
+
         public Cell<Double> getState()
         {
             Cell<Double> s = p.getState();
@@ -35,36 +38,33 @@ namespace CS8803AGA.PsychSim
         public void addEvidence(double e)
         {
             p.updateBelief(CS8803AGA.PsychSim.State.Action.Up, e);
+            this.updatePOMDP();
         }
 
-        public void message(Message m, Model Npc)
+        public virtual void updatePOMDP()
         {
-            switch (m)
-            {
-                //case Message.askFunding: 
-                case Message.askFunding: break;
+            //throw new NotImplementedException();
+        }
 
-                case Message.askNoFunding:
-                    this.mdp.changeBelief(new double[] { 0, 1, 0, 0, 3, 0, 0, 5, 0 });
-                    break;
-                                        //new double[] { 1, 1, -1, 2, 2, -2, 3, 3, -3 }
-                case Message.acceptApplication:   
-                    this.mdp.changeBelief(new double[] { -1, 0, 3, -2, 0, 5, -4, 0, 7 });
-                    break;              //new double[] { -1, 1, 2, 0, 2, 3, -1, 3, 4 });
-                // case Message.askProject:
-                case Message.submitApplication:
-                    Npc.message(Message.acceptApplication, this);
-                    break;
-                default: break;
-            }
-        }
-        public static void addEvidenceAll(List<Model> l, double e)
+
+        public Cell<Double> getNextState(CS8803AGA.PsychSim.State.Action a, Cell<Double> c)
         {
-            foreach (Model m in l)
-            {
-                   m.addEvidence(e);
-            }
-            
+            int x = a.getXResult(c.getX());
+            int y = a.getYResult(c.getY());
+            return this.mdp.S.cellLookup[x][y];
         }
+
+
     }
 }
+
+
+
+//public static void addEvidenceAll(List<Model> l, double e)
+//{
+//    foreach (Model m in l)
+//    {
+//           m.addEvidence(e);
+//    }
+
+//}

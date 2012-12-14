@@ -8,7 +8,7 @@ using CS8803AGA.PsychSim.State;
 
 namespace CS8803AGA.PsychSim
 {
-    class POMDP
+    public class POMDP
     {
         public State<Double> belief;
         public Sensor sensor;

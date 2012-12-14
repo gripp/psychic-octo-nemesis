@@ -23,14 +23,15 @@ namespace CS8803AGA.story.characters
             ACE_TEST = 4,
             DO_PROJECT = 9,
             PRESENT_THESIS = 10,
-            REQUEST_FUNDING
+            REQUEST_FUNDING,
+            REQUEST_NO_FUNDING
         };
 
-        public Model Mind
+        public RiedlPOMDP Mind
         {
             get { return mnd; }
         }
-        private Model mnd = new Model();
+        private RiedlPOMDP mnd = new RiedlPOMDP();
 
         bool f_explained;
         bool f_playerAccessedPuzzle;
@@ -195,7 +196,7 @@ namespace CS8803AGA.story.characters
 
         private string getOptions()
         {
-            List<ThingToDoToRiedl> options = new List<ThingToDoToRiedl>();
+            List<ThingToDoToRiedl> options = GameplayManager.Game.getRiedl().Mind.options();
 
             if (options.Count == 0)
             {
@@ -267,7 +268,10 @@ namespace CS8803AGA.story.characters
                     GameplayManager.Game.getRiedl().Mind.addEvidence(10);
                     break;
                 case ThingToDoToRiedl.REQUEST_FUNDING:
-                    GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding, GameplayManager.Game.getDean().Mind);
+                    GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding);
+                    break;
+                case ThingToDoToRiedl.REQUEST_NO_FUNDING:
+                    GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askNoFunding);
                     break;
                 case ThingToDoToRiedl.SHAKE_HAND:
                     GameplayManager.say("RIEDL: Thank you for introducing yourself.");

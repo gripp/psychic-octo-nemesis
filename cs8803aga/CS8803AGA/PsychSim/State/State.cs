@@ -6,7 +6,7 @@ using System.Text;
 
 namespace CS8803AGA.PsychSim.State
 {
-    class State<C>
+    public class State<C>
     {
         HashSet<Cell<C>> cells = new HashSet<Cell<C>>();
         public Dictionary<int, Dictionary<int, Cell<C>>> cellLookup = new Dictionary<int, Dictionary<int, Cell<C>>>();

@@ -7,7 +7,7 @@ using CS8803AGA.PsychSim.Probability;
 
 namespace CS8803AGA.PsychSim.State
 {
-    class Sensor
+    public class Sensor
     {
         public Sensor()
         {

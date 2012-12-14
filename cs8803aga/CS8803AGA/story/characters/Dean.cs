@@ -22,11 +22,11 @@ namespace CS8803AGA.story.characters
             REQUEST_SCHOLARSHIP
         };
 
-        public Model Mind
+        public DeanPOMDP Mind
         {
             get { return mnd; }
         }
-        private Model mnd = new Model();
+        private DeanPOMDP mnd = new DeanPOMDP();
 
         bool f_playerAccessedPuzzle;
         bool f_playerRequestedScholarship;
@@ -76,7 +76,7 @@ namespace CS8803AGA.story.characters
 
         private string getOptions()
         {
-            List<ThingToDoToRiedl> options = new List<ThingToDoToRiedl>();
+            List<ThingToDoToDean> options = GameplayManager.Game.getDean().Mind.options();
 
             if (options.Count == 0)
             {
@@ -165,7 +165,8 @@ namespace CS8803AGA.story.characters
                         + "Computer Science isn't really my field, but you're clearly very intelligent.");
                     break;
                 case ThingToDoToDean.REQUEST_SCHOLARSHIP:
-                    GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication, GameplayManager.Game.getRiedl().Mind);
+                    GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication);
+                    GameplayManager.Game.getRiedl().Mind.message(Message.notify);
                     break;
                 case ThingToDoToDean.SHAKE_HAND:
                     GameplayManager.say("DEAN: Nice to meet you, too.\n"

@@ -6,15 +6,15 @@
       <TargetPlatform>Windows</TargetPlatform>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAGameLibrary\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-09-10T12:26:00.5613682-04:00</Value>
+        <Value>2012-09-14T01:31:40.1313725-04:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

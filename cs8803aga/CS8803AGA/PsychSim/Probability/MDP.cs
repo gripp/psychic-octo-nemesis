@@ -7,7 +7,7 @@ using CS8803AGA.PsychSim.State;
 
 namespace CS8803AGA.PsychSim.Probability
 {
-    class MDP
+    public class MDP
     {
         private HashSet<Cell<Double>> states = null;
         private Cell<Double> initialState;

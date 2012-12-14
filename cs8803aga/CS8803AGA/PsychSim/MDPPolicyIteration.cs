@@ -8,10 +8,10 @@ using CS8803AGA.PsychSim.State;
 
 namespace CS8803AGA.PsychSim
 {
-    class MDPPolicyIteration
+    public class MDPPolicyIteration
     {
         LookupPolicy policy;
-        State<Double> S;
+        public State<Double> S;
         public MDP mdp;
         PolicyIteration pi;
         public MDPPolicyIteration()

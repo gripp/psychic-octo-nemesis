@@ -7,7 +7,7 @@ using CS8803AGA.PsychSim.State;
 
 namespace CS8803AGA.PsychSim.Probability
 {
-    class ActionsFunction
+    public class ActionsFunction
     {
         static HashSet<Cell<Double>> terminals = new HashSet<Cell<Double>>();
 

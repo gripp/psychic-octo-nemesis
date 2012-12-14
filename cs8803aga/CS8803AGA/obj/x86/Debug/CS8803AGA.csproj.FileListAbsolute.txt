@@ -170,3 +170,6 @@ C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Deb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Data\Dean.xnb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Characters\Dean.xnb
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGA\bin\x86\Debug\Content\Animation\Textures\Dean.xnb
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGA\obj\x86\Debug\CS8803AGA.exe

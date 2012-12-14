@@ -5,39 +5,53 @@ using System.Text;
 
 using CS8803AGA.PsychSim.State;
 using CS8803AGA.PsychSim.Probability;
+using CS8803AGA.story.characters;
+
 namespace CS8803AGA.PsychSim
 {
-    class Program
+    class Control
     {
-        static void TempMain(string[] args)
+        bool funding = true;
+        bool application = false;
+        List<Model> l = new List<Model>();
+        Model prof = new Model();
+        Model dean = new Model();
+        CS8803AGA.PsychSim.State.Action a;
+        Cell<Double> c;
+
+        static void run(string[] args)
         {
-            bool funding = true;
-            bool application = false;
-            List<Model> l = new List<Model>();
-            Model prof = new Model();
-            Model dean = new Model();
-            l.Add(prof);
-            l.Add(dean);
-            CS8803AGA.PsychSim.State.Action a = prof.getAction();
-            Cell<Double> c = prof.getState();
 
-            Model.addEvidenceAll(l, 9);
+            //l.Add(prof);
+            //l.Add(dean);
+            //a = prof.getAction();
+            //c = prof.getState();
+            
+            //Model.addEvidenceAll(l, 9);
 
 
-            prof.message(Message.askNoFunding, dean);
-            funding = false;
+            //prof.message(Message.askNoFunding, dean);
+            //funding = false;
 
-            a = prof.getAction();
-            c = prof.getState();
-            Model.addEvidenceAll(l, 11);
+            //c = prof.getNextState(a, c);
 
-            dean.message(Message.submitApplication, prof);
-            application = true;
+            //a = prof.getAction();
+            //c = prof.getState();
+            //Model.addEvidenceAll(l, 11);
 
-            a = prof.getAction();
-            c = prof.getState();
+            //dean.message(Message.submitApplication, prof);
+            //application = true;
 
+            //a = prof.getAction();
+            //c = prof.getState();
 
+            //c = prof.getNextState(a, c);
+
+        }
+
+        public static void options()
+        {
+            List<Riedl.ThingToDoToRiedl> l = new List<Riedl.ThingToDoToRiedl>();
 
         }
 

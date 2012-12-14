@@ -18,3 +18,13 @@ C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.csproj.GenerateResource.Cache
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.exe
 C:\Users\Marshall\Documents\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.pdb
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\bin\x86\Debug\CS8803AGAEditor.exe
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\bin\x86\Debug\CS8803AGAEditor.pdb
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\bin\x86\Debug\CS8803AGAGameLibrary.dll
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\bin\x86\Debug\CS8803AGAGameLibrary.pdb
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.ContentTypeSelector.resources
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.csproj.GenerateResource.Cache
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.exe
+C:\Users\ganga\Documents\GitHub\psychic-octo-nemesis\cs8803aga\CS8803AGAEditor\obj\x86\Debug\CS8803AGAEditor.pdb

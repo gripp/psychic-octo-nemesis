@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace CS8803AGA.PsychSim.Probability
 {
-    class TransitionProbabilityFunction
+     public class TransitionProbabilityFunction
     {
         State<Double> state;
         private double[] distribution = new double[] { 0.8, 0.1, 0.1 };
