@@ -49,11 +49,11 @@ namespace CS8803AGA.engine
         /// <returns></returns>
         public override void update(Microsoft.Xna.Framework.GameTime gameTime)
         {
-            if (InputSet.getInstance().getButton(InputsEnum.BUTTON_3))
-            {
-                EngineManager.pushState(new EngineStateMap());
-                return;
-            }
+            //if (InputSet.getInstance().getButton(InputsEnum.BUTTON_3))
+            //{
+            //    EngineManager.pushState(new EngineStateMap());
+            //    return;
+            //}
 
             Area area = GameplayManager.ActiveArea;
             area.GameObjects.ForEach(i => i.update());

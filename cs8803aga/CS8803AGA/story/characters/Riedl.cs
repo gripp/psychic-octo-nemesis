@@ -202,6 +202,48 @@ namespace CS8803AGA.story.characters
         private string getOptions()
         {
             List<ThingToDoToRiedl> options = GameplayManager.Game.getRiedl().Mind.options();
+            if (options.Contains(ThingToDoToRiedl.SHAKE_HAND)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_SHOOK_RIEDL_HAND)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_RIEDL_HAND])
+            {
+                options.Remove(ThingToDoToRiedl.SHAKE_HAND);
+            }
+            if (options.Contains(ThingToDoToRiedl.PRESENT_THESIS)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_WROTE_RIEDL_THESIS)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_WROTE_RIEDL_THESIS])
+            {
+                options.Remove(ThingToDoToRiedl.PRESENT_THESIS);
+            }
+            if (options.Contains(ThingToDoToRiedl.ACE_TEST)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_ACED_TEST)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_ACED_TEST])
+            {
+                options.Remove(ThingToDoToRiedl.ACE_TEST);
+            }
+            if (options.Contains(ThingToDoToRiedl.DO_PROJECT)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TURNED_IN_RIEDL_PROJECT)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TURNED_IN_RIEDL_PROJECT])
+            {
+                options.Remove(ThingToDoToRiedl.DO_PROJECT);
+            }
+            if (options.Contains(ThingToDoToRiedl.TELL_JOKE)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TOLD_RIEDL_JOKE)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_RIEDL_JOKE])
+            {
+                options.Remove(ThingToDoToRiedl.TELL_JOKE);
+            }
+            if (options.Contains(ThingToDoToRiedl.DISCUSS_THEORY)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_DISCUSSED_RIEDL_THEORY)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_RIEDL_THEORY])
+            {
+                options.Remove(ThingToDoToRiedl.DISCUSS_THEORY);
+            }
+            if (options.Contains(ThingToDoToRiedl.REQUEST_FUNDING)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_FUNDING)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_FUNDING])
+            {
+                options.Remove(ThingToDoToRiedl.REQUEST_FUNDING);
+            }
 
             if (options.Count == 0)
             {
@@ -214,16 +256,16 @@ namespace CS8803AGA.story.characters
             {
                 string optionsString = "SYSTEM: What would you like to do?\n";
 
-                if (options.Contains(ThingToDoToRiedl.SHAKE_HAND)) { optionsString += "   1: Shake RIEDL's hand."; }
-                if (options.Contains(ThingToDoToRiedl.PRESENT_THESIS)) { optionsString += "   2: Tell RIEDL about a paper you wrote."; }
-                if (options.Contains(ThingToDoToRiedl.ACE_TEST)) { optionsString += "   3: Tell RIEDL about a test you aced."; }
-                if (options.Contains(ThingToDoToRiedl.DO_PROJECT)) { optionsString += "   4: Tell RIEDL about a project you did."; }
-                if (options.Contains(ThingToDoToRiedl.TELL_JOKE)) { optionsString += "   5: Tell RIEDL a joke."; }
-                if (options.Contains(ThingToDoToRiedl.DISCUSS_THEORY)) { optionsString += "   6: Discuss computational theory with RIEDL."; }
+                if (options.Contains(ThingToDoToRiedl.SHAKE_HAND)) { optionsString += "   1: Shake RIEDL's hand.\n"; }
+                if (options.Contains(ThingToDoToRiedl.PRESENT_THESIS)) { optionsString += "   2: Tell RIEDL about a paper you wrote.\n"; }
+                if (options.Contains(ThingToDoToRiedl.ACE_TEST)) { optionsString += "   3: Tell RIEDL about a test you aced.\n"; }
+                if (options.Contains(ThingToDoToRiedl.DO_PROJECT)) { optionsString += "   4: Tell RIEDL about a project you did.\n"; }
+                if (options.Contains(ThingToDoToRiedl.TELL_JOKE)) { optionsString += "   5: Tell RIEDL a joke.\n"; }
+                if (options.Contains(ThingToDoToRiedl.DISCUSS_THEORY)) { optionsString += "   6: Discuss computational theory with RIEDL.\n"; }
                 if (options.Contains(ThingToDoToRiedl.REQUEST_FUNDING))
                 {
                     optionsString += "   7: Request funding.";
-                    GameplayManager.Game.Keys[PLAYER_HAD_FUNDING_OPTION] = true;
+                    GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAD_FUNDING_OPTION] = true;
                 }
 
                 return optionsString;
@@ -272,48 +314,51 @@ namespace CS8803AGA.story.characters
 
         internal void simulate(ThingToDoToRiedl thingToDoToRiedl)
         {
+            string dialog = "";
             switch (thingToDoToRiedl)
             {
                 case ThingToDoToRiedl.ACE_TEST:
-                    GameplayManager.say("RIEDL: Wow. You got an A on that test?\n"
-                        + "A lot of students were complaining about how difficult it was.");
+                    dialog = "RIEDL: Wow. You got an A on that test?\n"
+                        + "A lot of students were complaining about how difficult it was.";
                     GameplayManager.Game.getRiedl().Mind.addEvidence(4);
                     break;
                 case ThingToDoToRiedl.DISCUSS_THEORY:
-                    GameplayManager.say("RIEDL: I'm happy that you take the time to actually read papers.");
+                    dialog = "RIEDL: I'm happy that you take the time to actually read papers.";
                     GameplayManager.Game.getRiedl().Mind.addEvidence(3);
                     break;
                 case ThingToDoToRiedl.DO_PROJECT:
-                    GameplayManager.say("RIEDL: This project looked like it took a whole lot of work.\n"
-                        + "You did this in your spare time? Very impressive!");
+                    dialog = "RIEDL: This project looked like it took a whole lot of work.\n"
+                        + "You did this in your spare time? Very impressive!";
                     GameplayManager.Game.getRiedl().Mind.addEvidence(9);
                     break;
                 case ThingToDoToRiedl.PRESENT_THESIS:
-                    GameplayManager.say("RIEDL: Your conclusions in this paper are fascinating.\n"
-                        + "This may be publishable work.");
+                    dialog = "RIEDL: Your conclusions in this paper are fascinating.\n"
+                        + "This may be publishable work.";
                     GameplayManager.Game.getRiedl().Mind.addEvidence(10);
                     break;
                 case ThingToDoToRiedl.REQUEST_FUNDING:
+                    dialog = "RIEDL: I'll think about it.";
                     GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askFunding);
                     break;
                 case ThingToDoToRiedl.SHAKE_HAND:
-                    GameplayManager.say("RIEDL: Thank you for introducing yourself.");
+                    dialog = "RIEDL: Thank you for introducing yourself.";
                     GameplayManager.Game.getRiedl().Mind.addEvidence(1);
                     break;
                 case ThingToDoToRiedl.TELL_JOKE:
-                    GameplayManager.say("RIEDL: Ha! That's a good one. I do enjoy a joke now and again.");
+                    dialog = "RIEDL: Ha! That's a good one. I do enjoy a joke now and again.";
                     GameplayManager.Game.getRiedl().Mind.addEvidence(2);
                     break;
             }
-            if (GameplayManager.Game.Keys.ContainsKey(PLAYER_HAD_FUNDING_OPTION)
-                && GameplayManager.Game.Keys[PLAYER_HAD_FUNDING_OPTION]
+            if (GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_HAD_FUNDING_OPTION)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAD_FUNDING_OPTION]
                 && thingToDoToRiedl != ThingToDoToRiedl.REQUEST_FUNDING)
             {
                 GameplayManager.Game.getRiedl().Mind.message(CS8803AGA.PsychSim.Message.askNoFunding);
-                GameplayManager.Game.Keys[PLAYER_HAD_FUNDING_OPTION] = false;
+                GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_HAD_FUNDING_OPTION] = false;
             }
             GameplayManager.Game.updateState();
             GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
+            GameplayManager.say(dialog);
         }
     }
 }

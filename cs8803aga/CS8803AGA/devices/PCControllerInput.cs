@@ -136,6 +136,10 @@ namespace CS8803AGA.devices
             inputs_.setButton(InputsEnum.BUTTON_2, ks.IsKeyDown(BUTTON_2));
             inputs_.setButton(InputsEnum.BUTTON_3, ks.IsKeyDown(BUTTON_3));
             inputs_.setButton(InputsEnum.BUTTON_4, ks.IsKeyDown(BUTTON_4));
+            inputs_.setButton(InputsEnum.BUTTON_5, ks.IsKeyDown(BUTTON_5));
+            inputs_.setButton(InputsEnum.BUTTON_6, ks.IsKeyDown(BUTTON_6));
+            inputs_.setButton(InputsEnum.BUTTON_7, ks.IsKeyDown(BUTTON_7));
+            inputs_.setButton(InputsEnum.BUTTON_8, ks.IsKeyDown(BUTTON_8));
 
             inputs_.setButton(InputsEnum.LEFT_TRIGGER,
                                 ms.RightButton == ButtonState.Pressed);
@@ -176,6 +180,14 @@ namespace CS8803AGA.devices
                 return BUTTON_3.ToString();
             case InputsEnum.BUTTON_4:
                 return BUTTON_4.ToString();
+            case InputsEnum.BUTTON_5:
+                return BUTTON_5.ToString();
+            case InputsEnum.BUTTON_6:
+                return BUTTON_6.ToString();
+            case InputsEnum.BUTTON_7:
+                return BUTTON_7.ToString();
+            case InputsEnum.BUTTON_8:
+                return BUTTON_8.ToString();
             case InputsEnum.LEFT_BUMPER:
                 return LEFT_BUMPER.ToString();
             case InputsEnum.RIGHT_BUMPER:

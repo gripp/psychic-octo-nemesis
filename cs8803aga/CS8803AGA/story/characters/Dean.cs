@@ -78,6 +78,36 @@ namespace CS8803AGA.story.characters
         private string getOptions()
         {
             List<ThingToDoToDean> options = GameplayManager.Game.getDean().Mind.options();
+            if (options.Contains(ThingToDoToDean.DISCUSS_THEORY)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY])
+            {
+                options.Remove(ThingToDoToDean.DISCUSS_THEORY);
+            }
+            if (options.Contains(ThingToDoToDean.PRESENT_THESIS)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN])
+            {
+                options.Remove(ThingToDoToDean.PRESENT_THESIS);
+            }
+            if (options.Contains(ThingToDoToDean.REQUEST_SCHOLARSHIP)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP])
+            {
+                options.Remove(ThingToDoToDean.REQUEST_SCHOLARSHIP);
+            }
+            if (options.Contains(ThingToDoToDean.SHAKE_HAND)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND])
+            {
+                options.Remove(ThingToDoToDean.SHAKE_HAND);
+            }
+            if (options.Contains(ThingToDoToDean.TELL_JOKE)
+                && GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE)
+                && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE])
+            {
+                options.Remove(ThingToDoToDean.TELL_JOKE);
+            }
 
             if (options.Count == 0)
             {
@@ -90,40 +120,11 @@ namespace CS8803AGA.story.characters
             {
                 string optionsString = "SYSTEM: What would you like to do?\n";
 
-                if (options.Contains(ThingToDoToDean.SHAKE_HAND)
-                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND)
-                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_SHOOK_DEAN_HAND]))
-                {
-                    optionsString += "   1: Shake the DEAN's hand.";
-                }
-
-                if (options.Contains(ThingToDoToDean.TELL_JOKE)
-                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE)
-                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_TOLD_DEAN_JOKE]))
-                {
-                    optionsString += "   2: Tell the DEAN a joke.";
-                }
-
-                if (options.Contains(ThingToDoToDean.DISCUSS_THEORY)
-                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY)
-                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_DISCUSSED_EDUCATIONAL_THEORY]))
-                {
-                    optionsString += "   3: Discuss educational theory with the DEAN.";
-                }
-
-                if (options.Contains(ThingToDoToDean.PRESENT_THESIS)
-                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN)
-                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_EXPLAINED_THESIS_TO_DEAN]))
-                {
-                    optionsString += "   4: Tell the DEAN about a paper you wrote.";
-                }
-
-                if (options.Contains(ThingToDoToDean.REQUEST_SCHOLARSHIP)
-                    && !(GameplayManager.Game.Keys.ContainsKey(GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP)
-                    && GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_REQUESTED_SCHOLARSHIP]))
-                {
-                    optionsString += "   5: Apply for a scholarship.";
-                }
+                if (options.Contains(ThingToDoToDean.SHAKE_HAND)) { optionsString += "   1: Shake the DEAN's hand\n"; }
+                if (options.Contains(ThingToDoToDean.TELL_JOKE)) { optionsString += "   2: Tell the DEAN a joke.\n"; }
+                if (options.Contains(ThingToDoToDean.DISCUSS_THEORY)) { optionsString += "   3: Discuss educational theory with the DEAN.\n"; }
+                if (options.Contains(ThingToDoToDean.PRESENT_THESIS)) { optionsString += "   4: Tell the DEAN about a paper you wrote.\n"; }
+                if (options.Contains(ThingToDoToDean.REQUEST_SCHOLARSHIP)) { optionsString += "   5: Apply for a scholarship.\n"; }
 
                 return optionsString;
             }
@@ -165,35 +166,38 @@ namespace CS8803AGA.story.characters
 
         internal void simulate(ThingToDoToDean thingToDoToDean)
         {
+            string dialog = "";
             switch (thingToDoToDean)
             {
                 case ThingToDoToDean.DISCUSS_THEORY:
-                    GameplayManager.say("DEAN: Your stances are so interesting!\n"
-                        + "I love it when students take an interest in the direction of their education!");
+                    dialog = "DEAN: Your stances are so interesting!\n"
+                        + "I love it when students take an interest in the direction of their education!";
                     GameplayManager.Game.getDean().Mind.addEvidence(10);
                     break;
                 case ThingToDoToDean.PRESENT_THESIS:
-                    GameplayManager.say("DEAN: I think I understand.\n"
-                        + "Computer Science isn't really my field, but you're clearly very intelligent.");
+                    dialog = "DEAN: I think I understand.\n"
+                        + "Computer Science isn't really my field, but you're clearly very intelligent.";
                     GameplayManager.Game.getDean().Mind.addEvidence(5);
                     break;
                 case ThingToDoToDean.REQUEST_SCHOLARSHIP:
+                    dialog = "DEAN: I'll think about it...";
                     GameplayManager.Game.getDean().Mind.message(CS8803AGA.PsychSim.Message.submitApplication);
                     GameplayManager.Game.getRiedl().Mind.message(Message.notify);
                     break;
                 case ThingToDoToDean.SHAKE_HAND:
-                    GameplayManager.say("DEAN: Nice to meet you, too.\n"
-                        + "I'm a bit busy, but I do enjoy talking to students now and again.");
+                    dialog = "DEAN: Nice to meet you, too.\n"
+                        + "I'm a bit busy, but I do enjoy talking to students now and again.";
                     GameplayManager.Game.getDean().Mind.addEvidence(2);
                     break;
                 case ThingToDoToDean.TELL_JOKE:
-                    GameplayManager.say("DEAN: I don't get it.\n"
-                        + "If you don't mind, I have some work to do...");
+                    dialog = "DEAN: I don't get it.\n"
+                        + "If you don't mind, I have some work to do...";
                     GameplayManager.Game.getDean().Mind.addEvidence(1);
                     break;
             }
             GameplayManager.Game.updateState();
             GameplayManager.Game.Keys[GameState.GameFlag.PLAYER_PARALYZED] = false;
+            GameplayManager.say(dialog);
         }
     }
 }

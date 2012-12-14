@@ -30,7 +30,7 @@ namespace CS8803AGA.engine
         public override void update(GameTime gameTime)
         {
             if (InputSet.getInstance().getButton(InputsEnum.BUTTON_1) ||
-                InputSet.getInstance().getButton(InputsEnum.BUTTON_2) ||
+                //InputSet.getInstance().getButton(InputsEnum.BUTTON_2) ||
                 InputSet.getInstance().getButton(InputsEnum.CONFIRM_BUTTON) ||
                 InputSet.getInstance().getButton(InputsEnum.CANCEL_BUTTON))
             {
